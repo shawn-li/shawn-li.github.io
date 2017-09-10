@@ -1,1 +1,5 @@
-alert(1);
+(function(){
+	$('#btn1').click(function(){
+		alert(111);
+	})
+})();
