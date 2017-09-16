@@ -1,0 +1,140 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.cl{zoom:1;}
+.cl::after{content:'';display:block;height:0;visibility:hidden;clear:both;}
+
+.lx-nav-wrap{
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0;	
+}
+.lx-nav{
+	margin: 0 auto;
+	padding: 0;
+	//height: 45px;  /* 导航栏高度  */
+	//width: 80%;
+	list-style: none;
+	//background-color: #ccc;
+	//opacity: 0.8;
+	@media screen and (min-width: 800px) {
+		li{
+			font-size: 20px;
+			min-width: 120px;
+		}
+	}
+
+	li{
+		float: left;
+		margin-left: 20px;
+		display: block;	
+		font-weight: 600;
+		position: relative;
+	}
+	li:first-child{
+		margin-left: 10px;	
+	}
+	li>a{
+		padding: 9px 0px 10px 0px;		
+		display: block;	
+		border-radius:3px;
+		color: #000;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	li>a:hover{
+		cursor: pointer;
+		text-decoration: none;
+		background-color: #eee;
+		color:#666;
+	}
+
+	li>a.active{
+		background-color: #337ab7;
+		color:#fff;
+	}
+}
+.lx-nav-box{
+	position: fixed;
+	z-index: 1000;
+	top: 100px;
+	right: 50px;
+
+	.lx-nav-pre,
+	.lx-nav-next{
+		height: 50px;
+		width: 50px;
+		border:1px solid #333;
+
+		a{
+			height: 50px;
+			display: block;
+		}
+	}
+}
+
+.circle{
+	//border:1px solid #333;
+	position: relative;
+	display: block; 
+	background: #fff; 
+	border-radius: 50%; 
+	height: 100px; 
+	width: 100px; 
+	margin: 0; 
+	background: radial-gradient(circle at 30px 30px, #fff, #d9d9d9); 
+	//background: -webkit-radial-gradient(circle at 100px 100px, #5cabff, #000); 
+	-moz-box-shadow:3px 3px 10px;             /* For Firefox3.6+ */
+	-webkit-box-shadow:3px 3px 10px;            /* For Chrome5+, Safari5+ */
+	box-shadow:3px 3px 10px;                    /* For Latest Opera */
+	
+	img.logo{
+		position: absolute;
+		top: 34px;
+		left: 41px;
+		width: 20px;
+		height: 20px;
+	}
+
+}
+
+.nike_logo{
+	
+	
+	.nike_logo_top{
+		position: absolute;
+		top: 36px;
+		left: 65px;
+		border: 0 solid transparent;
+	    border-bottom: 5px solid #ff0099;
+	    -o-border-radius: 0 0 100px 0;
+	    -moz-border-radius: 0 0 100px 0;
+	    -webkit-border-radius: 0 0 100px 0;
+	    border-radius: 0 0 100px 0;
+
+	    -ms-transform:rotate(-47deg); 	/* IE 9 */
+		-moz-transform:rotate(-47deg); 	/* Firefox */
+		-webkit-transform:rotate(-47deg); /* Safari 和 Chrome */
+		-o-transform:rotate(-47deg); 	/* Opera */
+	    transform:rotate(-47deg);
+
+	    width: 32px;
+    	height: 37px;
+	}
+	.nike_logo_bottom{
+		position: absolute;
+	    top: 64px;
+    	left: 75px;
+	    border-radius:50px 0 0 10px;
+ 		border-top: 0px solid transparent;
+ 		border-left: 5px solid #ff0099;
+ 		border-right: 0px solid transparent;
+ 		border-bottom: 16px solid transparent;
+	   	width: 5px;
+    	height: 12px;
+    	transform: rotate(-58deg);
+	}
+}

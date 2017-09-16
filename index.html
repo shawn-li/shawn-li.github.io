@@ -3,11 +3,106 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="./icons/myicon.png" media="screen" /> <!-- 这个作用是在浏览器地址栏显示您的小图标 -->
+	<link rel='bookmark' href='./icons/myicon.png'> 
+	<!-- 这个作用是在收藏夹里面显示您的小图标 -->
+	<link rel="stylesheet" type="text/css" href="./styles/global.css">
+	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/lx-slider.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-	<h3>I'm shawn li!</h3>
-	<button id="btn1" value="click me">click me</button>
-	<script type="text/javascript" src="main.js"></script>
+	<div class="lx-nav-wrap">
+		<ul class="lx-nav cl">
+			<li><a class="lx-nav-item" href="#" data-lx-nav="profile">自我介绍</a></li>
+			<li><a class="lx-nav-item" href="#" data-lx-nav="skill">职业技能</a></li>
+			<li><a class="lx-nav-item" href="#" data-lx-nav="project">项目经验</a></li>
+			<li><a class="lx-nav-item" href="#" data-lx-nav="hobby">个人爱好</a></li>
+			<li><a class="lx-nav-item" href="#" data-lx-nav="target">个人目标</a></li>
+		</ul>
+	</div>
+	<div class="lx-nav-box">
+		<div class="lx-nav-pre">
+			<a href="#">
+				上一页
+			</a>
+		</div>
+			
+		<div class="lx-nav-next">
+			<a href="#">
+				下一页
+			</a>
+		</div>
+	</div>
+
+	<div id="wrap">
+		
+		<div class="lx-nav-section profile-box" data-lx-nav="profile">
+			<div class="header-box">
+				<ul class="header cl">
+					<li class="col-md-offset-1 col-md-2"><a class="header-item" href="#" data-lx-nav="profile">自我介绍</a></li>
+					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="skill">职业技能</a></li>
+					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="project">项目经验</a></li>
+					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="hobby">个人爱好</a></li>
+					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="target">个人目标</a></li>
+				</ul>
+			</div>
+			<div class="profile-content cl">
+				<div class="profile-content-left-box cl">
+					<a href="http://www.cdut.edu.cn/default.html" target="_blank">
+						<img class="cdutLogo" src="./icons/CDUT.png" alt="成都理工大学">
+					</a>
+					<div class="profile-left-text">
+						<p>2013.9至2017.6 就读于<strong>成都理工大学</strong>&nbsp<strong>软件工程</strong>专业</p>
+						<p>在校情况：</p>
+						<ul>
+							<li>顺利拿到学位证和毕业证，通过英语四级和计算机二级考试</li>
+							<li>担任班级组织委员，组织安排班级活动</li>
+							<li>大学4年一直是学院足球队成员，并在2015-2016学年担任足球队队长，获得过乙级联赛第二名、第三名，并顺利冲甲，理工杯8强</li>
+							<li>获得过两次院级优秀班干部</li>
+							<li>校级多米诺科技比赛三等奖</li>
+						</ul>
+					</div>
+				</div>
+				<div class="profile-content-right-box">
+					<div class="profile-right-text">
+						<p>我来自<strong>四川乐山</strong>，一个旅游城市</p>
+						<p>上大学之前，我基本没有离开过这里</p>
+						<p>简单介绍一下乐山：</p>
+						<ul>
+							<li>作为旅游城市，乐山有许多著名景点，如峨眉山、乐山大佛、嘉阳小火车</li>
+							<li>对于吃货乐山也是来到四川必去的地方，在这里你可以吃到正宗的乐山甜皮鸭、乐山钵钵鸡、跷脚牛肉、乐山麻辣烫...</li>
+							<li>乐山话相比于四川其他地区发音很有特点，更加豪放和洒脱，这也代表了乐山人的性格，当然在外地人看来或许口音有点重，听不懂哟</li>
+							<li>乐山很大但市区不大，我生长在五通桥区（顾名思义，桥很多），另外乐山有两个彝族自治县</li>
+						</ul>
+					</div>
+					<a href="#">
+						<img class="Leshan" alt="乐山" src="./icons/Leshan01.jpg">
+						<img class="Leshan" alt="乐山" src="./icons/Leshan02.jpg">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="lx-nav-section skill-box" data-lx-nav="skill">
+			职业技能
+		</div>
+		<div class="lx-nav-section" data-lx-nav="project">
+			项目经验
+		</div>
+		<div class="lx-nav-section" data-lx-nav="hobby">
+			个人爱好
+		</div>
+		<div class="lx-nav-section" data-lx-nav="target">
+			个人目标
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="./scripts/lx-nav.min.js"></script>
+	<script type="text/javascript" src="./scripts/lx-slider.min.js"></script>
+	<script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#wrap .profile-box {
+  width: 90%;
+  margin: 0px auto;
+  padding: 20px 0;
+}
+#wrap .profile-box .header-box {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #d4d4d4;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20px;
+}
+#wrap .profile-box .header-box .header {
+  list-style: none;
+  padding: 10px 0;
+}
+#wrap .profile-box .header-box .header li {
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+#wrap .profile-box .header-box .header .header-item {
+  text-decoration: none;
+  color: #000;
+}
+#wrap .profile-box .profile-content {
+  margin-top: 20px;
+  padding: 30px;
+  height: 500px;
+}
+#wrap .profile-box .profile-content .profile-content-left-box {
+  box-sizing: border-box;
+  padding: 2%;
+  float: left;
+  width: 50%;
+  background-color: #fff;
+  text-align: justify;
+  line-height: 1.5em;
+}
+#wrap .profile-box .profile-content .profile-content-left-box .cdutLogo {
+  float: left;
+  width: 36%;
+  margin-right: 4%;
+  vertical-align: middle;
+}
+#wrap .profile-box .profile-content .profile-content-left-box .profile-left-text {
+  float: right;
+  width: 60%;
+}
+#wrap .profile-box .profile-content .profile-content-left-box .profile-left-text p {
+  margin-top: 2%;
+  font-size: 16px;
+}
+#wrap .profile-box .profile-content .profile-content-left-box .profile-left-text ul {
+  margin-top: 2%;
+}
+#wrap .profile-box .profile-content .profile-content-left-box .profile-left-text li {
+  margin-left: 1.2em;
+  font-size: 14px;
+}
+#wrap .profile-box .profile-content .profile-content-right-box {
+  border-left: 2px dashed #d4d4d4;
+  box-sizing: border-box;
+  padding: 2%;
+  float: right;
+  width: 50%;
+  background-color: #fff;
+  text-align: justify;
+  line-height: 1.5em;
+}
+#wrap .profile-box .profile-content .profile-content-right-box .Leshan {
+  float: right;
+  width: 36%;
+  margin-left: 4%;
+  margin-top: 2%;
+  vertical-align: middle;
+}
+#wrap .profile-box .profile-content .profile-content-right-box .profile-right-text {
+  float: left;
+  width: 60%;
+}
+#wrap .profile-box .profile-content .profile-content-right-box .profile-right-text p {
+  margin-top: 2%;
+  font-size: 16px;
+}
+#wrap .profile-box .profile-content .profile-content-right-box .profile-right-text ul {
+  margin-top: 2%;
+}
+#wrap .profile-box .profile-content .profile-content-right-box .profile-right-text li {
+  margin-left: 1.2em;
+  font-size: 14px;
+}
+#wrap .skill-box {
+  background-color: #999;
+}
