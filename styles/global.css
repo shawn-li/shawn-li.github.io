@@ -3,9 +3,9 @@
   margin: 0;
 }
 #wrap .profile-box {
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
-  padding: 20px 0;
+  padding: 3% 5%;
 }
 #wrap .profile-box .header-box {
   width: 90%;
@@ -97,4 +97,13 @@
 }
 #wrap .skill-box {
   background-color: #999;
+  padding: 3% 5%;
+  margin: 0px auto;
+  width: 100%;
+}
+#wrap .skill-box .skill-content-item {
+  padding: 0 20%;
+}
+#wrap .skill-box .skill-content-item svg {
+  height: 200px;
 }

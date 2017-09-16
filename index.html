@@ -8,7 +8,6 @@
 	<!-- 这个作用是在收藏夹里面显示您的小图标 -->
 	<link rel="stylesheet" type="text/css" href="./styles/global.css">
 	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.min.css">
-	<link rel="stylesheet" type="text/css" href="./styles/lx-slider.min.css">
 	<script type="text/javascript" src="./scripts/jquery-3.1.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
 	<script type="text/javascript" src="./scripts/bootstrap.min.js"></script>
@@ -87,22 +86,30 @@
 			</div>
 		</div>
 		<div class="lx-nav-section skill-box" data-lx-nav="skill">
-			职业技能
+			<div class="skill-content">
+				<!-- SVG 是使用 XML 来描述二维图形和绘图程序的语言 -->
+				<div class="skill-content-item">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+						<circle cx="100" cy="100" r="80" stroke="black" stroke-width="2" fill="#6a7a87"/>
+						<g></g>
+					</svg>
+				</div>
+				
+			</div>
 		</div>
-		<div class="lx-nav-section" data-lx-nav="project">
+		<div class="lx-nav-section project-box" data-lx-nav="project">
 			项目经验
 		</div>
-		<div class="lx-nav-section" data-lx-nav="hobby">
+		<div class="lx-nav-section hobby-box" data-lx-nav="hobby">
 			个人爱好
 		</div>
-		<div class="lx-nav-section" data-lx-nav="target">
+		<div class="lx-nav-section target-box" data-lx-nav="target">
 			个人目标
 		</div>
 
 	</div>
 
 	<script type="text/javascript" src="./scripts/lx-nav.min.js"></script>
-	<script type="text/javascript" src="./scripts/lx-slider.min.js"></script>
 	<script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 </html>
