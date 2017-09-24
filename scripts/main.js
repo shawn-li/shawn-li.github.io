@@ -234,10 +234,11 @@ $(document).ready(function(){
 	//project -- webapp
 	var num;
 	var $projectImgLoad=$('.project-img-load');
-	// for (var i = 0; i < $projectImgLoad.length; i++) {
-	// 	$projectImgLoad.eq(i).attr('src', './icons/webapp'+ (i+1) +'.png');
-	// 	console.log("Image"+i+" finish!");
-	// }
+	for (var i = 0; i < $projectImgLoad.length; i++) {
+		$projectImgLoad.eq(i).find('img').addClass('scale');
+		$projectImgLoad.eq(i).attr('src', './icons/webapp'+ (i+1) +'.png');
+		console.log("Image"+i+" finish!");
+	}
 	$projectImgLoad.load(function(){
 		//alert("laod");
 		//console.log($(this).parent().find('.load'));
@@ -255,12 +256,12 @@ $(document).ready(function(){
 		$(this).parent().find('.loading').remove();
 	});
 
-	$('.loading').click(function(){
-		$(this).find('img.project-img-load').addClass('scale');
-		var i = $(this).parent().find('img.project-img-load').attr('data-num');
-		console.log(i);
-		$(this).parent().find('img.project-img-load').attr('src', './icons/webapp'+ i +'.png');
-		return false;
-	})
+	// $('.loading').click(function(){
+	// 	$(this).find('img.project-img-load').addClass('scale');
+	// 	var i = $(this).parent().find('img.project-img-load').attr('data-num');
+	// 	console.log(i);
+	// 	$(this).parent().find('img.project-img-load').attr('src', './icons/webapp'+ i +'.png');
+	// 	return false;
+	// });
 
 });
