@@ -45,7 +45,7 @@
 			$lxNav_box.css({
 				top:settings.preAndNextBox_Top
 			});
-			console.log(settings.preAndNextBox_Top);
+			//console.log(settings.preAndNextBox_Top);
 		}
 		if (settings.preAndNextBox_Right != 'auto') {
 			$lxNav_box.css({
@@ -58,6 +58,7 @@
 		//按顺序取每个！section！的scrollTop放入数组sectionTopList
 		var sectionTopList = [];
 		for (var i = 0; i < $lxNav_section.length; i++) {
+			console.log(i + '===' + $lxNav_section.eq(i).offset().top)
 			sectionTopList.push(Math.round($lxNav_section.eq(i).offset().top));
 		}
 		//按顺序取每个！section！的data-lx-nav值放入sectionDataList

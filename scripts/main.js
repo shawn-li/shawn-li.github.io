@@ -9,7 +9,8 @@ $(document).ready(function(){
 	var $hobbyImgBox= $('.hobby-image-box');
 	var $hobbyImgClose = $('.hobby-img-close');
 
-	var imgAddr = ['Leshan01-md.jpg','Leshan02-md.jpg','chongqing-md.jpg','fuzhou-md.jpg','xiamen-md.jpg','kunming-md.jpg','qujing-md.jpg','dali-md.jpg','xian-md.jpg','qingdao1-md.jpg'];
+	var imgHobbyAddr = ['Leshan01-md.jpg','Leshan02-md.jpg','chongqing-md.jpg','fuzhou-md.jpg','xiamen-md.jpg','kunming-md.jpg','qujing-md.jpg','dali-md.jpg','xian-md.jpg','qingdao1-md.jpg'];
+	//var imgProjectWebapp = ['webapp1','webapp2','webapp3','webapp4']; 
 
 	// -----------------------
 	//响应式
@@ -231,14 +232,20 @@ $(document).ready(function(){
 
 	//加载图片
 	//project -- webapp
+	var num;
 	var projectImgLoad=$('.project-img-load');
 	for (var i = 0; i < projectImgLoad.length; i++) {
-		var num = i+1;
-		projectImgLoad.attr('src', './icons/webapp'+ num +'.png');
-	}
-	for (var i = 0; i < imgAddr.length; i++) {
-		$hobbyImgBox.eq(i).find('img').attr('src', './icons/'+ imgAddr[i] );
+		projectImgLoad.eq(i).attr('src', './icons/webapp'+ (i+1) +'.png');
 		console.log("Image"+i+" finish!");
 	}
+	projectImgLoad.load(function(){
+		//alert("laod");
+		console.log($(this).parent().find('.load'));
+		$(this).parent().find('.loading').remove();
+	});
+	for (var i = 0; i < imgHobbyAddr.length; i++) {
+		$hobbyImgBox.eq(i).find('img').attr('src', './icons/'+ imgHobbyAddr[i] );
+	}
+
 
 });

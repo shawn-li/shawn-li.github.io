@@ -436,7 +436,26 @@
 
 		
 	}
-
+	
+	//-------------skill-project 响应式 媒体查询
+	
+	@media screen and (min-width: 1174px) {
+		.project-content-img-box{
+			height: 232px;
+		}
+	}
+	@media screen and (max-width: 1025px) and (min-width:576px){
+		.project-content-img-box{
+			height: 462px;
+		}
+	}
+	@media screen and (max-width: 575px) and (min-width:517px){
+		.project-content-img-box{
+			height: 696px;
+		}
+	}
+	
+	//-------------
 	.project-box{
 		// background: #fcfff4; /* Old browsers */
 		// background: -ms-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* IE 9 */
@@ -450,7 +469,11 @@
 		margin: 0px auto;
 		width: 80%;
 
-		
+		.scale{
+			transform: rotate(360deg);
+			transition-duration: 2s;
+		}
+
 		.project-content{
 			position: relative;
 			border-left: 5px solid #b6b6b6;
@@ -482,14 +505,33 @@
 				font-size: 14px;
 				padding: 0 0 30px 30px;
 				line-height: 1.5em;
-
+				
 				.project-content-img-box{
+					position: relative;
+
+					.loading{
+						position: absolute;
+						background-color: #fff;
+						//background: url('../icons/loading.png');
+						height: 222px;
+						width: 174px;
+						
+						img{
+							margin: 45%;
+						}
+					}
+					.project-content-item-box{
+						//min-height: 230px;
+						float: left;
+						margin-right: 10px;
+					}
+					
 					
 					img{
-						margin-top: 1%;
-						float: left;
+						//margin-top: 1%;
 						margin-left: 3%;
-						padding: 1% 0;
+						margin-bottom: 10px;
+						//padding: 1% 0;
 						border: 1px solid #b6b6b6;
 					}
 				}
