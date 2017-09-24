@@ -3,39 +3,56 @@
 	//fixed导航栏包括fixed按钮框
 	$.fn.lxnav=function(options){
 
-		var $window=$(window);
-		$lxNav=$('.lx-nav');
-		$html_body=$('html,body');
-		$lxNav_wrap=$('.lx-nav-wrap');
-		$lxNav_Pre=$('.lx-nav-pre');
-		$lxNav_Next=$('.lx-nav-next');
-		$lxNav_section=$('.lx-nav-section');
-		$lxNav_Item=$('.lx-nav-item');
+		var $window=$(window);		//取window对象，主要用于监控滚动位置
+		$lxNav=$('.lx-nav');		//nav ul对象用于宽度比例设置
+		$html_body=$('html,body');		//取html，body对象，主要用于滚动
+		$wrap=$('#wrap');
+		$lxNav_wrap=$('.lx-nav-wrap');		//nav 外层用于定位、透明度设置、背景颜色
+		$lxNav_Pre=$('.lx-nav-pre');		//fixed上一页
+		$lxNav_Next=$('.lx-nav-next');		//fixed下一页
+		$lxNav_section=$('.lx-nav-section');	//section
+		$lxNav_Item=$('.lx-nav-item');		//fixed nav按键
+		$lxNav_box=$('.lx-nav-box');    //fixed上一页/下一页按键框
 
 		var settings=$.extend( {} , $.fn.lxnav.default , options );
 		//导航栏按钮个数
 		var lxNavItemNum = $('.lx-nav-item').length;
 
-
-		//初始化		
+		// --------------------------------------------------
+		//初始化	
 		if (settings.sidebarHeight != 'auto' && typeof settings.sidebarHeight =='number') {
 			$lxNav.css("height",settings.sidebarHeight);
 		}
 		if (settings.wrapWidth != 'auto') {
 			$lxNav.css("width",settings.navWidth);
+			//console.log(settings.navWidth);
+		}else{
+			$lxNav.css("width",'100%');
 		}
 		if (settings.sectionHeight != 'auto' && typeof settings.sectionHeight =='number') {
 			$lxNav_section.css("height",settings.sectionHeight);
+		}else if(settings.sectionHeight == 'auto'){
+			settings.sectionHeight=$lxNav_section.eq(1).offset().top;
 		}
-		console.log($lxNav.width());
-		settings.navItemWidth = (($lxNav.width()-20-lxNavItemNum*20+20)/lxNavItemNum);
-		//console.log(settings.navItemWidth);
-		if (settings.navItemWidth != 'auto' && typeof settings.navItemWidth =='number') {
-			$lxNav_Item.css("width",settings.navItemWidth);
-			console.log(settings.navItemWidth);
+		// 导航按钮
+		// settings.navItemWidth = (($lxNav.width()-20-lxNavItemNum*20+20)/lxNavItemNum);
+		// //console.log(settings.navItemWidth);
+		// if (settings.navItemWidth != 'auto' && typeof settings.navItemWidth =='number') {
+		// 	$lxNav_Item.css("width",settings.navItemWidth);
+		// 	//console.log(settings.navItemWidth);
+		// }
+		if (settings.preAndNextBox_Top != 'auto') {
+			$lxNav_box.css({
+				top:settings.preAndNextBox_Top
+			});
+			console.log(settings.preAndNextBox_Top);
 		}
-		$lxNav_wrap.hide();
-		
+		if (settings.preAndNextBox_Right != 'auto') {
+			$lxNav_box.css({
+				right:settings.preAndNextBox_Right
+			});
+		}
+		$lxNav_wrap.hide();	
 		//sectionTopList ==> sectionDataList ==> lxNavList
 
 		//按顺序取每个！section！的scrollTop放入数组sectionTopList
@@ -48,7 +65,7 @@
 		for (var i = 0; i < $lxNav_Item.length; i++) {
 			sectionDataList.push($lxNav_section.eq(i).attr('data-lx-nav'));
 		}
-		//对应secttionTopList的顺序取到！lx-nav！中data-lx-nav值放入lxNavList
+		//依次取到！lx-nav！中data-lx-nav值放入lxNavList
 		var lxNavList = [];
 		for (var i = 0; i < $lxNav_Item.length; i++) {
 			lxNavList.push($lxNav_Item.eq(i).attr('data-lx-nav'));
@@ -57,10 +74,12 @@
 		console.log(sectionDataList);
 		console.log(lxNavList);
 		
-		$lxNav.css({"background-color": settings.navBgColor});
-		$lxNav.css({
-			"opacity": settings.navOpacity,
-			"-moz-opacity":settings.navOpacity
+		$lxNav_wrap.css({"background-color": settings.navBgColor});
+		$lxNav_wrap.css({
+			"-moz-opacity":settings.navOpacity,
+			"-ms-opacity":settings.navOpacity,
+			"-webkit-opacity":settings.navOpacity,
+			"opacity": settings.navOpacity
 		});
 
 
@@ -137,7 +156,7 @@
 		//给nav按钮绑定事件
 		$lxNav_Item.click(function(e){
 			//console.log($($(this).parent().parent().children()));
-			var el=$(this)
+			var el=$(this);
 			var li_list=el.parent().parent().children();
 			$(li_list).find('a').removeClass('active');
 			el.addClass('active');
@@ -148,31 +167,57 @@
 			var targetTop=getTargetSectionByNav(data);
 			console.log(targetTop);
 			$html_body.animate({scrollTop: targetTop}, 800);
+			
+			settings.afterScroll(targetTop);
 			if (targetTop == 0 ) {
 				$lxNav_wrap.fadeOut('fast');
+			}else{
+				$lxNav_wrap.fadeIn('slow');
+				console.log(333)
 			}
 			return false;
 		});
 		//滑轮后导航栏消失
+		//$html_body.bind("mousewheel",function(){
+		$(window).scroll(function(event){
+			// if ($('.lx-nav-item .active')) {
+			// 	var scrollFlagData = $('.lx-nav-item .active').attr('data-lx-nav');
+			// 	var scrollFlagNum = scrollFlagData
+			// }
+			$lxNav_wrap.fadeOut('fast');
+			// if ($window.scrollTop() > settings.sectionHeight) {			
+			// 	//$('.lx-nav-item').removeClass('active');
+			// 	if ($lxNav_wrap.css('display') == 'none') {
+			// 		$lxNav_wrap.fadeIn('slow');
+			// 	}
+			// }else{
+			// 	if($lxNav_wrap.css('display') !='none') {
+			// 		$lxNav_wrap.fadeOut('fast');
+			// 	}
+			// }
+		});
 		$html_body.bind("mousewheel",function(){
-			if ($window.scrollTop() >= settings.sectionHeight) {
-				$('.lx-nav-item').removeClass('active');
-				$lxNav_wrap.fadeIn('slow');
+			$('.lx-nav-item').removeClass('active');
+		});
+
+		//顶部导航栏开关
+		$('.lx-nav-flag').click(function(){
+			if (settings.lxnavFlag) {
+				settings.lxnavFlag=false;
+				$(this).find('a').html("顶层导航-开");
 			}else{
-				$lxNav_wrap.fadeOut('fast');
+				settings.lxnavFlag=true;
+				$(this).find('a').html("顶层导航-关");
 			}
 		});
-		// $(window).scroll(function(event){
-		// 	if ($window.scrollTop() >= settings.sectionHeight) {
-		// 		$lxNav_wrap.fadeIn('slow');
-		// 	}else{
-		// 		$lxNav_wrap.fadeOut('fast');
-		// 	}
-		// });
 
 		//点击导航栏消失
 		$html_body.click(function(e){		
-			if ($window.scrollTop() >= settings.sectionHeight) {
+			//console.log(settings.sectionHeight);
+			if (!settings.lxnavFlag) {
+				return false;
+			}
+			if ($window.scrollTop() >= Math.round(settings.sectionHeight)) {
 				//console.log($lxNav_wrap.css('display'));
 				if ($lxNav_wrap.css('display')=='none') {
 					$lxNav_wrap.fadeIn('fast');
@@ -191,18 +236,31 @@
 			$lxNav_Item.removeClass('active');
 			var nowTop = $window.scrollTop();
 			var targetTop = getPreTargetNavBySection(nowTop);
-			
+			//取到targetTop的值，得到section的序号，再通过data-lx-nav取到nav的序号
+			var num = sectionTopList.indexOf(Math.round(targetTop));
+			var data = $lxNav_section.eq(num).attr('data-lx-nav');
+			//console.log(data);
+			var nav_num = lxNavList.indexOf(data);
+			$lxNav_Item.eq(nav_num).addClass('active');
+
 			$html_body.animate({scrollTop: targetTop }, 800);
 			console.log("目标滚动到的位置"+targetTop);
+			settings.afterScroll(targetTop);
 			return false;
 		});
 		$lxNav_Next.click(function(){
 			$lxNav_Item.removeClass('active');
 			var nowTop = $window.scrollTop();
 			var targetTop = getNextTargetNavBySection(nowTop);
+			var num = sectionTopList.indexOf(Math.round(targetTop));
+			var data = $lxNav_section.eq(num).attr('data-lx-nav');
+			//console.log(data);
+			var nav_num = lxNavList.indexOf(data);
+			$lxNav_Item.eq(nav_num).addClass('active');
 			
 			$html_body.animate({scrollTop: targetTop }, 800);
 			console.log("目标滚动到的位置"+targetTop);
+			settings.afterScroll(targetTop);
 			return false;
 		});
 
@@ -212,11 +270,15 @@
 
 	$.fn.lxnav.default={
 		sidebarHeight:'auto',	//导航栏高度
-		sectionHeight: 600,	//每个section固定高度
+		sectionHeight: 'auto',	//每个section固定高度
 		navItemWidth:'auto',  //导航栏每个按钮的宽度
-		navWidth:'auto',    //导航栏宽度
+		navWidth:'100%',    //导航栏宽度
 		navBgColor: '#fff',    //导航栏背景颜色
-		navOpacity:0.8       //导航栏透明度
+		navOpacity:0.8 ,      //导航栏透明度
+		preAndNextBox_Top: 'auto',
+		preAndNextBox_Right: 'auto',
+		lxnavFlag: true,
+		afterScroll: function(targetTop){}   //活动到对应section后回调函数,并传入对应section的top值作为参数
 	}
 
 })(jQuery,Math);

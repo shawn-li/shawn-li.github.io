@@ -6,8 +6,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="./icons/myicon.png" media="screen" /> <!-- 这个作用是在浏览器地址栏显示您的小图标 -->
 	<link rel='bookmark' href='./icons/myicon.png'> 
 	<!-- 这个作用是在收藏夹里面显示您的小图标 -->
+	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="./styles/global.css">
-	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.css">
 	<script type="text/javascript" src="./scripts/jquery-3.1.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
 	<script type="text/javascript" src="./scripts/bootstrap.min.js"></script>
@@ -16,25 +17,33 @@
 <body>
 	<div class="lx-nav-wrap">
 		<ul class="lx-nav cl">
-			<li><a class="lx-nav-item" href="#" data-lx-nav="profile">自我介绍</a></li>
-			<li><a class="lx-nav-item" href="#" data-lx-nav="skill">职业技能</a></li>
-			<li><a class="lx-nav-item" href="#" data-lx-nav="project">项目经验</a></li>
-			<li><a class="lx-nav-item" href="#" data-lx-nav="hobby">个人爱好</a></li>
-			<li><a class="lx-nav-item" href="#" data-lx-nav="target">个人目标</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><a href="#"></a></li>
+			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 "><a class="lx-nav-item" href="#" data-lx-nav="profile">自我介绍</a></li>
+			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a class="lx-nav-item" href="#" data-lx-nav="skill">职业技能</a></li>
+			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a class="lx-nav-item" href="#" data-lx-nav="project">项目经验</a></li>
+			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a class="lx-nav-item" href="#" data-lx-nav="hobby">个人爱好</a></li>
+			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 "><a class="lx-nav-item" href="#" data-lx-nav="target">个人目标</a></li>
 		</ul>
 	</div>
+	<div class="lx-nav-flag">
+		<a href="#">
+			fixed导航-关
+		</a>
+	</div>
 	<div class="lx-nav-box">
+
 		<div class="lx-nav-pre">
 			<a href="#">
-				上一页
+				<img class="img_pre" src="./icons/pre.png">
 			</a>
 		</div>
 			
 		<div class="lx-nav-next">
 			<a href="#">
-				下一页
+				<img class="img_next" src="./icons/next.png">
 			</a>
 		</div>
+
 	</div>
 
 	<div id="wrap">
@@ -42,13 +51,14 @@
 		<div class="lx-nav-section profile-box" data-lx-nav="profile">
 			<div class="header-box">
 				<ul class="header cl">
-					<li class="col-md-offset-1 col-md-2"><a class="header-item" href="#" data-lx-nav="profile">自我介绍</a></li>
-					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="skill">职业技能</a></li>
-					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="project">项目经验</a></li>
-					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="hobby">个人爱好</a></li>
-					<li class="col-md-2"><a class="header-item" href="#" data-lx-nav="target">个人目标</a></li>
+					<li class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-2 col-sm-2 col-xs-2"><a class="header-item" href="#" data-lx-nav="profile">自我介绍</a></li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a class="header-item" href="#" data-lx-nav="skill">职业技能</a></li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a class="header-item" href="#" data-lx-nav="project">项目经验</a></li>
+					<li class="col-md-2 col-sm-2 col-xs-2"><a class="header-item" href="#" data-lx-nav="hobby">个人爱好</a></li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a class="header-item" href="#" data-lx-nav="target">个人目标</a></li>
 				</ul>
 			</div>
+
 			<div class="profile-content cl">
 				<div class="profile-content-left-box cl">
 					<a href="http://www.cdut.edu.cn/default.html" target="_blank">
@@ -66,7 +76,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="profile-content-right-box">
+				<div class="profile-content-right-box cl">
 					<div class="profile-right-text">
 						<p>我来自<strong>四川乐山</strong>，一个旅游城市</p>
 						<p>上大学之前，我基本没有离开过这里</p>
@@ -78,38 +88,222 @@
 							<li>乐山很大但市区不大，我生长在五通桥区（顾名思义，桥很多），另外乐山有两个彝族自治县</li>
 						</ul>
 					</div>
-					<a href="#">
-						<img class="Leshan" alt="乐山" src="./icons/Leshan01.jpg">
-						<img class="Leshan" alt="乐山" src="./icons/Leshan02.jpg">
-					</a>
+					
+						<img class="Leshan" alt="乐山" src="./icons/Leshan01-sm.jpg">
+						<img class="Leshan" alt="乐山" src="./icons/Leshan02-sm.jpg">
+						<!-- <div class="Leshan1"></div>
+						<div class="Leshan"></div> -->
+					
 				</div>
 			</div>
 		</div>
 		<div class="lx-nav-section skill-box" data-lx-nav="skill">
-			<div class="skill-content">
+			<!-- <div class="skill-border-top-left"></div>
+			<div class="skill-border-top-right"></div> -->
+			<div class="box-title">职业技能</div>
+
+			<div class="skill-content cl">
 				<!-- SVG 是使用 XML 来描述二维图形和绘图程序的语言 -->
-				<div class="skill-content-item">
-					<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-						<circle cx="100" cy="100" r="80" stroke="black" stroke-width="2" fill="#6a7a87"/>
-						<g></g>
+				<div class="skill-content-item cl">
+					<div class="skill-profile skill-shadow1">
+					熟悉原生Javascript编程、Javascript面向对象程序设计和继承、原型链、ECMAScript语言规范以及ES6的变化、DOM、BOM、AJAX、JSON等知识，熟练使用jquery和zepto插件
+					</div>
+					<div class="skill-name skill-shadow1">
+						<img class="js-logo" src="./icons/js.png" alt="Javascript">
+						<span class="js-text">Javascript</span>
+					</div>
+					<svg class="skill-score skill-shadow1">
+						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="90%"/>
+						<g data-svg-origin="0 0">CSS</g>
+					</svg>
+				</div>
+
+				<div class="skill-content-item cl">
+					<div class="skill-profile skill-shadow2">
+					熟悉HTML5/CSS3、解决主流浏览器兼容性问题、响应式布局、使用Chrome开发者工具，使用过canvas、SVG、本地存储localStorage、CSS动画效果、CSS预处理语言Less
+					</div>
+					<div class="skill-name skill-shadow2">
+						<img class="html-logo" src="./icons/html.png" alt="html5">
+						<img class="css-logo" src="./icons/css.png" alt="css3">
+						<!-- <img class="html-text" src="./icons/html-text.png">
+						<img class="css-text" src="./icons/css-text.png"></img> -->
+						<span class="html-text">HTML5</span>
+						<SPAN class="css-text">&CSS3</SPAN>
+					</div>
+					<svg class="skill-score skill-shadow2" version="1.1">
+						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="80%"/>
+						<g data-svg-origin="0 0">CSS</g>
+					</svg>
+				</div>
+
+				<div class="skill-content-item cl">
+					<div class="skill-profile skill-shadow3">
+						熟悉JAVA SE、JSP、SQL语句，了解SSH(spring, struts, hibernate)框架、Tomcat，熟练使用IDEA、Oracle、Toad
+					</div>
+					<div class="skill-name skill-shadow3">
+						<img class="java-logo" src="./icons/java.png" alt="java">
+						<img class="sql-logo" src="./icons/sql.png" alt="sql">
+						<span class="java-text">JAVA</span>
+						<span class="sql-text">&SQL</span>
+					</div>
+					<svg class="skill-score skill-shadow3" version="1.1">
+						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="70%"/>
+					</svg>
+				</div>
+
+				<div class="skill-content-item cl">
+					<div class="skill-profile skill-shadow4">
+						熟悉fs、path等常用内置模块的使用,熟悉Git Bash命令行工具,了解基于Express、Koa的Web开发。
+					</div>
+					<div class="skill-name skill-shadow4">
+						<img class="nodejs-logo" src="./icons/nodejs.png" alt="node.js">
+						<span class="nodejs-text">Node.js</span>
+					</div>
+					<svg class="skill-score skill-shadow4" version="1.1">
+						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="60%"/>
+					</svg>
+				</div>
+
+				<div class="skill-content-item cl">
+					<div class="skill-profile skill-shadow5">
+						会切图，哈哈哈
+					</div>
+					<div class="skill-name skill-shadow5">
+						<img class="ps-logo" src="./icons/ps.png" alt="node.js">
+						<span class="ps-text">P S</span>
+					</div>
+					<svg class="skill-score skill-shadow5" version="1.1">
+						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="20%"/>
 					</svg>
 				</div>
 				
 			</div>
 		</div>
 		<div class="lx-nav-section project-box" data-lx-nav="project">
-			项目经验
+			<div class="box-title">项目经验</div>
+
+			<div class="project-content cl">
+				<div class="project-content-top">
+					Webapp书城
+					<div class="project-icon-circle"></div>
+				</div>
+				<div class="project-content-bottom">
+					<p>基于<strong>Node.js</strong>开发的一款<strong>Webapp</strong>，前端使用<strong>Vue.js+Zepto+H5/CSS3</strong>，<strong>Node</strong>开发基于Koa框架，使用了fs、path等常用内置模块,对不同的手机进行响应式布局，并对PC端进行兼容，在性能上进行优化。</p>
+					<p>书城我在大学时期个人完成开发，是一款基于移动端浏览器的应用，webapp虽然相比于原生app存在着许多劣势，但是也有着开发成本低、跨平台、无需反复下载安装等优势，比较适合个人或小团队的开发，而且阅读的webapp也十分适合移动端用户，更加轻便。用户可以在书城不同频道查看、搜索到个人喜欢的书记，并进入阅读器阅读。</p>
+					<div class="project-content-img-box cl">
+						<img src="./icons/webapp1.png" alt="webapp-index">
+						<img src="./icons/webapp2.png" alt="webapp-category">
+						<img src="./icons/webapp3.png" alt="webapp-search">
+						<img src="./icons/webapp4.png" alt="webapp-reader">
+					</div>		
+				</div>
+			</div>
+			<div class="project-content cl">
+				<div class="project-content-top">
+					学校期间
+					<div class="project-icon-circle"></div>
+				</div>
+				<div class="project-content-bottom">熟悉JAVA SE、JSP、SQL语句，了解SSH(spring, hibernate，struts)框架、Tomcat，熟练使用IDEA、Oracle、Toad</div>
+			</div>
+			<div class="project-content cl">
+				<div class="project-content-top">
+					学校期间
+					<div class="project-icon-circle"></div>
+				</div>
+				<div class="project-content-bottom">熟悉JAVA SE、JSP、SQL语句，了解SSH(spring, hibernate，struts)框架、Tomcat，熟练使用IDEA、Oracle、Toad</div>
+			</div>
 		</div>
+
 		<div class="lx-nav-section hobby-box" data-lx-nav="hobby">
-			个人爱好
+			<div class="box-title">个人爱好</div>
+
+			<div class="hobby-content cl">
+				<div class="hobby-bookmark bookmark-left bookmark-1" data-img="Leshan" data-num="0">乐山
+					<i class="hobby-bookmark-circle-left"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-left bookmark-2" data-img="chengdu" data-num="1">成都
+					<i class="hobby-bookmark-circle-left"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-left bookmark-3" data-img="chongqing" data-num="2">重庆
+					<i class="hobby-bookmark-circle-left"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-left bookmark-4" data-img="fuzhou" data-num="3">福州
+					<i class="hobby-bookmark-circle-left"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-left bookmark-5" data-img="xiamen" data-num="4">厦门
+					<i class="hobby-bookmark-circle-left"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-right bookmark-6" data-img="kunming" data-num="5">昆明
+					<i class="hobby-bookmark-circle-right"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-right bookmark-7" data-img="qujing" data-num="6">曲靖
+					<i class="hobby-bookmark-circle-right"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-right bookmark-8" data-img="dali" data-num="7">大理
+					<i class="hobby-bookmark-circle-right"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-right bookmark-9" data-img="xian" data-num="8">西安
+					<i class="hobby-bookmark-circle-right"></i>
+				</div>
+				<div class="hobby-bookmark bookmark-right bookmark-10" data-img="qingdao" data-num="9">青岛
+					<i class="hobby-bookmark-circle-right"></i>
+				</div>
+
+				
+				<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
+					<div class="hobby-img-close">
+						<i class="hobby-bookmark-circle-left"></i>
+					</div>
+					<img src="./icons/Leshan01.jpg" alt="Leshan">					
+				</div>
+				<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
+					<img src="./icons/Leshan02.jpg" alt="chengdu">					
+				</div>
+				<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
+					<img src="./icons/chongqing.jpg" alt="chongqing">					
+				</div>
+				<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
+					<img src="./icons/fuzhou.jpg" alt="fuzhou">					
+				</div>
+				<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
+					<img src="./icons/xiamen.jpeg" alt="xiamen">					
+				</div>
+
+
+				<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
+					<img src="./icons/kunming.jpg" alt="kunming">
+				</div>
+				<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
+					<img src="./icons/qujing.jpeg" alt="qujing">
+				</div>
+				<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
+					<img src="./icons/dali.jpeg" alt="dali">
+				</div>
+				<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
+					<img src="./icons/xian.jpg" alt="xian">
+				</div>
+				<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
+					<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
+					<img src="./icons/qingdao1.jpg" alt="qingdao">
+				</div>
+			</div>
 		</div>
-		<div class="lx-nav-section target-box" data-lx-nav="target">
+
+		<div class="lx-nav-section target-box" data-lx-nav="target" style="height: 200px">
 			个人目标
 		</div>
 
 	</div>
-
-	<script type="text/javascript" src="./scripts/lx-nav.min.js"></script>
+	
+	<script type="text/javascript" src="./scripts/lx-nav.js"></script>
 	<script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 </html>

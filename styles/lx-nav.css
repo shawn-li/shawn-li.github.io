@@ -63,16 +63,8 @@
   top: 100px;
   right: 50px;
 }
-.lx-nav-box .lx-nav-pre,
-.lx-nav-box .lx-nav-next {
-  height: 50px;
-  width: 50px;
-  border: 1px solid #333;
-}
-.lx-nav-box .lx-nav-pre a,
-.lx-nav-box .lx-nav-next a {
-  height: 50px;
-  display: block;
+.lx-nav-box .lx-nav-pre {
+  margin-bottom: 1%;
 }
 .circle {
   position: relative;
