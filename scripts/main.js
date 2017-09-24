@@ -233,19 +233,24 @@ $(document).ready(function(){
 	//加载图片
 	//project -- webapp
 	var num;
-	var projectImgLoad=$('.project-img-load');
-	for (var i = 0; i < projectImgLoad.length; i++) {
-		projectImgLoad.eq(i).attr('src', './icons/webapp'+ (i+1) +'.png');
+	var $projectImgLoad=$('.project-img-load');
+	for (var i = 0; i < $projectImgLoad.length; i++) {
+		$projectImgLoad.eq(i).attr('src', './icons/webapp'+ (i+1) +'.png');
 		console.log("Image"+i+" finish!");
 	}
-	projectImgLoad.load(function(){
+	$projectImgLoad.load(function(){
 		//alert("laod");
 		console.log($(this).parent().find('.load'));
 		$(this).parent().find('.loading').remove();
 	});
 	for (var i = 0; i < imgHobbyAddr.length; i++) {
-		$hobbyImgBox.eq(i).find('img').attr('src', './icons/'+ imgHobbyAddr[i] );
+		$hobbyImgBox.eq(i).find('img.hobby-img').attr('src', './icons/'+ imgHobbyAddr[i] );
 	}
+	$hobbyImgBox.find('img.hobby-img').load(function(){
+		//alert("laod");
+		console.log($(this).parent().find('.load'));
+		$(this).parent().find('.loading').remove();
+	});
 
 
 });

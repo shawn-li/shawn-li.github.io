@@ -569,6 +569,15 @@
   cursor: pointer;
   background: url(../icons/hobbyImgClose1.png) no-repeat center;
 }
+#wrap .hobby-box .hobby-content .hobby-image-box .loading {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+#wrap .hobby-box .hobby-content .hobby-image-box .loading img {
+  margin: 15% 45%;
+}
 #wrap .hobby-box .hobby-content .hobby-leftImgBox-beforeSlider {
   left: 0%;
 }
