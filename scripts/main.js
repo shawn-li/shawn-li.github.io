@@ -35,6 +35,22 @@ $(document).ready(function(){
 	// 	alert("laod finish");
 	// });
 
+	//lx-nav插件
+	$(document).lxnav({
+		navWidth:'90%',  
+		preAndNextBox_Top: '50px',
+		preAndNextBox_Right: '2%',
+		exceptClick:'.hobby-bookmark',
+		afterScroll:function(targetTop){
+			if(Math.round(targetTop) == Math.round(firstSectionHeight)){
+				$('.skill-score').find('rect').each(function(){
+					var $target=$(this);
+					var score=$(this).attr('data-skill-score');
+					skillDataBar($target, score);
+				});
+			}
+		}
+	});
 
 	//点击header上的按键 滑动到对应的Section
 	var scrollToSection=function(){
@@ -91,7 +107,9 @@ $(document).ready(function(){
 			
 		});
 	}
+	scrollToSection();
 
+	
 	//职业技能数据条增长
 	var skillDataBar=function(el,data){
 		//console.log(data);
@@ -209,28 +227,14 @@ $(document).ready(function(){
 		});
 		return false;
 	});
-	
 
-	//lx-nav插件
-	$(document).lxnav({
-		navWidth:'90%',  
-		preAndNextBox_Top: '50px',
-		preAndNextBox_Right: '2%',
-		exceptClick:'.hobby-bookmark',
-		afterScroll:function(targetTop){
-			if(Math.round(targetTop) == Math.round(firstSectionHeight)){
-				$('.skill-score').find('rect').each(function(){
-					var $target=$(this);
-					var score=$(this).attr('data-skill-score');
-					skillDataBar($target, score);
-				});
-			}
-		}
-	});
-
-	scrollToSection();
 
 	//加载图片
+	//project -- webapp
+	var projectImgLoad=$('.project-img-load');
+	for (var i = 0; i < projectImgLoad.length; i++) {
+		projectImgLoad.attr('src', './icons/webapp'+ (i+1) +'.png');
+	}
 	for (var i = 0; i < imgAddr.length; i++) {
 		$hobbyImgBox.eq(i).find('img').attr('src', './icons/'+ imgAddr[i] );
 		console.log("Image"+i+" finish!");
