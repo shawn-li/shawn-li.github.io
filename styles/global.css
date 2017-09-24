@@ -420,23 +420,19 @@
 #wrap .project-box .project-content .project-content-bottom .project-content-img-box {
   position: relative;
 }
-#wrap .project-box .project-content .project-content-bottom .project-content-img-box .loading {
-  position: absolute;
-  background-color: #fff;
-  height: 222px;
-  width: 174px;
-}
-#wrap .project-box .project-content .project-content-bottom .project-content-img-box .loading img {
-  margin: 45%;
-}
 #wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box {
   float: left;
   margin-right: 10px;
 }
-#wrap .project-box .project-content .project-content-bottom .project-content-img-box img {
-  margin-left: 3%;
-  margin-bottom: 10px;
-  border: 1px solid #b6b6b6;
+#wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box .loading {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 166px;
+}
+#wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box .loading img {
+  margin: 45%;
+  border: transparent;
 }
 @media screen and (max-width: 1080px) {
   #wrap .hobby-box .hobby-bookmark {
