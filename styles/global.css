@@ -31,6 +31,21 @@
 .lx-nav-box .img_next {
   margin-top: 10px;
 }
+#wrap .scale {
+  -ms-transition: transform 5s;
+  -webkit-transition: transform 5s;
+  -moz-transition: transform 5s;
+  transition: transform 5s;
+  transform: rotate(359deg);
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -moz-transform: rotate(360deg);
+  /* Firefox */
+  -webkit-transform: rotate(360deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(360deg);
+  /* Opera */
+}
 #wrap .box-title {
   text-align: center;
   font-size: 24px;
@@ -384,10 +399,6 @@
   padding: 4% 5%;
   margin: 0px auto;
   width: 80%;
-}
-#wrap .project-box .scale {
-  transform: rotate(360deg);
-  transition-duration: 2s;
 }
 #wrap .project-box .project-content {
   position: relative;
