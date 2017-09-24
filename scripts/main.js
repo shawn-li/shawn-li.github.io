@@ -9,7 +9,7 @@ $(document).ready(function(){
 	var $hobbyImgBox= $('.hobby-image-box');
 	var $hobbyImgClose = $('.hobby-img-close');
 
-	var currentImgNum;
+	var imgAddr = ['Leshan01.jpg','Leshan02.jpg','chongqing.jpg','fuzhou.jpg','xiamen.jpeg','kunming.jpg','qujing.jpeg','dali.jpeg','xian.jpg','qingdao1.jpg'];
 
 	// -----------------------
 	//响应式
@@ -25,6 +25,16 @@ $(document).ready(function(){
 	// 	'border-radius':  width_skillName*0.5
 	//  });
 	//------------------------
+
+	// $('img').on("load",function(){
+		
+	// 	alert("laod finish");
+	// });
+	// $('img.img-first').load(function(){
+		
+	// 	alert("laod finish");
+	// });
+
 
 	//点击header上的按键 滑动到对应的Section
 	var scrollToSection=function(){
@@ -219,5 +229,11 @@ $(document).ready(function(){
 	});
 
 	scrollToSection();
+
+	//加载图片
+	for (var i = 0; i < imgAddr.length; i++) {
+		$hobbyImgBox.eq(i).find('img').attr('src', './icons/'+ imgAddr[i] );
+		console.log("Image"+i+" finish!");
+	}
 
 });

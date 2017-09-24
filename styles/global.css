@@ -127,9 +127,13 @@
   text-align: justify;
   line-height: 1.5em;
 }
-#wrap .profile-box .profile-content .profile-content-right-box .Leshan {
+#wrap .profile-box .profile-content .profile-content-right-box .profile-right-img {
   float: right;
   width: 36%;
+}
+#wrap .profile-box .profile-content .profile-content-right-box .Leshan {
+  float: right;
+  width: 100%;
   display: block;
   margin-left: 4%;
   margin-bottom: 2%;
