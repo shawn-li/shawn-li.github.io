@@ -423,6 +423,8 @@
 #wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box {
   float: left;
   margin-right: 10px;
+  width: 166px;
+  height: 220px;
 }
 #wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box .loading {
   position: absolute;

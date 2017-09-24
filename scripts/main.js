@@ -240,7 +240,7 @@ $(document).ready(function(){
 	}
 	$projectImgLoad.load(function(){
 		//alert("laod");
-		console.log($(this).parent().find('.load'));
+		//console.log($(this).parent().find('.load'));
 		$(this).parent().find('.loading').remove();
 	});
 	for (var i = 0; i < imgHobbyAddr.length; i++) {
@@ -248,7 +248,7 @@ $(document).ready(function(){
 	}
 	$hobbyImgBox.find('img.hobby-img').load(function(){
 		//alert("laod");
-		console.log($(this).parent().find('.load'));
+		//console.log($(this).parent().find('.load'));
 		$(this).parent().find('.loading').remove();
 	});
 
