@@ -9,7 +9,7 @@ $(document).ready(function(){
 	var $hobbyImgBox= $('.hobby-image-box');
 	var $hobbyImgClose = $('.hobby-img-close');
 
-	var imgAddr = ['Leshan01.jpg','Leshan02.jpg','chongqing.jpg','fuzhou.jpg','xiamen.jpeg','kunming.jpg','qujing.jpeg','dali.jpeg','xian.jpg','qingdao1.jpg'];
+	var imgAddr = ['Leshan01-md.jpg','Leshan02-md.jpg','chongqing-md.jpg','fuzhou-md.jpg','xiamen-md.jpg','kunming-md.jpg','qujing-md.jpg','dali-md.jpg','xian-md.jpg','qingdao1-md.jpg'];
 
 	// -----------------------
 	//响应式
@@ -109,7 +109,7 @@ $(document).ready(function(){
 	}
 	scrollToSection();
 
-	
+
 	//职业技能数据条增长
 	var skillDataBar=function(el,data){
 		//console.log(data);
@@ -233,7 +233,8 @@ $(document).ready(function(){
 	//project -- webapp
 	var projectImgLoad=$('.project-img-load');
 	for (var i = 0; i < projectImgLoad.length; i++) {
-		projectImgLoad.attr('src', './icons/webapp'+ (i+1) +'.png');
+		var num = i+1;
+		projectImgLoad.attr('src', './icons/webapp'+ num +'.png');
 	}
 	for (var i = 0; i < imgAddr.length; i++) {
 		$hobbyImgBox.eq(i).find('img').attr('src', './icons/'+ imgAddr[i] );
