@@ -14,6 +14,36 @@
 .lx-nav li {
   margin: 0!important;
 }
+@media screen and (max-width: 720px) {
+  .lx-nav-box {
+    bottom: 10px;
+    right: 1%;
+  }
+  .lx-nav-flag {
+    display: none;
+  }
+  .lx-nav-pre {
+    display: none;
+  }
+  .lx-nav-next {
+    display: none;
+  }
+  .lx-nav-toTop {
+    display: none;
+  }
+  .lx-nav-mobile-toTop {
+    display: block;
+  }
+}
+@media screen and (min-width: 721px) {
+  .lx-nav-box {
+    top: 50px;
+    right: 2%;
+  }
+  .lx-nav-mobile-toTop {
+    display: none;
+  }
+}
 .lx-nav-flag {
   position: fixed;
   top: 1%;
@@ -31,19 +61,72 @@
 .lx-nav-box .img_next {
   margin-top: 10px;
 }
+.lx-nav-box .lx-nav-toTop {
+  position: relative;
+  margin-top: 10px;
+  height: 50px;
+  width: 80px;
+  background-color: #85a9e5;
+  border-bottom: 15px solid #7ad84e;
+}
+.lx-nav-box .lx-nav-toTop .goal {
+  position: absolute;
+  height: 30px;
+  width: 70%;
+  left: 15%;
+  top: 20%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.lx-nav-box .lx-nav-toTop .ball {
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+}
+.lx-nav-box .lx-nav-toTop .foot {
+  position: absolute;
+  bottom: -20px;
+  left: 11px;
+  display: none;
+}
+.lx-nav-box .lx-nav-toTop .ball:hover {
+  -ms-transition: transform 2s;
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  transition: transform 2s;
+  transform: scale(0.5, 0.5) translate(70px, -50px);
+  -ms-transform: scale(0.5, 0.5) translate(70px, -50px);
+  /* IE 9 */
+  -moz-transform: scale(0.5, 0.5) translate(70px, -50px);
+  /* Firefox */
+  -webkit-transform: scale(0.5, 0.5) translate(70px, -50px);
+  /* Safari 和 Chrome */
+  -o-transform: scale(0.5, 0.5) translate(70px, -50px);
+  /* Opera */
+}
+.lx-nav-box .lx-nav-toTop .ball:hover + .foot {
+  display: block;
+}
+.lx-nav-box .lx-nav-toTop .foot:hover + .foot {
+  display: block;
+}
+.lx-nav-box .js-Totop:hover {
+  cursor: pointer;
+}
 #wrap .scale {
   -ms-transition: transform 5s;
   -webkit-transition: transform 5s;
   -moz-transition: transform 5s;
   transition: transform 5s;
-  transform: rotate(359deg);
-  -ms-transform: rotate(360deg);
+  transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
   /* IE 9 */
-  -moz-transform: rotate(360deg);
+  -moz-transform: rotate(720deg);
   /* Firefox */
-  -webkit-transform: rotate(360deg);
+  -webkit-transform: rotate(720deg);
   /* Safari 和 Chrome */
-  -o-transform: rotate(360deg);
+  -o-transform: rotate(720deg);
   /* Opera */
 }
 #wrap .box-title {
@@ -56,9 +139,34 @@
 #wrap .profile-box .header-box .header {
   font-size: 16px;
 }
+#wrap .profile-box .profile-content {
+  font-size: 14px;
+}
+#wrap .profile-box .profile-content .profile-left-text {
+  float: right;
+  width: 60%;
+}
+#wrap .profile-box .profile-content .profile-right-text {
+  float: left;
+  width: 60%;
+}
 @media screen and (max-width: 720px) {
   #wrap .profile-box .header-box .header {
-    font-size: 14px;
+    font-size: 10px;
+  }
+  #wrap .profile-box .profile-content {
+    font-size: 12px;
+  }
+  #wrap .profile-box .profile-content .profile-left-text {
+    float: none;
+    width: 100%;
+  }
+  #wrap .profile-box .profile-content .profile-right-text {
+    float: none;
+    width: 100%;
+  }
+  #wrap .profile-box .profile-content .profile-right-img {
+    margin-left: 5px;
   }
 }
 #wrap .profile-box {
@@ -117,10 +225,6 @@
   margin-right: 4%;
   vertical-align: middle;
 }
-#wrap .profile-box .profile-content .profile-content-left-box .profile-left-text {
-  float: right;
-  width: 60%;
-}
 #wrap .profile-box .profile-content .profile-content-left-box .profile-left-text p {
   margin-top: 2%;
   font-size: 16px;
@@ -151,11 +255,7 @@
   width: 100%;
   display: block;
   margin-left: 4%;
-  margin-bottom: 2%;
-}
-#wrap .profile-box .profile-content .profile-content-right-box .profile-right-text {
-  float: left;
-  width: 60%;
+  margin-bottom: 5%;
 }
 #wrap .profile-box .profile-content .profile-content-right-box .profile-right-text p {
   margin-top: 2%;
@@ -169,16 +269,21 @@
   font-size: 14px;
 }
 @media screen and (min-width: 1174px) {
+  #wrap .skill-content-item {
+    padding: 1% 10%;
+  }
   #wrap .skill-box .skill-profile {
     width: 40%;
     height: 100px;
   }
   #wrap svg.skill-score {
     width: 38%;
-    height: 100px;
   }
 }
 @media screen and (max-width: 1173px) and (min-width: 791px) {
+  #wrap .skill-content-item {
+    padding: 1% 10%;
+  }
   #wrap .skill-box .skill-content {
     width: 700px;
     margin: 0 auto;
@@ -186,10 +291,59 @@
   #wrap .skill-box .skill-profile {
     width: 200px;
     height: auto;
+    min-height: 100px;
   }
   #wrap .skill-box svg.skill-score {
     width: 200px;
+  }
+}
+@media screen and (max-width: 790px) {
+  #wrap .skill-content-item {
+    border-bottom: 1px solid #b6b6b6;
+    padding: 20px 10px;
+  }
+  #wrap .skill-profile {
+    width: 100%;
+  }
+  #wrap .skill-name {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 608px) {
+  #wrap .skill-mobile-title {
+    display: none;
+  }
+  #wrap .skill-name {
     height: 100px;
+    width: 100px;
+    -ms-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    -ms-transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    transition: transform 0.5s;
+  }
+  #wrap .sm-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 607px) {
+  #wrap .skill-name {
+    display: none;
+  }
+  #wrap .skill-mobile-title {
+    display: block;
+    color: #ff0084;
+  }
+}
+@media screen and (max-width: 500px) {
+  #wrap .sm-text {
+    font-size: 12px;
   }
 }
 #wrap .skill-box {
@@ -208,9 +362,6 @@
   padding: 3%;
   margin: 0px auto;
   width: 100%;
-}
-#wrap .skill-box .skill-content-item {
-  padding: 1% 10%;
 }
 #wrap .skill-box .skill-content-item .skill-shadow1 {
   -ms-box-shadow: 0 0 10px #d4d4d4;
@@ -254,21 +405,8 @@
   line-height: 1.5em;
 }
 #wrap .skill-box .skill-content-item .skill-name {
-  height: 100px;
-  width: 100px;
-  -ms-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
   float: left;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10px;
   position: relative;
-  -ms-transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  transition: transform 0.5s;
 }
 #wrap .skill-box .skill-content-item .skill-name .js-logo {
   position: absolute;
@@ -371,7 +509,8 @@
 }
 #wrap .skill-box .skill-content-item svg.skill-score {
   float: left;
-  margin-top: 10px;
+  height: 60px;
+  margin-top: 30px;
 }
 #wrap .skill-box .skill-content-item svg.skill-score rect {
   -ms-transition: width 1s;
@@ -379,19 +518,42 @@
   -moz-transition: width 1s;
   transition: width 1s;
 }
-@media screen and (min-width: 1174px) {
-  #wrap .project-content-img-box {
-    height: 232px;
+@media screen and (min-width: 1025px) {
+  #wrap .project-content-img-box .project-content-item-box {
+    margin-right: 10px;
+    width: 166px;
+    height: 220px;
+  }
+  #wrap .project-content-img-box .project-content-item-box .loading {
+    height: 100%;
+    width: 166px;
   }
 }
-@media screen and (max-width: 1025px) and (min-width: 576px) {
-  #wrap .project-content-img-box {
-    height: 462px;
+@media screen and (max-width: 1025px) and (min-width: 600px) {
+  #wrap .project-content-img-box .project-content-item-box {
+    margin-right: 20px;
+    width: 166px;
+    height: 220px;
+  }
+  #wrap .project-content-img-box .project-content-item-box .loading {
+    height: 100%;
+    width: 166px;
   }
 }
-@media screen and (max-width: 575px) and (min-width: 517px) {
-  #wrap .project-content-img-box {
-    height: 696px;
+@media screen and (max-width: 599px) {
+  #wrap .project-content-item-box {
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 83px;
+    height: 110px;
+  }
+  #wrap .project-content-item-box .loading {
+    height: 100%;
+    width: 83px;
+  }
+  #wrap .project-content-item-box img {
+    width: 83px;
+    height: 110px;
   }
 }
 #wrap .project-box {
@@ -433,15 +595,10 @@
 }
 #wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box {
   float: left;
-  margin-right: 10px;
-  width: 166px;
-  height: 220px;
 }
 #wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box .loading {
   position: absolute;
   background-color: #fff;
-  height: 100%;
-  width: 166px;
 }
 #wrap .project-box .project-content .project-content-bottom .project-content-img-box .project-content-item-box .loading img {
   margin: 45%;

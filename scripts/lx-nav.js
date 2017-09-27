@@ -3,21 +3,22 @@
 	//fixed导航栏包括fixed按钮框
 	$.fn.lxnav=function(options){
 
-		var $window=$(window);		//取window对象，主要用于监控滚动位置
-		$lxNav=$('.lx-nav');		//nav ul对象用于宽度比例设置
-		$html_body=$('html,body');		//取html，body对象，主要用于滚动
-		$wrap=$('#wrap');
-		$lxNav_wrap=$('.lx-nav-wrap');		//nav 外层用于定位、透明度设置、背景颜色
-		$lxNav_Pre=$('.lx-nav-pre');		//fixed上一页
-		$lxNav_Next=$('.lx-nav-next');		//fixed下一页
-		$lxNav_section=$('.lx-nav-section');	//section
-		$lxNav_Item=$('.lx-nav-item');		//fixed nav按键
-		$lxNav_box=$('.lx-nav-box');    //fixed上一页/下一页按键框
+		var $window=$(window),		//取window对象，主要用于监控滚动位置
+		$lxNav=$('.lx-nav'),		//nav ul对象用于宽度比例设置
+		$html_body=$('html,body'),		//取html，body对象，主要用于滚动
+		$wrap=$('#wrap'),
+		$lxNav_wrap=$('.lx-nav-wrap'),		//nav 外层用于定位、透明度设置、背景颜色
+		$lxNav_Pre=$('.lx-nav-pre'),		//fixed上一页
+		$lxNav_Next=$('.lx-nav-next'),		//fixed下一页
+		$lxNav_section=$('.lx-nav-section'),	//section
+		$lxNav_Item=$('.lx-nav-item'),		//fixed nav按键
+		$lxNav_box=$('.lx-nav-box'),    //fixed上一页/下一页按键框
+		$lxnavFlag ;   //fixed导航栏开关
 
 		var settings=$.extend( {} , $.fn.lxnav.default , options );
 		//导航栏按钮个数
 		var lxNavItemNum = $('.lx-nav-item').length;
-
+		
 		// --------------------------------------------------
 		//初始化	
 		if (settings.sidebarHeight != 'auto' && typeof settings.sidebarHeight =='number') {
@@ -52,7 +53,12 @@
 				right:settings.preAndNextBox_Right
 			});
 		}
-		$lxNav_wrap.hide();	
+		//fixed回到顶部
+		if (settings.lxNavTotop) {
+			$lxNav_toTop=$(settings.lxNavTotop);    
+		}
+		
+		//$lxNav_wrap.hide();	
 		//sectionTopList ==> sectionDataList ==> lxNavList
 
 		//按顺序取每个！section！的scrollTop放入数组sectionTopList
@@ -135,7 +141,7 @@
 			//目标nav的序号
 			var target_nav = 0;
 			for (var i = sectionTopList.length-1; i >0 ; i--) {
-				if (nowTop  < sectionTopList[i] ) {
+				if (Math.round(nowTop)  < sectionTopList[i] ) {
 					targetTop = Math.round(sectionTopList[i]);
 					target = i;
 				}
@@ -252,6 +258,7 @@
 		$lxNav_Next.click(function(){
 			$lxNav_Item.removeClass('active');
 			var nowTop = $window.scrollTop();
+			console.log(nowTop);
 			var targetTop = getNextTargetNavBySection(nowTop);
 			var num = sectionTopList.indexOf(Math.round(targetTop));
 			var data = $lxNav_section.eq(num).attr('data-lx-nav');
@@ -264,7 +271,11 @@
 			settings.afterScroll(targetTop);
 			return false;
 		});
-
+		$lxNav_toTop.click(function(){
+			$lxNav_Item.removeClass('active');
+			$html_body.animate({scrollTop: 0 }, 800);
+			return false;
+		});
 
 	
 	}
@@ -279,6 +290,7 @@
 		preAndNextBox_Top: 'auto',
 		preAndNextBox_Right: 'auto',
 		lxnavFlag: true,
+		lxNavTotop:'.js-Totop',
 		afterScroll: function(targetTop){}   //活动到对应section后回调函数,并传入对应section的top值作为参数
 	}
 

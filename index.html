@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>shawn-li</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 	<link rel="shortcut icon" type="image/x-icon" href="./icons/myicon.png" media="screen" /> <!-- 这个作用是在浏览器地址栏显示您的小图标 -->
 	<link rel='bookmark' href='./icons/myicon.png'> 
 	<!-- 这个作用是在收藏夹里面显示您的小图标 -->
@@ -15,7 +16,7 @@
 
 </head>
 <body>
-	<div class="lx-nav-wrap">
+	<div class="lx-nav-wrap mobile-close">
 		<ul class="lx-nav cl">
 			<li class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><a href="#"></a></li>
 			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 "><a class="lx-nav-item" href="#" data-lx-nav="profile">自我介绍</a></li>
@@ -43,7 +44,14 @@
 				<img class="img_next img-first" src="./icons/next.png">
 			</a>
 		</div>
-
+		
+		<div class="lx-nav-toTop js-Totop">
+			<div class="goal">
+			</div>
+			<img class="ball" src="./icons/football-md.png" alt="ball"></img>
+			<img class="foot" src="./icons/foot.png" alt="foot">
+		</div>
+		<img class="lx-nav-mobile-toTop js-Totop" src="./icons/rocket.png" alt="toTop">
 	</div>
 
 	<div id="wrap">
@@ -78,6 +86,10 @@
 					</div>
 				</div>
 				<div class="profile-content-right-box cl">
+					<div class="profile-right-img">
+						<img class="Leshan img-first" alt="乐山" src="./icons/Leshan01-sm.jpg">
+						<img class="Leshan img-first" alt="乐山" src="./icons/Leshan02-sm.jpg">
+					</div>
 					<div class="profile-right-text">
 						<p>我来自<strong>四川乐山</strong>，一个旅游城市</p>
 						<p>上大学之前，我基本没有离开过这里</p>
@@ -90,10 +102,7 @@
 						</ul>
 					</div>
 					
-						<div class="profile-right-img">
-							<img class="Leshan img-first" alt="乐山" src="./icons/Leshan01-sm.jpg">
-							<img class="Leshan img-first" alt="乐山" src="./icons/Leshan02-sm.jpg">
-						</div>
+						
 						
 						<!-- <div class="Leshan1"></div>
 						<div class="Leshan"></div> -->
@@ -109,20 +118,23 @@
 			<div class="skill-content cl">
 				<!-- SVG 是使用 XML 来描述二维图形和绘图程序的语言 -->
 				<div class="skill-content-item cl">
+					<div class="skill-mobile-title">Javascript</div>
 					<div class="skill-profile skill-shadow1">
 					熟悉原生Javascript编程、Javascript面向对象程序设计和继承、原型链、ECMAScript语言规范以及ES6的变化、DOM、BOM、AJAX、JSON等知识，熟练使用jquery和zepto插件
 					</div>
 					<div class="skill-name skill-shadow1">
 						<img class="js-logo" src="./icons/js.png" alt="Javascript">
 						<span class="js-text">Javascript</span>
+						<div class="sm-text">Javascript</div>
 					</div>
 					<svg class="skill-score skill-shadow1">
-						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="90%"/>
-						<g data-svg-origin="0 0">CSS</g>
+						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="90%"/>
+						<g data-svg-origin="0 0"></g>
 					</svg>
 				</div>
 
 				<div class="skill-content-item cl">
+					<div class="skill-mobile-title">HTML5&CSS3</div>
 					<div class="skill-profile skill-shadow2">
 					熟悉HTML5/CSS3、解决主流浏览器兼容性问题、响应式布局、使用Chrome开发者工具，使用过canvas、SVG、本地存储localStorage、CSS动画效果、CSS预处理语言Less
 					</div>
@@ -133,14 +145,16 @@
 						<img class="css-text" src="./icons/css-text.png"></img> -->
 						<span class="html-text">HTML5</span>
 						<SPAN class="css-text">&CSS3</SPAN>
+						<div class="sm-text">HTML5&CSS3</div>
 					</div>
 					<svg class="skill-score skill-shadow2" version="1.1">
-						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="80%"/>
+						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="80%"/>
 						<g data-svg-origin="0 0">CSS</g>
 					</svg>
 				</div>
 
 				<div class="skill-content-item cl">
+					<div class="skill-mobile-title">JAVA&SQL</div>
 					<div class="skill-profile skill-shadow3">
 						熟悉JAVA SE、JSP、SQL语句，了解SSH(spring, struts, hibernate)框架、Tomcat，熟练使用IDEA、Oracle、Toad
 					</div>
@@ -149,35 +163,40 @@
 						<img class="sql-logo" src="./icons/sql.png" alt="sql">
 						<span class="java-text">JAVA</span>
 						<span class="sql-text">&SQL</span>
+						<div class="sm-text">JAVA&SQL</div>
 					</div>
 					<svg class="skill-score skill-shadow3" version="1.1">
-						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="70%"/>
+						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="70%"/>
 					</svg>
 				</div>
 
 				<div class="skill-content-item cl">
+					<div class="skill-mobile-title">Node.js</div>
 					<div class="skill-profile skill-shadow4">
 						熟悉fs、path等常用内置模块的使用,熟悉Git Bash命令行工具,了解基于Express、Koa的Web开发。
 					</div>
 					<div class="skill-name skill-shadow4">
 						<img class="nodejs-logo" src="./icons/nodejs.png" alt="node.js">
 						<span class="nodejs-text">Node.js</span>
+						<div class="sm-text">Node.js</div>
 					</div>
 					<svg class="skill-score skill-shadow4" version="1.1">
-						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="60%"/>
+						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="60%"/>
 					</svg>
 				</div>
 
 				<div class="skill-content-item cl">
+					<div class="skill-mobile-title">PS</div>
 					<div class="skill-profile skill-shadow5">
 						会切图，哈哈哈
 					</div>
 					<div class="skill-name skill-shadow5">
 						<img class="ps-logo" src="./icons/ps.png" alt="node.js">
 						<span class="ps-text">P S</span>
+						<div class="sm-text">P S</div>
 					</div>
 					<svg class="skill-score skill-shadow5" version="1.1">
-						<rect x="0" y="35" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="20%"/>
+						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="20%"/>
 					</svg>
 				</div>
 				
@@ -201,7 +220,7 @@
 						<img class="project-img-load" src="./icons/webapp4.png" alt="webapp-reader"> -->
 						<div class="project-content-item-box">
 							<div class="loading">
-								<img class="" src="./icons/loading.png">
+								<img src="./icons/loading.png" class="1">
 							</div>
 							<img class="project-img-load" src="" alt="webapp-index" data-num="1">
 						</div>
@@ -222,10 +241,7 @@
 								<img src="./icons/loading.png">
 							</div>
 							<img class="project-img-load" src="" alt="webapp-reader" data-num="4">
-						</div>
-						
-						
-						
+						</div>			
 					</div>		
 				</div>
 			</div>

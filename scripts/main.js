@@ -8,6 +8,7 @@ $(document).ready(function(){
 	var $hobbyBtn=$('.hobby-bookmark');
 	var $hobbyImgBox= $('.hobby-image-box');
 	var $hobbyImgClose = $('.hobby-img-close');
+	var $lxNavTotop=$('.lx-nav-toTop');
 
 	var imgHobbyAddr = ['Leshan01-md.jpg','Leshan02-md.jpg','chongqing-md.jpg','fuzhou-md.jpg','xiamen-md.jpg','kunming-md.jpg','qujing-md.jpg','dali-md.jpg','xian-md.jpg','qingdao1-md.jpg'];
 	//var imgProjectWebapp = ['webapp1','webapp2','webapp3','webapp4']; 
@@ -39,8 +40,8 @@ $(document).ready(function(){
 	//lx-nav插件
 	$(document).lxnav({
 		navWidth:'90%',  
-		preAndNextBox_Top: '50px',
-		preAndNextBox_Right: '2%',
+		//preAndNextBox_Top: '50px',
+		//preAndNextBox_Right: '2%',
 		exceptClick:'.hobby-bookmark',
 		afterScroll:function(targetTop){
 			if(Math.round(targetTop) == Math.round(firstSectionHeight)){
@@ -229,15 +230,14 @@ $(document).ready(function(){
 		return false;
 	});
 
-
 	//加载图片
 	//project -- webapp
 	var num;
 	var $projectImgLoad=$('.project-img-load');
 	for (var i = 0; i < $projectImgLoad.length; i++) {
-		$projectImgLoad.eq(i).find('img').addClass('scale');
+		$projectImgLoad.eq(i).parent().find('.loading').find('img').addClass('scale');
 		$projectImgLoad.eq(i).attr('src', './icons/webapp'+ (i+1) +'.png');
-		console.log("Image"+i+" finish!");
+		//console.log("Image"+i+" finish!");
 	}
 	$projectImgLoad.load(function(){
 		//alert("laod");
@@ -247,7 +247,7 @@ $(document).ready(function(){
 
 	//爱好
 	for (var i = 0; i < imgHobbyAddr.length; i++) {
-		$hobbyImgBox.eq(i).find('img.hobby-img').addClass('scale');
+		$hobbyImgBox.eq(i).parent().find('.loading').find('img').addClass('scale');
 		$hobbyImgBox.eq(i).find('img.hobby-img').attr('src', './icons/'+ imgHobbyAddr[i] );
 	}
 	$hobbyImgBox.find('img.hobby-img').load(function(){
