@@ -40,6 +40,7 @@ $(document).ready(function(){
 	//lx-nav插件
 	$(document).lxnav({
 		navWidth:'90%',  
+		lxnavFlag: false,
 		//preAndNextBox_Top: '50px',
 		//preAndNextBox_Right: '2%',
 		exceptClick:'.hobby-bookmark',

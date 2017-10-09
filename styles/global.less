@@ -65,56 +65,63 @@
 	.img_next{
 		margin-top: 10px;
 	}
-	.lx-nav-toTop{
-		position: relative;
-		margin-top: 10px;
-		height: 50px;
-		width: 80px;
-		background-color: #85a9e5;
-		border-bottom: 15px solid #7ad84e;
+}
+.lx-nav-toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	margin-top: 10px;
+	height: 50px;
+	width: 80px;
+	background-color: #85a9e5;
+	border-bottom: 15px solid #7ad84e;
 
-		.goal{
-			position: absolute;
-			height: 30px;
-			width: 70%;
-			left: 15%;
-			top: 20%;
-			background-color: transparent;
-			border: 2px solid #fff;
-			border-bottom: 1px solid #fff;
-		}
-		.ball{
-			position: absolute;
-			bottom: -20px;
-			left: 10%;
-		}
-		.foot{
-			position: absolute;
-    		bottom: -20px;
-    		left: 11px;
-    		display: none;
-		}
-		.ball:hover{
-			-ms-transition: transform 2s;
-			-webkit-transition: transform 2s;
-			-moz-transition: transform 2s;
-			transition: transform 2s;
-			transform:scale(0.5, 0.5) translate(70px, -50px);
-			-ms-transform:scale(0.5, 0.5) translate(70px, -50px);	/* IE 9 */
-			-moz-transform:scale(0.5, 0.5) translate(70px, -50px); 	/* Firefox */
-			-webkit-transform:scale(0.5, 0.5) translate(70px, -50px); /* Safari 和 Chrome */
-			-o-transform:scale(0.5, 0.5) translate(70px, -50px); 	/* Opera */
-		}
-		.ball:hover +.foot{
-			display: block;
-		}
-		.foot:hover +.foot{
-			display: block;
-		}
+	.goal{
+		position: absolute;
+		height: 30px;
+		width: 70%;
+		left: 15%;
+		top: 20%;
+		background-color: transparent;
+		border: 2px solid #fff;
+		border-bottom: 1px solid #fff;
 	}
-	.js-Totop:hover{
-		cursor: pointer;
+	.ball{
+		position: absolute;
+		bottom: -20px;
+		left: 10%;
 	}
+	.foot{
+		position: absolute;
+		bottom: -20px;
+		left: 11px;
+		display: none;
+	}
+	.ball:hover{
+		-ms-transition: transform 2s;
+		-webkit-transition: transform 2s;
+		-moz-transition: transform 2s;
+		transition: transform 2s;
+		transform:scale(0.5, 0.5) translate(70px, -50px);
+		-ms-transform:scale(0.5, 0.5) translate(70px, -50px);	/* IE 9 */
+		-moz-transform:scale(0.5, 0.5) translate(70px, -50px); 	/* Firefox */
+		-webkit-transform:scale(0.5, 0.5) translate(70px, -50px); /* Safari 和 Chrome */
+		-o-transform:scale(0.5, 0.5) translate(70px, -50px); 	/* Opera */
+	}
+	.ball:hover +.foot{
+		display: block;
+	}
+	.foot:hover +.foot{
+		display: block;
+	}
+}
+.lx-nav-mobile-toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+.js-Totop:hover{
+	cursor: pointer;
 }
 
 
@@ -754,6 +761,10 @@
 	//--------------------------------------------hobby-box 响应式 媒体查询
 	@media screen and (max-width: 1080px){
 		.hobby-box{
+			padding: 4% 5%;
+			margin: 0px auto;
+			width: 100%;
+
 			.hobby-bookmark{
 				font-size: 14px;
 				font-weight: 600;
@@ -763,6 +774,10 @@
 	}
 	@media screen and (min-width: 1081px){
 		.hobby-box{
+			padding: 4% 5%;
+			margin: 0px auto;
+			width: 80%;
+
 			.hobby-bookmark{		
 				font-size: 16px;
 				font-weight: 600;
@@ -774,14 +789,18 @@
 	//------------------------------------------------
 	.hobby-box{
 		background-color: #eee;
-		
-		padding: 4% 5%;
-		margin: 0px auto;
-		width: 80%;
+		.box-small-title{
+			text-align: center;
+        	font-weight: bold;
 
+        	span{
+        		text-shadow: 0 -1px 0 #858585;
+        	}
+        }
 		.hobby-content{
 			position: relative;
 			margin: 0 auto;
+			margin-bottom: 50px;
 			border: 1px solid #b6b6b6;
 			width: 100%;
 			height: 300px;
@@ -924,10 +943,109 @@
 			.hobby-rightImgBox-beforeSlider{
 				right: 0%;
 			}
+		}
+
+		.football-content{
+			margin: 0 auto;
+			border: 1px solid #b6b6b6;
+			width: 100%;
+			height: 300px;
 			
-			
+			.box-small-title{
+			text-align: center;
+        	font-weight: bold;
+
+        	span{
+        		text-shadow: 0 -1px 0 #858585;
+        	}
+
+        }
 
 		}
 	}
+	
+	//--------------------------------------------contact-box 响应式 媒体查询
+	@media screen and (min-width: 861px){
+		.contact-ul{
 
+			li{
+				float: left;
+				height: 100px;
+				width: 30%;
+			}
+			img{
+				top: 2%;
+			}
+		}
+		
+	}
+	@media screen and (max-width: 860px){
+		.contact-ul{
+			.contact-ul-div{
+				
+			}
+			li{
+				margin-bottom: 10px;
+			}
+			img{
+				top: 14%;
+			}
+		}
+		
+	}
+	@media screen and (min-width: 1081px){
+		
+		
+	}
+	
+	//------------------------------------------------
+	.contact-box{
+		//background-color: #eee;
+		margin: 10px auto;
+		width: 80%;
+		//border-top: 2px solid #b6b6b6;
+	}
+
+	.contact-ul{
+		margin-top: 150px;
+		
+
+		li{
+			position: relative;
+			//float: left;
+			background-color:white;
+			height: 100px;
+			//width: 30%;
+			margin-right: 5%;
+
+			.contact-ul-div{
+				padding: 10px;
+			}
+
+			h4{
+				text-align: center;
+			}
+			img{
+				position: absolute;
+				//top: 2%;
+				left: 25%;
+			}
+			.contact-content{
+				padding: 5%;
+				text-align: center;
+				font-size: 16px;
+				font-weight: 600;
+			}
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+
+	}
+	
+}
+
+.copyright{
+	margin: 10px;
+	text-align: center;
 }

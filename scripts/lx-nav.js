@@ -13,7 +13,7 @@
 		$lxNav_section=$('.lx-nav-section'),	//section
 		$lxNav_Item=$('.lx-nav-item'),		//fixed nav按键
 		$lxNav_box=$('.lx-nav-box'),    //fixed上一页/下一页按键框
-		$lxnavFlag ;   //fixed导航栏开关
+		$lxnavFlag =$ (".lx-nav-flag");   //fixed导航栏开关
 
 		var settings=$.extend( {} , $.fn.lxnav.default , options );
 		//导航栏按钮个数
@@ -35,6 +35,15 @@
 		}else if(settings.sectionHeight == 'auto'){
 			settings.sectionHeight=$lxNav_section.eq(1).offset().top;
 		}
+		//fixed导航开关初始化
+		
+		if (settings.lxnavFlag) {
+			$lxnavFlag.find('a').html("fixed导航-关");
+		}else{
+			$lxnavFlag.find('a').html("fixed导航-开");
+			console.log(settings.lxnavFlag);
+		}
+
 		// 导航按钮
 		// settings.navItemWidth = (($lxNav.width()-20-lxNavItemNum*20+20)/lxNavItemNum);
 		// //console.log(settings.navItemWidth);
@@ -208,13 +217,15 @@
 		});
 
 		//顶部导航栏开关
-		$('.lx-nav-flag').click(function(){
+		$lxnavFlag.click(function(){
 			if (settings.lxnavFlag) {
 				settings.lxnavFlag=false;
-				$(this).find('a').html("顶层导航-开");
+				$(this).find('a').html("fixed导航-开");
+				return false;
 			}else{
 				settings.lxnavFlag=true;
-				$(this).find('a').html("顶层导航-关");
+				$(this).find('a').html("fixed导航-关");
+				return false;
 			}
 		});
 

@@ -61,15 +61,17 @@
 .lx-nav-box .img_next {
   margin-top: 10px;
 }
-.lx-nav-box .lx-nav-toTop {
-  position: relative;
+.lx-nav-toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
   margin-top: 10px;
   height: 50px;
   width: 80px;
   background-color: #85a9e5;
   border-bottom: 15px solid #7ad84e;
 }
-.lx-nav-box .lx-nav-toTop .goal {
+.lx-nav-toTop .goal {
   position: absolute;
   height: 30px;
   width: 70%;
@@ -79,18 +81,18 @@
   border: 2px solid #fff;
   border-bottom: 1px solid #fff;
 }
-.lx-nav-box .lx-nav-toTop .ball {
+.lx-nav-toTop .ball {
   position: absolute;
   bottom: -20px;
   left: 10%;
 }
-.lx-nav-box .lx-nav-toTop .foot {
+.lx-nav-toTop .foot {
   position: absolute;
   bottom: -20px;
   left: 11px;
   display: none;
 }
-.lx-nav-box .lx-nav-toTop .ball:hover {
+.lx-nav-toTop .ball:hover {
   -ms-transition: transform 2s;
   -webkit-transition: transform 2s;
   -moz-transition: transform 2s;
@@ -105,13 +107,18 @@
   -o-transform: scale(0.5, 0.5) translate(70px, -50px);
   /* Opera */
 }
-.lx-nav-box .lx-nav-toTop .ball:hover + .foot {
+.lx-nav-toTop .ball:hover + .foot {
   display: block;
 }
-.lx-nav-box .lx-nav-toTop .foot:hover + .foot {
+.lx-nav-toTop .foot:hover + .foot {
   display: block;
 }
-.lx-nav-box .js-Totop:hover {
+.lx-nav-mobile-toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.js-Totop:hover {
   cursor: pointer;
 }
 #wrap .scale {
@@ -605,12 +612,22 @@
   border: transparent;
 }
 @media screen and (max-width: 1080px) {
+  #wrap .hobby-box {
+    padding: 4% 5%;
+    margin: 0px auto;
+    width: 100%;
+  }
   #wrap .hobby-box .hobby-bookmark {
     font-size: 14px;
     font-weight: 600;
   }
 }
 @media screen and (min-width: 1081px) {
+  #wrap .hobby-box {
+    padding: 4% 5%;
+    margin: 0px auto;
+    width: 80%;
+  }
   #wrap .hobby-box .hobby-bookmark {
     font-size: 16px;
     font-weight: 600;
@@ -618,13 +635,18 @@
 }
 #wrap .hobby-box {
   background-color: #eee;
-  padding: 4% 5%;
-  margin: 0px auto;
-  width: 80%;
+}
+#wrap .hobby-box .box-small-title {
+  text-align: center;
+  font-weight: bold;
+}
+#wrap .hobby-box .box-small-title span {
+  text-shadow: 0 -1px 0 #858585;
 }
 #wrap .hobby-box .hobby-content {
   position: relative;
   margin: 0 auto;
+  margin-bottom: 50px;
   border: 1px solid #b6b6b6;
   width: 100%;
   height: 300px;
@@ -753,4 +775,71 @@
 }
 #wrap .hobby-box .hobby-content .hobby-rightImgBox-beforeSlider {
   right: 0%;
+}
+#wrap .hobby-box .football-content {
+  margin: 0 auto;
+  border: 1px solid #b6b6b6;
+  width: 100%;
+  height: 300px;
+}
+#wrap .hobby-box .football-content .box-small-title {
+  text-align: center;
+  font-weight: bold;
+}
+#wrap .hobby-box .football-content .box-small-title span {
+  text-shadow: 0 -1px 0 #858585;
+}
+@media screen and (min-width: 861px) {
+  #wrap .contact-ul li {
+    float: left;
+    height: 100px;
+    width: 30%;
+  }
+  #wrap .contact-ul img {
+    top: 2%;
+  }
+}
+@media screen and (max-width: 860px) {
+  #wrap .contact-ul li {
+    margin-bottom: 10px;
+  }
+  #wrap .contact-ul img {
+    top: 14%;
+  }
+}
+#wrap .contact-box {
+  margin: 10px auto;
+  width: 80%;
+}
+#wrap .contact-ul {
+  margin-top: 150px;
+}
+#wrap .contact-ul li {
+  position: relative;
+  background-color: white;
+  height: 100px;
+  margin-right: 5%;
+}
+#wrap .contact-ul li .contact-ul-div {
+  padding: 10px;
+}
+#wrap .contact-ul li h4 {
+  text-align: center;
+}
+#wrap .contact-ul li img {
+  position: absolute;
+  left: 25%;
+}
+#wrap .contact-ul li .contact-content {
+  padding: 5%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+#wrap .contact-ul li:last-child {
+  margin-right: 0;
+}
+.copyright {
+  margin: 10px;
+  text-align: center;
 }
