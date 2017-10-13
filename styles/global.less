@@ -792,6 +792,8 @@
 		.box-small-title{
 			text-align: center;
         	font-weight: bold;
+        	margin-top: 30px;
+        	margin-bottom: 15px;
 
         	span{
         		text-shadow: 0 -1px 0 #858585;
@@ -800,7 +802,7 @@
 		.hobby-content{
 			position: relative;
 			margin: 0 auto;
-			margin-bottom: 50px;
+			//margin-bottom: 50px;
 			border: 1px solid #b6b6b6;
 			width: 100%;
 			height: 300px;
@@ -898,10 +900,16 @@
 				display: none;			
 				top: 5%;
 				//left: 14%;
-				width: 74%;
+				//width: 74%;
+				width: 60%;
 				height: 90%;
-				background-color: #eee;
+				background-color: #999;
 				margin: auto;
+
+				-ms-box-shadow: 0px 0px 5px #000;
+				-webkit-box-shadow: 0px 0px 5px #000;
+				-moz-box-shadow: 0px 0px 5px #000;
+				box-shadow:  0px 0px 5px #000;
 				
 				img{
 					display: block;
@@ -916,8 +924,13 @@
 					background-color: #999;
 					height: 16%;
     				width: 10%;
+    				right: -10%;
 					display: none;
 					box-sizing: border-box;
+					-ms-box-shadow: 0px 0px 2px #999;
+					-webkit-box-shadow: 0px 0px 2px #999;
+					-moz-box-shadow: 0px 0px 2px #999;
+					box-shadow:  0px 0px 2px #999;
 					//border: 1px solid #666;
 
 				}
@@ -973,9 +986,7 @@
 				height: 100px;
 				width: 30%;
 			}
-			img{
-				top: 2%;
-			}
+		
 		}
 		
 	}
@@ -986,9 +997,6 @@
 			}
 			li{
 				margin-bottom: 10px;
-			}
-			img{
-				top: 14%;
 			}
 		}
 		
@@ -1027,7 +1035,7 @@
 			}
 			img{
 				position: absolute;
-				//top: 2%;
+				top: 14%;
 				left: 25%;
 			}
 			.contact-content{

@@ -164,9 +164,15 @@ $(document).ready(function(){
 		});
 		
 		if (num <5 ) {
-			$hobbyImgBox.eq(num).animate({'left':'13%'},300);
+			$hobbyImgBox.eq(num).animate({'left':'20%'},300);
+			$hobbyImgClose.eq(num).css({
+				'right':'-10%'
+			});
 		}else{
-			$hobbyImgBox.eq(num).animate({'right':'13%'},300);
+			$hobbyImgBox.eq(num).animate({'right':'20%'},300);
+			$hobbyImgClose.eq(num).css({
+				'left':'-10%'
+			});
 		}
 		//$hobbyImgBox.eq(num).animate({'left':'13%'},500);
 		$hobbyImgClose.eq(num).css({
