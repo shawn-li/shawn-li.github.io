@@ -127,6 +127,17 @@
 
 #wrap{
 	.scale{
+		-ms-transition: transform 1s;
+		-webkit-transition: transform 1s;
+		-moz-transition: transform 1s;
+		transition: transform 1s;
+		transform:rotate(720deg);
+		-ms-transform:rotate(720deg); 	/* IE 9 */
+		-moz-transform:rotate(720deg); 	/* Firefox */
+		-webkit-transform:rotate(720deg); /* Safari 和 Chrome */
+		-o-transform:rotate(720deg); 	/* Opera */
+	}
+	.scale-slow{
 		-ms-transition: transform 5s;
 		-webkit-transition: transform 5s;
 		-moz-transition: transform 5s;
@@ -286,11 +297,28 @@
 					width: 36%;
 				}
 				.Leshan{
+					position: relative;
 					float: right;
 					width: 100%;
 					display: block;
 					margin-left: 4%;
 					margin-bottom: 5%;
+					
+					.loading{
+						position: absolute;
+						background-color: #fff;
+						width: 100%;
+						height: 100%;
+						
+						img{
+							margin: 23% 42%;
+						}
+					}
+
+					img.Leshan-img{
+						width: 100%;
+						display: block;
+					}
 				}
 				.profile-right-text{
 					//float: left;
@@ -326,7 +354,7 @@
 			}
 	    }
 
-	    svg.skill-score{		
+	    .skill-score{		
 			width: 38%;		
 		}
 	}
@@ -345,7 +373,7 @@
 				height: auto;
 				min-height: 100px;
 			}
-			svg.skill-score{
+			.skill-score{
 				width: 200px;
 			}
 	    }
@@ -607,11 +635,21 @@
 				box-shadow:  0 0 10px red;
 				
 			}
-			svg.skill-score{
+			.skill-score{
 				float: left;
 				 height: 60px;
 				// width: 38%;
 				margin-top: 30px;
+				.skill-score-animate{
+					height: 30px;
+					margin-top: 15px;
+					width: 1%;
+					background-color: #666;
+					-ms-transition: width 1s;
+					-webkit-transition: width 1s;
+					-moz-transition: width 1s;
+					transition: width 1s;
+				}
 
 				rect{
 					-ms-transition: width 1s;
@@ -738,7 +776,7 @@
 							//width: 166px;
 							
 							img{
-								margin: 45%;
+								margin: 50% 40%;
 								border: transparent;
 							}
 						}
@@ -789,6 +827,8 @@
 	//------------------------------------------------
 	.hobby-box{
 		background-color: #eee;
+		margin-bottom: 80px;
+
 		.box-small-title{
 			text-align: center;
         	font-weight: bold;
@@ -806,6 +846,10 @@
 			border: 1px solid #b6b6b6;
 			width: 100%;
 			height: 300px;
+			line-height: 300px;
+			text-align: center;
+			color: #666;
+			
 			
 				.hobby-bookmark-circle-left{
 					position: absolute;
@@ -828,13 +872,14 @@
 
 			.hobby-bookmark{
 				position: absolute;
-				padding-top: 10px;
 				z-index: 999;
 				text-align: center;
 				//font-size: 16px;
 				//font-weight: 600;
+				color: #000;
 				width: 7%;
-				height: 14%;
+				height: 40px;
+				line-height: 40px;
 				background-color: #b6b6b6;
 
 			}
@@ -903,13 +948,14 @@
 				//width: 74%;
 				width: 60%;
 				height: 90%;
-				background-color: #999;
+				background-color: #fff;
 				margin: auto;
+				border-radius: 5px;
 
-				-ms-box-shadow: 0px 0px 5px #000;
-				-webkit-box-shadow: 0px 0px 5px #000;
-				-moz-box-shadow: 0px 0px 5px #000;
-				box-shadow:  0px 0px 5px #000;
+				-ms-box-shadow: 0px 0px 5px #d4d4d4;
+				-webkit-box-shadow: 0px 0px 5px #d4d4d4;
+				-moz-box-shadow: 0px 0px 5px #d4d4d4;
+				box-shadow:  0px 0px 5px #d4d4d4;
 				
 				img{
 					display: block;
@@ -943,9 +989,10 @@
 					background-color: #fff;
 					height: 100%;
 					width: 100%;
+					padding: 18%;
 					
 					img{
-						margin: 15% 45%;
+						margin: 20% 45%;
 					}
 				}
 
@@ -959,20 +1006,130 @@
 		}
 
 		.football-content{
+			position: relative;
 			margin: 0 auto;
 			border: 1px solid #b6b6b6;
 			width: 100%;
-			height: 300px;
-			
-			.box-small-title{
-			text-align: center;
-        	font-weight: bold;
+			height: 400px;
+			background-color: #85a9e5;
+			border-bottom: 100px solid #7ad84e;			
 
-        	span{
-        		text-shadow: 0 -1px 0 #858585;
+			.goal{
+    		    position: absolute;
+			    height: 280px;
+			    width: 70%;
+			    left: 15%;
+			    top: 28px;
+			    background-color: transparent;
+			    border: 10px solid #fff;
+			    border-bottom: 3px solid #fff;
+
+			    .goal-item{
+					width: 23%;
+					height: 23%;
+					float: left;
+					margin-left: 1.6%;
+					margin-top: 0.7%;
+					background-color: #fff;
+					text-align: center;
+					padding: 20px;
+					font-size: 16px;
+					font-weight: 600;
+				}
+				.goal-item:hover{
+					cursor: pointer;
+				}
+				.goal-item-last{
+					margin-right: 1.6%;
+				}
+				
+				.football-img-box{
+					display: none;
+					position: absolute;
+					width: 23%;
+					height: 23%;
+					background-color: #333;
+					
+					-ms-border-radius:10px;
+					-webkit-border-radius:10px;
+					-moz-border-radius:10px;
+					border-radius: 10px;
+
+					-ms-box-shadow: 0 0 10px #333;
+					-webkit-box-shadow: 0 0 10px #333;
+					-moz-box-shadow: 0 0 10px #333;
+					box-shadow:  0 0 10px #333;
+
+					.football-img-box-close{
+						position: absolute;
+						right: -32px;
+						top: 0;
+						width: 32px;
+    					height: 32px;
+    					display: none;
+						background: url(../icons/hobbyImgClose2.png) no-repeat center;
+					}
+					.football-img-box-close:hover{
+						cursor: pointer;
+    					background: url(../icons/hobbyImgClose1.png) no-repeat center;
+					}
+					.football-img-box-img{
+						max-width: 100%;
+						max-height: 100%;
+						margin: auto;
+						display: block;
+					}
+					.loading{
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 100%;
+						width: 100%;
+						background-color: #333;
+						display: none;
+						padding: 18%;
+
+						img{
+							margin: 20% 48%;
+						}
+					}
+				}
         	}
 
-        }
+			.spot{
+				position: absolute;
+				left: 48%;
+    			bottom: -94px;
+				width: 30px; 
+			    height: 10px; 
+			    background: #fff; 
+			    -moz-border-radius: 100px;
+			    -webkit-border-radius: 100px;
+			    border-radius: 100px;
+				
+			}
+
+			.ball{
+				position: absolute;
+    			bottom: -95px;
+    			left: 46%;
+			}
+			// .foot{
+			//     position: absolute;
+			// 	bottom: -108px;
+   //  			left: 43.5%;
+			// 	display: block;
+			// 	opacity: 0;
+			// }
+			
+			.ball:hover +.foot{
+				display: block;
+				cursor: pointer;
+			}
+			.foot:hover +.foot{
+				display: block;
+				cursor: pointer;
+			}
 
 		}
 	}
@@ -1011,11 +1168,12 @@
 		//background-color: #eee;
 		margin: 10px auto;
 		width: 80%;
+		padding-top: 80px;
 		//border-top: 2px solid #b6b6b6;
 	}
 
 	.contact-ul{
-		margin-top: 150px;
+		//margin-top: 150px;
 		
 
 		li{
@@ -1057,3 +1215,89 @@
 	margin: 10px;
 	text-align: center;
 }
+
+//动画加载图标
+.loader{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	padding: 1em;
+	margin: 0 auto 1em;
+	// display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+ //    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+ //    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+ //    display: -webkit-flex; /* 新版本语法: Chrome 21+  Safari */
+ //    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+ //    align-items:center;
+	// -webkit-align-items:center;
+	// box-align:center;
+	// -moz-box-align:center;
+	// -webkit-box-align:center;
+
+	.loader-item{
+		display: inline-block;
+		vertical-align: middle;
+		// float: left;
+		// width: 20%;
+		// margin-right: 20%;
+		width: 18%;
+    	margin-right: 4%;
+		background-color: #fff;
+		border-radius: 2px;
+	}
+	.loader-item:last-child{
+		margin-right: 0;
+	}
+	.loader1{
+		animation:mymove1 0.6s infinite;
+		-webkit-animation:mymove1 0.6s infinite; /* Safari 和 Chrome */
+	}
+	.loader2{
+		animation:mymove2 0.6s infinite;
+		-webkit-animation:mymove2 0.6s infinite; /* Safari 和 Chrome */
+	}
+	.loader3{
+		animation:mymove3 0.6s infinite;
+		-webkit-animation:mymove3 0.6s infinite; /* Safari 和 Chrome */
+	}
+
+	@keyframes mymove1{
+		0%{
+			height: 100%;
+		} 
+		50%{
+			height: 50%;
+		}
+		100%{
+			height: 100%;
+		}
+	}
+	@keyframes mymove2{
+		0%{
+			height: 75%;
+		} 
+		33.3333333333%{
+			height: 100%;
+		}
+		100%{
+			height: 50%;
+		}
+	}
+	@keyframes mymove3{
+		0%{
+			height: 50%;
+		} 
+		50%{
+			height: 100%;
+		}
+		100%{
+			height: 50%;
+		}
+	}
+}
+.loader-hobby{
+	.loader-item{
+		background-color: #6c6c6c;
+	}
+}
+

@@ -5,9 +5,19 @@ $(document).ready(function(){
 	var $skillName=$('.skill-name');
 	var $lxNav_section=$('.lx-nav-section');
 	var firstSectionHeight=$lxNav_section.eq(1).offset().top;
+	var $LeshanImg = $('.Leshan-img');
 	var $hobbyBtn=$('.hobby-bookmark');
 	var $hobbyImgBox= $('.hobby-image-box');
 	var $hobbyImgClose = $('.hobby-img-close');
+	var $goalItem = $('.football-content .goal-item');
+	var $ball = $('.football-content .ball');
+	var $foot = $('.football-content .foot');
+	var $ftImgBox = $('.football-img-box');
+	var $ftImgBoxImg = $('.football-img-box-img');
+	var $ftImgBoxClose = $('.football-img-box-close');
+	var $ftImgBoxLoading = $('.football-img-box .loading');
+	var $ftImgText = $('.football-img-text');
+
 	var $lxNavTotop=$('.lx-nav-toTop');
 
 	var imgHobbyAddr = ['Leshan01-md.jpg','Leshan02-md.jpg','chongqing-md.jpg','fuzhou-md.jpg','xiamen-md.jpg','kunming-md.jpg','qujing-md.jpg','dali-md.jpg','xian-md.jpg','qingdao1-md.jpg'];
@@ -55,7 +65,55 @@ $(document).ready(function(){
 		}
 	});
 
-	//点击header上的按键 滑动到对应的Section
+
+	/*
+		加载图片
+	*/
+	var Loading = function(){
+
+		//profile
+		$LeshanImg.each(function(index , el){
+			$this = $(el);
+			$this.parent().find('.loading').find('img').addClass('scale');
+			var imgName = $this.attr('data-img');
+			$this.attr('src' , './images/' + imgName + '.jpg');
+		});
+
+		$LeshanImg.load(function(){
+			$(this).parent().find('.loading').hide();
+		});
+
+		//project -- webapp
+		var num;
+		var $projectImgLoad=$('.project-img-load');
+		for (var i = 0; i < $projectImgLoad.length; i++) {
+			$projectImgLoad.eq(i).parent().find('.loading').find('img').addClass('scale');
+			$projectImgLoad.eq(i).attr('src', './images/webapp'+ (i+1) +'.png');
+			//console.log("Image"+i+" finish!");
+		}
+		$projectImgLoad.load(function(){
+			//alert("laod");
+			//console.log($(this).parent().find('.load'));
+			$(this).parent().find('.loading').hide();
+		});
+
+		//爱好
+		for (var i = 0; i < imgHobbyAddr.length; i++) {
+			$hobbyImgBox.eq(i).parent().find('.loading').find('img').addClass('scale');
+			$hobbyImgBox.eq(i).find('img.hobby-img').attr('src', './images/'+ imgHobbyAddr[i] );
+		}
+		$hobbyImgBox.find('img.hobby-img').load(function(){
+			//alert("laod");
+			//console.log($(this).parent().find('.load'));
+			$(this).parent().find('.loading').hide();
+		});
+	}
+	Loading();
+
+
+	/*
+		点击header上的按键 滑动到对应的Section
+	*/
 	var scrollToSection=function(){
 
 		$lxNav_section=$('.lx-nav-section');
@@ -120,23 +178,23 @@ $(document).ready(function(){
 			width:data
 		});
 	}
+
 	//不同的技能可以设置不同的值
 	$skillName.hover(function(){
 		var el=$(this);
-		var $target=el.parent().find('.skill-score').find('rect');
+		var $target=el.parent().find('.skill-score').find('.skill-score-animate');
 		var score=$target.attr('data-skill-score');
 		skillDataBar($target, score);
 	}); 
 	$skillName.click(function(){
 		var el=$(this);
-		var $target=el.parent().find('.skill-score').find('rect');
-		var score=$target.attr('data-skill-score');
+		var $target=el.parent().find('.skill-score').find('.skill-score-animate');
 		skillDataBar($target, '1%');
 		return false;
 	}); 
 	$window.scroll(function(){
 		if($window.scrollTop() >= firstSectionHeight){
-			$('.skill-score').find('rect').each(function(){
+			$('.skill-score').find('.skill-score-animate').each(function(){
 				var $target=$(this);
 				var score=$(this).attr('data-skill-score');
 				skillDataBar($target, score);
@@ -144,7 +202,10 @@ $(document).ready(function(){
 		}
 	});
 
-	//hobby-box
+	/*
+		点击事件
+	*/
+	//hobby-box  标签
 	$hobbyBtn.click(function(){
 		var $el=$(this);
 		var data = $(this).attr('data-img');
@@ -237,38 +298,104 @@ $(document).ready(function(){
 		return false;
 	});
 
-	//加载图片
-	//project -- webapp
-	var num;
-	var $projectImgLoad=$('.project-img-load');
-	for (var i = 0; i < $projectImgLoad.length; i++) {
-		$projectImgLoad.eq(i).parent().find('.loading').find('img').addClass('scale');
-		$projectImgLoad.eq(i).attr('src', './icons/webapp'+ (i+1) +'.png');
-		//console.log("Image"+i+" finish!");
-	}
-	$projectImgLoad.load(function(){
-		//alert("laod");
-		//console.log($(this).parent().find('.load'));
-		$(this).parent().find('.loading').remove();
+	//球门获取点数
+	var goalFlag = false; //判断是否在射门过程中
+	$goalItem.click(function(){
+		if (goalFlag == true ) {
+			return;
+		}
+		goalFlag = true;
+		$ball.css({
+			'display' : 'block'
+		});
+		// $foot.css({
+		// 	'opacity' : '1'
+		// });
+		var goalLeftAry = [21 , 37 , 54 , 70];
+		var goalBottomAry = [185 , 130 , 68 , 10];
+		$this = $(this);
+		//球门牌取到的数字
+		var num = $this.text();
+		var goalLeft = num%4!=0?num%4:4;
+		var goalBottom = Math.ceil(num/4);
+		// console.log(goalLeft);
+		// console.log(goalBottom);
+		// console.log(goalLeftAry[goalLeft-1]);
+		// console.log(goalBottomAry[goalBottom-1]);
+		$ball.animate({
+			'width' : '32px' ,
+			'height' : '32px',
+			'left': goalLeftAry[goalLeft-1]+'%',
+			'bottom': goalBottomAry[goalBottom-1]+'px',
+			'opacity': '0'
+		},1000, function(){
+			// $this.css({
+			// 	'background-color':'#999'
+			// });
+		});
+		$ball.animate({
+			'left': '46%',
+		    'bottom': '-95px',
+		    'width': '64px',
+		    'height': '64px'
+		},500,function(){
+			goalFlag = false;
+		});
+
+		var imgBoxAry = [ 1.6 , 26.2 , 50.8 , 77 ];
+		//照片框渐大
+		$ftImgBox.css({
+			'display' : 'block',
+			'opacity' : '0',
+			'width': '23%',
+			'height': '23%',
+			'left' :　imgBoxAry[goalLeft-1] + '%' ,
+			'top' :　imgBoxAry[goalBottom-1] + '%' 
+		});
+
+		$ftImgBox.animate({
+			'width': '120%',
+			'height': '120%',
+			'top':  '-4%',
+			'left': '-10%',
+			'opacity' : '1'
+		},1000 , function(){
+			$ftImgBoxClose.css({
+				'display' :　'block'
+			});
+			$ftImgBoxLoading.css({
+				'display': 'block'
+			});
+			$ftImgBoxImg.css({
+				'display':'block'
+			});
+			setTimeout(function(){
+				loadFootballImg();
+			},50);
+		});
+		$ftImgText.html();
+
+		return false;
+
+		function loadFootballImg(){
+			$ftImgBoxLoading.find('img').addClass('scale');
+			$ftImgBoxImg.attr('src' , './images/ftTime'+ num +'.jpg');
+		}
+	});
+	$ftImgBoxClose.click(function(){
+		$ftImgBoxImg.hide();
+		$ftImgBoxLoading.find('img').removeClass('scale');
+		$ftImgBoxLoading.css({
+			'display':'none'
+		});
+		$ball.css({
+			'opacity': '1'
+		});
+		$ftImgBox.hide();
+	});
+	$ftImgBoxImg.load(function(){
+		$ftImgBoxLoading.hide();
 	});
 
-	//爱好
-	for (var i = 0; i < imgHobbyAddr.length; i++) {
-		$hobbyImgBox.eq(i).parent().find('.loading').find('img').addClass('scale');
-		$hobbyImgBox.eq(i).find('img.hobby-img').attr('src', './icons/'+ imgHobbyAddr[i] );
-	}
-	$hobbyImgBox.find('img.hobby-img').load(function(){
-		//alert("laod");
-		//console.log($(this).parent().find('.load'));
-		$(this).parent().find('.loading').remove();
-	});
-
-	// $('.loading').click(function(){
-	// 	$(this).find('img.project-img-load').addClass('scale');
-	// 	var i = $(this).parent().find('img.project-img-load').attr('data-num');
-	// 	console.log(i);
-	// 	$(this).parent().find('img.project-img-load').attr('src', './icons/webapp'+ i +'.png');
-	// 	return false;
-	// });
-
+	
 });

@@ -87,8 +87,19 @@
 				</div>
 				<div class="profile-content-right-box cl">
 					<div class="profile-right-img">
-						<img class="Leshan img-first" alt="乐山" src="./icons/Leshan01-sm.jpg">
-						<img class="Leshan img-first" alt="乐山" src="./icons/Leshan02-sm.jpg">
+						<div class="Leshan">
+							<div class="loading">
+								<img src="./icons/loading.png">
+							</div>
+							<img class="Leshan-img" alt="乐山" data-img="Leshan01-sm" src="./images/Leshan01-sm.jpg">
+						</div>
+						<div class="Leshan">
+							<div class="loading">
+								<img src="./icons/loading.png">
+							</div>
+							<img class="Leshan-img" alt="乐山" data-img="Leshan02-sm" src="./images/Leshan02-sm.jpg">
+						</div>
+						
 					</div>
 					<div class="profile-right-text">
 						<p>我来自<strong>四川乐山</strong>，一个旅游城市</p>
@@ -127,10 +138,13 @@
 						<span class="js-text">Javascript</span>
 						<div class="sm-text">Javascript</div>
 					</div>
-					<svg class="skill-score skill-shadow1">
+					<div class="skill-score skill-shadow1">
+						<div class="skill-score-animate" data-skill-score="90%"></div>
+					</div>
+					<!-- <svg class="skill-score skill-shadow1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="90%"/>
 						<g data-svg-origin="0 0"></g>
-					</svg>
+					</svg> -->
 				</div>
 
 				<div class="skill-content-item cl">
@@ -144,13 +158,16 @@
 						<!-- <img class="html-text" src="./icons/html-text.png">
 						<img class="css-text" src="./icons/css-text.png"></img> -->
 						<span class="html-text">HTML5</span>
-						<SPAN class="css-text">&CSS3</SPAN>
+						<span class="css-text">&CSS3</span>
 						<div class="sm-text">HTML5&CSS3</div>
 					</div>
-					<svg class="skill-score skill-shadow2" version="1.1">
+					<div class="skill-score skill-shadow1">
+						<div class="skill-score-animate" data-skill-score="80%"></div>
+					</div>
+					<!-- <svg class="skill-score skill-shadow2" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="80%"/>
 						<g data-svg-origin="0 0">CSS</g>
-					</svg>
+					</svg> -->
 				</div>
 
 				<div class="skill-content-item cl">
@@ -165,9 +182,12 @@
 						<span class="sql-text">&SQL</span>
 						<div class="sm-text">JAVA&SQL</div>
 					</div>
-					<svg class="skill-score skill-shadow3" version="1.1">
+					<div class="skill-score skill-shadow1">
+						<div class="skill-score-animate" data-skill-score="70%"></div>
+					</div>
+					<!-- <svg class="skill-score skill-shadow3" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="70%"/>
-					</svg>
+					</svg> -->
 				</div>
 
 				<div class="skill-content-item cl">
@@ -180,9 +200,12 @@
 						<span class="nodejs-text">Node.js</span>
 						<div class="sm-text">Node.js</div>
 					</div>
-					<svg class="skill-score skill-shadow4" version="1.1">
+					<div class="skill-score skill-shadow1">
+						<div class="skill-score-animate" data-skill-score="60%"></div>
+					</div>
+					<!-- <svg class="skill-score skill-shadow4" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="60%"/>
-					</svg>
+					</svg> -->
 				</div>
 
 				<div class="skill-content-item cl">
@@ -195,9 +218,12 @@
 						<span class="ps-text">P S</span>
 						<div class="sm-text">P S</div>
 					</div>
-					<svg class="skill-score skill-shadow5" version="1.1">
+					<div class="skill-score skill-shadow1">
+						<div class="skill-score-animate" data-skill-score="20%"></div>
+					</div>
+					<!-- <svg class="skill-score skill-shadow5" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="20%"/>
-					</svg>
+					</svg> -->
 				</div>
 				
 			</div>
@@ -254,6 +280,8 @@
 
 			<h4 class="box-small-title"><span>旅行书签</span></h4>
 			<div class="hobby-content cl">
+				点击书签查看照片
+
 				<div>
 					<div class="hobby-bookmark bookmark-left bookmark-1" data-img="Leshan" data-num="0">乐山
 						<i class="hobby-bookmark-circle-left"></i>
@@ -296,35 +324,55 @@
 							<i class="hobby-bookmark-circle-left"></i>
 						</div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="Leshan">					
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="chengdu">					
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="chongqing">					
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="fuzhou">					
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="xiamen">					
 					</div>
@@ -333,35 +381,55 @@
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="kunming">
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="qujing">
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="dali">
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="xian">
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
 						<div class="loading">
-							<img src="./icons/loading.png">
+							<div class="loader loader-hobby">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
 						</div>
 						<img class="hobby-img" src="" alt="qingdao">
 					</div>
@@ -371,7 +439,44 @@
 			
 			<h4 class="box-small-title"><span>足&nbsp&nbsp球</span></h4>
 			<div class="football-content cl">
-				
+				<div class="goal">
+					<div class="goal-item">1</div>
+					<div class="goal-item">2</div>
+					<div class="goal-item">3</div>
+					<div class="goal-item goal-item-last">4</div>
+					<div class="goal-item">5</div>
+					<div class="goal-item">6</div>
+					<div class="goal-item">7</div>
+					<div class="goal-item goal-item-last">8</div>
+					<div class="goal-item">9</div>
+					<div class="goal-item">10</div>
+					<div class="goal-item">11</div>
+					<div class="goal-item goal-item-last">12</div>
+					<div class="goal-item">13</div>
+					<div class="goal-item">14</div>
+					<div class="goal-item">15</div>
+					<div class="goal-item goal-item-last">16</div>
+
+					<div class="football-img-box">
+						<div class="football-img-box-close"></div>
+						<img class="football-img-box-img" src="" alt="">
+						<div class="loading">
+							<!-- <img src="./icons/loading1.png"> -->
+							<div class="loader">
+								<div class="loader-item loader1"></div>
+								<div class="loader-item loader2"></div>
+								<div class="loader-item loader3"></div>
+							</div>
+						</div>
+
+						<div class="football-img-text">
+						</div>
+					</div>	
+				</div>			
+
+				<div class="spot"></div>
+				<img class="ball" src="./icons/football-lg.png" alt="ball"></img>
+				<!-- <img class="foot" src="./icons/foot-lg.png" alt="foot"> -->
 			</div>
 
 		</div>
@@ -404,6 +509,42 @@
 							成都
 						</div>
 					</div>
+					<div class="loader">
+						<div class="loader-item loader1"></div>
+						<div class="loader-item loader2"></div>
+						<div class="loader-item loader3"></div>
+					</div>
+					<!-- svg 加载动画 -->
+					<!-- <div class="loader loader--style6" title="5">
+					  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					     width="24px" height="30px" viewBox="0 0 24 30" fill="#FF6700" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+					    <rect x="0" y="13" width="4" height="5" fill="#333">
+					      <animate attributeName="height" attributeType="XML"
+					        values="5;21;5" 
+					        begin="0s" dur="0.6s" repeatCount="indefinite" />
+					      <animate attributeName="y" attributeType="XML"
+					        values="13; 5; 13"
+					        begin="0s" dur="0.6s" repeatCount="indefinite" />
+					    </rect>
+					    <rect x="10" y="13" width="4" height="5" fill="#333">
+					      <animate attributeName="height" attributeType="XML"
+					        values="5;21;5" 
+					        begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+					      <animate attributeName="y" attributeType="XML"
+					        values="13; 5; 13"
+					        begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+					    </rect>
+					    <rect x="20" y="13" width="4" height="5" fill="#333">
+					      <animate attributeName="height" attributeType="XML"
+					        values="5;21;5" 
+					        begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+					      <animate attributeName="y" attributeType="XML"
+					        values="13; 5; 13"
+					        begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+					    </rect>
+					  </svg>
+					</div> -->
+
 				</li>
 			</ul>	
 			
@@ -416,7 +557,7 @@
 	<!-- <script type="text/javascript" src="./scripts/jquery-3.1.1.min.js"></script> -->
 	<script type="text/javascript" src="./scripts/jquery-1.9.0.min.js"></script>
 	<!-- <script type="text/javascript" src="./scripts/bootstrap.min.js"></script> -->
-	<script type="text/javascript" src="./scripts/lx-nav.js"></script>
+	<script type="text/javascript" src="./scripts/lx-nav.min.js"></script>
 	<script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 </html>
