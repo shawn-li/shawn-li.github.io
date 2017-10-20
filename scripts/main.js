@@ -244,7 +244,7 @@ $(document).ready(function(){
 		var skillFlag = $target.attr('data-skill-flag');
 		if (skillFlag == 'true') {
 			skillDataBar($target, '1%');
-			$('.skill-score-animate').css('background-color','#666');
+			$target.css('background-color','#666');
 			$target.attr('data-skill-flag','false');
 		}else if(skillFlag == 'false'){
 			var score=$target.attr('data-skill-score');
