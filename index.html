@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>shawn-li</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
 	<link rel="shortcut icon" type="image/x-icon" href="./icons/myicon.png" media="screen" /> <!-- 这个作用是在浏览器地址栏显示您的小图标 -->
 	<link rel='bookmark' href='./icons/myicon.png'> 
 	<!-- 这个作用是在收藏夹里面显示您的小图标 -->
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
-	<link rel="stylesheet" type="text/css" href="./styles/global.css">
-	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.css">
+	<link rel="stylesheet" type="text/css" href="./styles/global.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
 	
@@ -88,15 +88,15 @@
 				<div class="profile-content-right-box cl">
 					<div class="profile-right-img">
 						<div class="Leshan">
-							<div class="loading">
+							<!-- <div class="loading">
 								<img src="./icons/loading.png">
-							</div>
+							</div> -->
 							<img class="Leshan-img" alt="乐山" data-img="Leshan01-sm" src="./images/Leshan01-sm.jpg">
 						</div>
 						<div class="Leshan">
-							<div class="loading">
+							<!-- <div class="loading">
 								<img src="./icons/loading.png">
-							</div>
+							</div> -->
 							<img class="Leshan-img" alt="乐山" data-img="Leshan02-sm" src="./images/Leshan02-sm.jpg">
 						</div>
 						
@@ -129,17 +129,15 @@
 			<div class="skill-content cl">
 				<!-- SVG 是使用 XML 来描述二维图形和绘图程序的语言 -->
 				<div class="skill-content-item cl">
-					<div class="skill-mobile-title">Javascript</div>
 					<div class="skill-profile skill-shadow1">
 					熟悉原生Javascript编程、Javascript面向对象程序设计和继承、原型链、ECMAScript语言规范以及ES6的变化、DOM、BOM、AJAX、JSON等知识，熟练使用jquery和zepto插件
 					</div>
 					<div class="skill-name skill-shadow1">
 						<img class="js-logo" src="./icons/js.png" alt="Javascript">
 						<span class="js-text">Javascript</span>
-						<div class="sm-text">Javascript</div>
 					</div>
 					<div class="skill-score skill-shadow1">
-						<div class="skill-score-animate" data-skill-score="90%"></div>
+						<div class="skill-score-animate" data-skill-score="90%" data-skill-flag="false"></div>
 					</div>
 					<!-- <svg class="skill-score skill-shadow1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="90%"/>
@@ -148,7 +146,6 @@
 				</div>
 
 				<div class="skill-content-item cl">
-					<div class="skill-mobile-title">HTML5&CSS3</div>
 					<div class="skill-profile skill-shadow2">
 					熟悉HTML5/CSS3、解决主流浏览器兼容性问题、响应式布局、使用Chrome开发者工具，使用过canvas、SVG、本地存储localStorage、CSS动画效果、CSS预处理语言Less
 					</div>
@@ -157,12 +154,10 @@
 						<img class="css-logo" src="./icons/css.png" alt="css3">
 						<!-- <img class="html-text" src="./icons/html-text.png">
 						<img class="css-text" src="./icons/css-text.png"></img> -->
-						<span class="html-text">HTML5</span>
-						<span class="css-text">&CSS3</span>
-						<div class="sm-text">HTML5&CSS3</div>
+						<span class="html-text">HTML5&CSS3</span>
 					</div>
 					<div class="skill-score skill-shadow1">
-						<div class="skill-score-animate" data-skill-score="80%"></div>
+						<div class="skill-score-animate" data-skill-score="80%" data-skill-flag="false"></div>
 					</div>
 					<!-- <svg class="skill-score skill-shadow2" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="80%"/>
@@ -171,19 +166,16 @@
 				</div>
 
 				<div class="skill-content-item cl">
-					<div class="skill-mobile-title">JAVA&SQL</div>
 					<div class="skill-profile skill-shadow3">
 						熟悉JAVA SE、JSP、SQL语句，了解SSH(spring, struts, hibernate)框架、Tomcat，熟练使用IDEA、Oracle、Toad
 					</div>
 					<div class="skill-name skill-shadow3">
 						<img class="java-logo" src="./icons/java.png" alt="java">
 						<img class="sql-logo" src="./icons/sql.png" alt="sql">
-						<span class="java-text">JAVA</span>
-						<span class="sql-text">&SQL</span>
-						<div class="sm-text">JAVA&SQL</div>
+						<span class="java-text">JAVA&SQL</span>
 					</div>
 					<div class="skill-score skill-shadow1">
-						<div class="skill-score-animate" data-skill-score="70%"></div>
+						<div class="skill-score-animate" data-skill-score="70%" data-skill-flag="false"></div>
 					</div>
 					<!-- <svg class="skill-score skill-shadow3" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="70%"/>
@@ -191,17 +183,15 @@
 				</div>
 
 				<div class="skill-content-item cl">
-					<div class="skill-mobile-title">Node.js</div>
 					<div class="skill-profile skill-shadow4">
 						熟悉fs、path等常用内置模块的使用,熟悉Git Bash命令行工具,了解基于Express、Koa的Web开发。
 					</div>
 					<div class="skill-name skill-shadow4">
 						<img class="nodejs-logo" src="./icons/nodejs.png" alt="node.js">
 						<span class="nodejs-text">Node.js</span>
-						<div class="sm-text">Node.js</div>
 					</div>
 					<div class="skill-score skill-shadow1">
-						<div class="skill-score-animate" data-skill-score="60%"></div>
+						<div class="skill-score-animate" data-skill-score="60%" data-skill-flag="false"></div>
 					</div>
 					<!-- <svg class="skill-score skill-shadow4" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="60%"/>
@@ -209,17 +199,15 @@
 				</div>
 
 				<div class="skill-content-item cl">
-					<div class="skill-mobile-title">PS</div>
 					<div class="skill-profile skill-shadow5">
 						会切图，哈哈哈
 					</div>
 					<div class="skill-name skill-shadow5">
 						<img class="ps-logo" src="./icons/ps.png" alt="node.js">
 						<span class="ps-text">P S</span>
-						<div class="sm-text">P S</div>
 					</div>
 					<div class="skill-score skill-shadow1">
-						<div class="skill-score-animate" data-skill-score="20%"></div>
+						<div class="skill-score-animate" data-skill-score="20%" data-skill-flag="false"></div>
 					</div>
 					<!-- <svg class="skill-score skill-shadow5" version="1.1">
 						<rect x="0" y="15" width="1%" height="30" stroke="black" stroke-width="0" fill="#666666" data-skill-score="20%"/>
@@ -278,7 +266,7 @@
 		<div class="lx-nav-section hobby-box" data-lx-nav="hobby">
 			<div class="box-title">个人爱好</div>
 
-			<h4 class="box-small-title"><span>旅行书签</span></h4>
+			<h4 class="box-small-title">旅行书签</h4>
 			<div class="hobby-content cl">
 				点击书签查看照片
 
@@ -323,6 +311,7 @@
 						<div class="hobby-img-close">
 							<i class="hobby-bookmark-circle-left"></i>
 						</div>
+						<img class="hobby-img" src="" alt="Leshan">
 						<div class="loading">
 							<div class="loader loader-hobby">
 								<div class="loader-item loader1"></div>
@@ -330,7 +319,8 @@
 								<div class="loader-item loader3"></div>
 							</div>
 						</div>
-						<img class="hobby-img" src="" alt="Leshan">					
+						<div class="hobby-img-summary">
+						</div>					
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
@@ -341,7 +331,8 @@
 								<div class="loader-item loader3"></div>
 							</div>
 						</div>
-						<img class="hobby-img" src="" alt="chengdu">					
+						<img class="hobby-img" src="" alt="chengdu">
+						<div class="hobby-img-summary"></div>					
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
@@ -352,7 +343,8 @@
 								<div class="loader-item loader3"></div>
 							</div>
 						</div>
-						<img class="hobby-img" src="" alt="chongqing">					
+						<img class="hobby-img" src="" alt="chongqing">	
+						<div class="hobby-img-summary"></div>						
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
@@ -363,7 +355,8 @@
 								<div class="loader-item loader3"></div>
 							</div>
 						</div>
-						<img class="hobby-img" src="" alt="fuzhou">					
+						<img class="hobby-img" src="" alt="fuzhou">	
+						<div class="hobby-img-summary"></div>						
 					</div>
 					<div class="hobby-image-box hobby-leftImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-left"></i></div>
@@ -374,7 +367,8 @@
 								<div class="loader-item loader3"></div>
 							</div>
 						</div>
-						<img class="hobby-img" src="" alt="xiamen">					
+						<img class="hobby-img" src="" alt="xiamen">		
+						<div class="hobby-img-summary"></div>					
 					</div>
 
 
@@ -388,6 +382,7 @@
 							</div>
 						</div>
 						<img class="hobby-img" src="" alt="kunming">
+						<div class="hobby-img-summary"></div>		
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
@@ -399,6 +394,7 @@
 							</div>
 						</div>
 						<img class="hobby-img" src="" alt="qujing">
+						<div class="hobby-img-summary"></div>		
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
@@ -410,6 +406,7 @@
 							</div>
 						</div>
 						<img class="hobby-img" src="" alt="dali">
+						<div class="hobby-img-summary"></div>		
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
@@ -421,6 +418,7 @@
 							</div>
 						</div>
 						<img class="hobby-img" src="" alt="xian">
+						<div class="hobby-img-summary"></div>		
 					</div>
 					<div class="hobby-image-box hobby-rightImgBox-beforeSlider">
 						<div class="hobby-img-close"><i class="hobby-bookmark-circle-right"></i></div>
@@ -432,12 +430,13 @@
 							</div>
 						</div>
 						<img class="hobby-img" src="" alt="qingdao">
+						<div class="hobby-img-summary"></div>		
 					</div>
 				</div>
 				
 			</div>
 			
-			<h4 class="box-small-title"><span>足&nbsp&nbsp球</span></h4>
+			<h4 class="box-small-title">足&nbsp&nbsp球</h4>
 			<div class="football-content cl">
 				<div class="goal">
 					<div class="goal-item">1</div>
@@ -468,8 +467,10 @@
 								<div class="loader-item loader3"></div>
 							</div>
 						</div>
-
-						<div class="football-img-text">
+						<div class="before-loading">
+							点击加载图片
+						</div>
+						<div class="football-img-summary">
 						</div>
 					</div>	
 				</div>			
@@ -485,7 +486,7 @@
 			<ul class="contact-ul cl">
 				<li>
 					<div class="contact-ul-div">
-						<h4>github</h4>
+						<!-- <span>github</span> -->
 						<img src="./icons/github.png" alt="github">
 						<div class="contact-content">
 							https://github.com/shawn-li
@@ -494,7 +495,7 @@
 				</li>
 				<li>
 					<div class="contact-ul-div">
-						<h4>邮箱</h4>
+						<!-- <span>邮箱</span> -->
 						<img src="./icons/email.png" alt="email">
 						<div class="contact-content">
 							707361845@qq.com
@@ -503,17 +504,17 @@
 				</li>
 				<li>
 					<div class="contact-ul-div">
-						<h4>地点</h4>
+						<!-- <span>地点</span> -->
 						<img src="./icons/address.png" alt="address">
 						<div class="contact-content">
 							成都
 						</div>
 					</div>
-					<div class="loader">
+					<!-- <div class="loader">
 						<div class="loader-item loader1"></div>
 						<div class="loader-item loader2"></div>
 						<div class="loader-item loader3"></div>
-					</div>
+					</div> -->
 					<!-- svg 加载动画 -->
 					<!-- <div class="loader loader--style6" title="5">
 					  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -550,7 +551,7 @@
 			
 		</div>
 		<div class="copyright">
-			Copyright by shawn-li
+			Copyright©2017 shawn-li
 		</div>
 
 	</div>
