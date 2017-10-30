@@ -1,0 +1,48 @@
+{
+	"data":{
+		"效果类": [
+            {
+                "type": "收藏>效果类",
+                "title": "焦点图轮播特效",
+                "url": "www.imooc.com/learn/18"
+            }
+        ],
+        "弹出层" : [
+            {
+                "type": "收藏>效果类",
+                "title": "弹出层",
+                "url": "www.imooc.com/learn/58"
+            },
+            {
+                "type": "收藏>效果类弹出层",
+                "title": "artDialog 最新版",
+                "url": "github.com/aui/artDialog"
+            },
+            {
+                "type": "收藏>效果类弹出层",
+                "title": "artDialog 文档",
+                "url": "aui.github.io/artDialog/doc/index.html"
+            },
+            {
+                "type": "收藏>效果类弹出层",
+                "title": "google code 下载地址",
+                "url": "code.google.com/p/artdialog/downloads/list"
+            },
+            {
+                "type": "收藏>效果类弹出层",
+                "title": "贤心弹出层",
+                "url": "layer.layui.com/"
+            },
+            {
+                "type": "收藏>效果类弹出层",
+                "title": "响应式用户交互组件库",
+                "url": "github.com/bh-lay/UI"
+            },
+            {
+                "type": "收藏>效果类弹出层",
+                "title": "sweetalert-有css3动画弹出层",
+                "url": "t4t5.github.io/sweetalert/"
+            }
+        ]
+	}
+}

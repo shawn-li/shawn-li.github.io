@@ -1,0 +1,87 @@
+{
+	"data":{
+		"Ext":[
+            {
+                "type": "收藏>各种UI方案>Ext",
+                "title": "extjs",
+                "url": "www.sencha.com/products/extjs/"
+            },
+            {
+                "type": "收藏>各种UI方案>Ext",
+                "title": "ext4英文api",
+                "url": "docs.sencha.com/extjs/4.0.7/"
+            },
+            {
+                "type": "收藏>各种UI方案>Ext",
+                "title": "ext4中文api",
+                "url": "extjs-doc-cn.github.io/ext4api/"
+            },
+            {
+                "type": "收藏>各种UI方案>Ext",
+                "title": "前端资源教程",
+                "url": "cnodejs.org/topic/56ef3edd532839c33a99d00e"
+            }
+        ],
+        "EasyUI":[
+            {
+                "type": "收藏>各种UI方案>EasyUI",
+                "title": "jquery easyui 未压缩源代码",
+                "url": "jquery-easyui.googlecode.com/svn/trunk/src/"
+            }
+        ],
+        "J-UI":[
+            {
+                "type": "收藏>各种UI方案>J-UI",
+                "title": "J-UI",
+                "url": "jui.org/"
+            }
+        ],
+        "Other" :[
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "MUI-最接近原生APP体验的高性能前端框架",
+                "url": "dcloudio.github.io/mui/"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "Amaze UI | 中国首个开源 HTML5 跨屏前端框架",
+                "url": "amazeui.org/"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "淘宝 HTML5 前端框架",
+                "url": "m.sui.taobao.org/"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "KISSY - 阿里前端JavaScript库",
+                "url": "docs.kissyui.com/"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "网易Nej - Nice Easy Javascript",
+                "url": "nej.netease.com/"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "Kendo UI MVVM Demo",
+                "url": "demos.telerik.com/kendo-ui/mvvm/index"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "Bootstrap",
+                "url": "www.bootcss.com/"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "Smart UI",
+                "url": "smartui.chinamzz.com/"
+            },
+            {
+                "type": "收藏>各种UI方案>Other",
+                "title": "雅虎UI - CSS UI",
+                "url": "developer.yahoo.com/yui/grids/"
+            }
+        ]
+	}
+}

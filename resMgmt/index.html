@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="./styles/global.css">
+	<link rel="stylesheet" type="text/css" href="./styles/lx-sidebar.css">
+</head>
+<body>
+	<div class="container">
+		<div class="l-sidebar">
+			<div class="l-sidebar-main">
+				<div class="lx-sidebar-top cl">
+					<img class="lx-sidebar-narrow" src="./icons/catalog.png" alt="catalog">
+				</div>
+				<div class="l-sidebar-summary">
+					<h3>前端学习资源</h3>
+					<p>将前端开发的资源文件规整在一起，方便查找学习</p>
+				</div>
+				
+				<div class="l-sidebar-menu">
+					<span class="l-sidebar-menu-title">菜单</span>
+					<div class="l-sidebar-menu-main">
+						<div class="lx-sidebar">
+							<ul class="lx-sidebar-ul">
+								<!-- <li class="lx-sidebar-li">
+									<a href="javascript:;">111</a>
+									<img class="lx-sidebar-arrow" src="./icons/arrow.png">
+									<ul class="lx-sidebar-show">
+										<li><a href="javascript:;">111</a></li>
+										<li><a href="javascript:;">111</a></li>
+										<li><a href="javascript:;">111</a></li>
+									</ul>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="top-nav">
+				
+			</div>
+			<div class="content-container">
+				<h1 class="content-h1"></h1>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/lxSidebar.js"></script>
+	<script type="text/javascript">
+		(function($){
+			var lxSidebarJson = function(){
+				
+				$.ajaxSetup({  
+				    async : false  
+				});  
+				$.get('./json/catalog.json', function(data){
+					var _data = data.catalog;
+
+					create(_data);
+					
+				});
+			}
+			//创建sidebar
+			var create = function(_data){
+				for (var i = 0; i < _data.length; i++) {
+					var type = _data[i].type 
+					var arr_obj = [];
+					var children = _data[i].children;
+					
+					if (children) {
+						var len = children.length;
+						for (var j=0; j<len;j++) {
+							//console.log(children[j].type);
+							arr_obj.push(children[j]);
+						}
+					}
+					//console.log(arr);
+					createLi(document.querySelector('.lx-sidebar-ul'),type,arr_obj);
+				}
+			}
+			//创建sidebar
+			var createLi = function(parent ,text, children){
+				var liDom = document.createElement('li');
+				liDom.className = 'lx-sidebar-li';
+				var aDom = document.createElement('a');
+				var aTextNode = document.createTextNode(text);
+				aDom.className = "js-lx-sidebar-item";
+				aDom.appendChild(aTextNode);
+				aDom.setAttribute('href','javascript:;');
+				var imgDom = document.createElement('img');
+				imgDom.className = 'lx-sidebar-arrow js-lx-sidebar-item';
+				imgDom.setAttribute('src','./icons/arrow.png');
+				var ulDom = document.createElement('ul');
+				ulDom.className = 'lx-sidebar-show';
+				for (var i = 0; i < children.length; i++) {
+					var subliDom = document.createElement('li');
+					subliDom.className = 'lx-sidebar-sub-li'
+					var subaDom = document.createElement('a');
+					subaDom.className = 'js-lx-sidebar-subItem';
+					subaDom.setAttribute('href','javascript:;');
+					subaDom.setAttribute('data-file',children[i].name);
+					subaDom.setAttribute('data-type',children[i].type);
+					var aTextNode = document.createTextNode(children[i].type);
+					subaDom.appendChild(aTextNode);
+					subliDom.appendChild(subaDom);
+					ulDom.appendChild(subliDom);
+				}
+
+				parent.appendChild(liDom);
+				liDom.appendChild(aDom);
+				liDom.appendChild(imgDom);
+				liDom.appendChild(ulDom);
+			}
+
+			lxSidebarJson();
+
+			//加载主界面信息
+			var createConetentDiv = function(parent , arr ,parent_type ,h2_addText){
+				//parent为添加到的父节点，arr为请求返回的数据数组，parent_type为父类型，
+				//h2_addText为h2标题需要添加的子标题
+				if (!document.querySelector('.content-h1')) {
+					var h1Dom = document.createElement('h1');
+					var h1TextNode = document.createTextNode(parent_type);
+					h1Dom.appendChild(h1TextNode);
+					h1Dom.className = 'content-h1';
+					parent.appendChild(h1Dom);
+				}
+				
+				var divDom = document.createElement('div');
+				divDom.className = 'content-div';
+				var h2Dom = document.createElement('h2');
+				h2Dom.className = 'content-title';
+				var ulDom = document.createElement('ul');
+				ulDom.className = 'content-ul';
+
+				if (h2_addText) {
+					var h2TextNode = document.createTextNode(h2_addText);
+					h2Dom.appendChild(h2TextNode);
+					divDom.appendChild(h2Dom);
+				}
+
+				for (var i = 0; i < arr.length; i++) {
+				
+					var liDom = document.createElement('li');
+					liDom.className = 'content-li';
+					var divSubDom = document.createElement('div');
+					divSubDom.className = 'content-li-item';
+					var ulSubDom = document.createElement('ul');
+					var liSubDom1 = document.createElement('li');
+					var liSubDom2 = document.createElement('li');
+
+					var liTextNode1 = document.createTextNode(arr[i].title);
+					var liTextNode2 = document.createTextNode("链接:   " + arr[i].url);
+					liSubDom1.appendChild(liTextNode1);
+					liSubDom2.appendChild(liTextNode2);
+					ulSubDom.appendChild(liSubDom1);
+					ulSubDom.appendChild(liSubDom2);
+					divSubDom.appendChild(ulSubDom);
+					liDom.appendChild(divSubDom);
+					ulDom.appendChild(liDom);
+				}	
+				divDom.appendChild(ulDom);
+				parent.appendChild(divDom);
+
+			} 
+			//渲染main主界面
+			var loadData = function( parent_type, data){
+				//console.log(document.querySelector('.content-container'));
+				
+
+				if (Array.isArray(data.data)) {
+					//数组
+					createConetentDiv(document.querySelector('.content-container') , data.data ,parent_type);				
+				}else{
+					//对象 --- 多个数组
+					for (var key in data.data) {
+						var arr = data.data[key];
+						createConetentDiv(document.querySelector('.content-container') , arr ,parent_type , key);
+					}
+				}
+				
+				
+			}
+
+			var $content = $('.content-container');
+			var $subItem = $('.js-lx-sidebar-subItem');
+
+			$subItem.click(function(){
+				var $this = $(this);
+				var file = $this.attr('data-file');
+				var type = $this.attr('data-type');
+				console.log(file)
+				$.get('./json/'+file+'.json',function(data){
+					$content.children().remove();
+					loadData( type ,data);
+					//$content.html(data.data[0].type);
+				})
+			});
+
+			
+
+			$('.lx-sidebar').lxSidebar();
+			
+		})(jQuery)
+	</script>
+</body>
+</html>

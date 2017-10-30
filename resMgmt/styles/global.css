@@ -1,0 +1,77 @@
+.cl {
+  zoom: 1;
+}
+.cl::after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.container {
+  background-color: #fff;
+  width: 100%;
+  min-height: 2000px;
+  overflow: auto;
+}
+.container .main {
+  position: relative;
+  margin-left: 25%;
+  width: 70%;
+  height: 100%;
+  background-color: #dcdcdc;
+}
+.container .main .top-nav {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+}
+.container .main .content-container {
+  width: 100%;
+  padding-top: 50px;
+  min-height: 800px;
+}
+.container .main .content-container .content-h1 {
+  font: bold 24px/30px STHeiti;
+  height: 30px;
+  text-align: center;
+}
+.container .main .content-container .content-div {
+  width: 80%;
+  margin: 0 10%;
+  padding: 20px 20px;
+  border-bottom: 1px solid #b6b6b6;
+  -moz-box-sizing: border-box;
+  /*Firefox3.5+*/
+  -webkit-box-sizing: border-box;
+  /*Safari3.2+*/
+  -o-box-sizing: border-box;
+  /*Opera9.6*/
+  -ms-box-sizing: border-box;
+  /*IE8*/
+  box-sizing: border-box;
+  /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+}
+.container .main .content-container .content-div .content-title {
+  padding: 5px;
+  font: bold 20px/24px STHeiti;
+  height: 24px;
+}
+.container .main .content-container .content-div .content-ul {
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.container .main .content-container .content-div .content-ul .content-li {
+  padding: 5px;
+  list-style: circle;
+}
+.container .main .content-container .content-div .content-ul .content-li .content-li-item {
+  margin-top: 1.5em;
+}
+.container .main .content-container .content-div .content-ul .content-li .content-li-item li {
+  width: 100%;
+  padding: 10px;
+  font: 16px/24px Microsoft JhengHei;
+  height: 24px;
+  word-break: break-all;
+}

@@ -1,0 +1,54 @@
+{
+	"data":[
+		{
+            "type": "收藏>富文本编辑器",
+            "title": "百度 ueditor",
+            "url": "ueditor.baidu.com/website/"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "经典的ckeditor",
+            "url": "ckeditor.com/"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "经典的kindeditor",
+            "url": "kindeditor.net/"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "wysiwyg",
+            "url": "www.bootcss.com/p/bootstrap-wysiwyg/"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "一个有情怀的编辑器。Bach’s Editor",
+            "url": "integ.github.io/BachEditor/"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "tower用的编辑器",
+            "url": "github.com/mycolorway/simditor"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "summernote 编辑器",
+            "url": "github.com/summernote/summernote"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "html5编辑器",
+            "url": "neilj.github.io/Squire/"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "XEditor",
+            "url": "lab.hustlzp.com/XEditor/"
+        },
+        {
+            "type": "收藏>富文本编辑器",
+            "title": "wangEditor",
+            "url": "github.com/wangfupeng1988/wangEditor"
+        }
+	]
+}

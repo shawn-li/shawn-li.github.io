@@ -1,0 +1,29 @@
+{
+	"data":[
+		{
+            "type": "收藏>页面分享功能",
+            "title": "百度分享",
+            "url": "share.baidu.com/"
+        },
+        {
+            "type": "收藏>页面分享功能",
+            "title": "JiaThis",
+            "url": "jiathis.com/"
+        },
+        {
+            "type": "收藏>页面分享功能",
+            "title": "社会化分享组件",
+            "url": "developer.baidu.com/soc/share"
+        },
+        {
+            "type": "收藏>页面分享功能",
+            "title": "ShareSDK 轻松实现社会化功能",
+            "url": "www.mob.com/%23/index"
+        },
+        {
+            "type": "收藏>页面分享功能",
+            "title": "友盟分享",
+            "url": "dev.umeng.com/social/android/quick-integration"
+        }
+	]
+}

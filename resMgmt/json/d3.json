@@ -1,0 +1,29 @@
+{
+	"data":[
+		{
+            "type": "D3",
+            "title": "d3 Tutorials",
+            "url": "github.com/mbostock/d3/wiki/Tutorials"
+        },
+        {
+            "type": "D3",
+            "title": "Gallery",
+            "url": "github.com/mbostock/d3/wiki/Gallery"
+        },
+        {
+            "type": "D3",
+            "title": "lofter",
+            "url": "datavisual.lofter.com/post/40cf3a_188e535"
+        },
+        {
+            "type": "D3",
+            "title": "iteye",
+            "url": "alanland.iteye.com/blog/1878595"
+        },
+        {
+            "type": "D3",
+            "title": "ruanyifeng",
+            "url": "javascript.ruanyifeng.com/library/d3.html"
+        }
+	]
+}
