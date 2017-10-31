@@ -2,7 +2,7 @@
     "data": {
         "time": "2017-10-27",
         "list":[""],
-        "content": {
+        "content": { 
             "综合知识": [
                 {
                     "type": "综合知识",
@@ -110,7 +110,7 @@
                     "url": "dwqs.gitbooks.io/frontenddevhandbook/content/"
                 }
             ],
-
+ 
             "入门学习": [
                 {
                     "type": "入门学习",
@@ -118,7 +118,7 @@
                     "url": "www.cnblogs.com/jikey/p/3613082.html"
                 },
                 {
-                    "type": "入门学习",
+                    "type": "入门学习", 
                     "title": "瘳雪峰的Javascript教程",
                     "url": "www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000"
                 },
@@ -2866,7 +2866,8 @@
                 },
                 {
                     "type": "前端架构",
-                    "title": "如何成为前端架构师"
+                    "title": "如何成为前端架构师",
+                    "url": "https://www.zhihu.com/question/24092572"
                 },
                 {
                     "type": "前端架构",

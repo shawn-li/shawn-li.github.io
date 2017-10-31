@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>学习资源管理</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./icons/resMgmt.png" media="screen" />
+	<link rel='bookmark' href='./icons/resMgmt.png'> 
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="./styles/global.css">
 	<link rel="stylesheet" type="text/css" href="./styles/lx-sidebar.css">
 </head>
 <body>
+	<img class="toTop" src="./icons/rocket1.png" alt="toTop">
 	<div class="container">
 		<div class="l-sidebar">
 			<div class="l-sidebar-main">
@@ -15,7 +18,7 @@
 					<img class="lx-sidebar-narrow" src="./icons/catalog.png" alt="catalog">
 				</div>
 				<div class="l-sidebar-summary">
-					<h3>前端学习资源</h3>
+					<h3>学习资源管理</h3>
 					<p>将前端开发的资源文件规整在一起，方便查找学习</p>
 				</div>
 				
@@ -42,6 +45,12 @@
 		
 		<div class="main">
 			<div class="top-nav">
+				<a href="https://github.com/shawn-li">
+					<div class="top-nav-item">
+						<img src="./icons/github.png" alt="github">
+						<span>github</span>
+					</div>
+				</a>
 				
 			</div>
 			<div class="content-container">
@@ -157,9 +166,17 @@
 					var liSubDom2 = document.createElement('li');
 
 					var liTextNode1 = document.createTextNode(arr[i].title);
-					var liTextNode2 = document.createTextNode("链接:   " + arr[i].url);
+					var liTextNode2 = document.createTextNode("链接:   ");
+					var aDomli = document.createElement('a');
+					aDomli.className = 'content-li-item-a';
+					aDomli.target = '_blank';
+					aDomli.href = arr[i].url;
+					var aDomTextNode = document.createTextNode(arr[i].url);
+					aDomli.appendChild(aDomTextNode);
 					liSubDom1.appendChild(liTextNode1);
 					liSubDom2.appendChild(liTextNode2);
+					liSubDom2.appendChild(aDomli);
+
 					ulSubDom.appendChild(liSubDom1);
 					ulSubDom.appendChild(liSubDom2);
 					divSubDom.appendChild(ulSubDom);
@@ -188,7 +205,7 @@
 				
 				
 			}
-
+			
 			var $content = $('.content-container');
 			var $subItem = $('.js-lx-sidebar-subItem');
 
@@ -196,7 +213,7 @@
 				var $this = $(this);
 				var file = $this.attr('data-file');
 				var type = $this.attr('data-type');
-				console.log(file)
+				//console.log(file)
 				$.get('./json/'+file+'.json',function(data){
 					$content.children().remove();
 					loadData( type ,data);
@@ -204,6 +221,12 @@
 				})
 			});
 
+			var $toTop = $('.toTop');
+			var $html_body = $('.body,html');
+			$toTop.click(function(){
+				$html_body.animate({scrollTop: 0 }, 800);
+				return false;
+			});
 			
 
 			$('.lx-sidebar').lxSidebar();

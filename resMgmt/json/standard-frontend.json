@@ -1,0 +1,109 @@
+{
+	"data":[
+		{
+            "type": "开发规范>前端",
+            "title": "通过分析github代码库总结出来的工程师代码书写习惯",
+            "url": "http://alloyteam.github.io/CodeGuide"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "HTML&CSS编码规范 by @mdo",
+            "url": "http://codeguide.bootcss.com/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "团队合作的css命名规范-腾讯AlloyTeam前端团队",
+            "url": "http://www.alloyteam.com/2011/10/107/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "前端编码规范之js - by yuwenhui",
+            "url": "http://yuwenhui.github.io/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "前端编码规范之js - by 李靖",
+            "url": "http://www.cnblogs.com/hustskyking/p/javascript-spec.html"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "前端开发规范手册",
+            "url": "http://zhibimo.com/read/Ashu/front-end-style-guide/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "Airbnb JavaScript 编码规范（简体中文版）",
+            "url": "https://github.com/yuche/javascript%23table-of-contents"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "AMD与CMD规范的区别",
+            "url": "http://www.zhihu.com/question/20351507"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "AMD与CMD规范的区别",
+            "url": "http://www.cnblogs.com/tugenhua0707/p/3507957.html"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "KISSY 源码规范",
+            "url": "http://docs.kissyui.com/1.4/docs/html/tutorials/style-guide/kissy-source-style.html"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "bt编码规范",
+            "url": "http://codeguide.bootcss.com/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "规范加强版",
+            "url": "https://github.com/Suxiaogang/Code_Guide"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "前端代码规范 及 最佳实践",
+            "url": "http://blog.jobbole.com/79075/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "百度前端规范",
+            "url": "http://coderlmn.github.io/code-standards/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "百度前端规范",
+            "url": "http://isobar-idev.github.io/code-standards/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "百度前端规范",
+            "url": "http://zhuanlan.zhihu.com/fuyun/19884834"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "ECMAScript6 编码规范–广发证券前端团队",
+            "url": "https://github.com/gf-rd/es6-coding-style"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "JavaScript 风格指南/编码规范（Airbnb公司版）",
+            "url": "http://blog.jobbole.com/79484/"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "网易前端开发规范",
+            "url": "http://nec.netease.com/standard"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "css模块",
+            "url": "http://www.75team.com/archives/1049"
+        },
+        {
+            "type": "开发规范>前端",
+            "title": "前端规范资源列表",
+            "url": "https://github.com/ecomfe/spec"
+        }
+	]
+}

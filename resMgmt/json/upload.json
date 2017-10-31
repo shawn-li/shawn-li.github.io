@@ -3,42 +3,42 @@
 		{
             "type": "收藏>文件上传",
             "title": "百度上传组件",
-            "url": "fex.baidu.com/webuploader/"
+            "url": "http://fex.baidu.com/webuploader/"
         },
         {
             "type": "收藏>文件上传",
             "title": "上传",
-            "url": "blueimp.github.io/jQuery-File-Upload/"
+            "url": "http://blueimp.github.io/jQuery-File-Upload/"
         },
         {
             "type": "收藏>文件上传",
             "title": "flash 头像上传",
-            "url": "www.hdfu.net/"
+            "url": "http://www.hdfu.net/"
         },
         {
             "type": "收藏>文件上传",
             "title": "图片上传预览",
-            "url": "www.dropzonejs.com/"
+            "url": "http://www.dropzonejs.com/"
         },
         {
             "type": "收藏>文件上传",
             "title": "图片裁剪",
-            "url": "elemefe.github.io/image-cropper/"
+            "url": "http://elemefe.github.io/image-cropper/"
         },
         {
             "type": "收藏>文件上传",
             "title": "图片裁剪-shearphoto",
-            "url": "www.shearphoto.com/"
+            "url": "http://www.shearphoto.com/"
         },
         {
             "type": "收藏>文件上传",
             "title": "jQuery图片处理",
-            "url": "www.oschina.net/project/tag/284/jquery-image-tools%3Flang%3D0%26os%3D0%26sort%3Dview%26p%3D2"
+            "url": "http://www.oschina.net/project/tag/284/jquery-image-tools%3Flang%3D0%26os%3D0%26sort%3Dview%26p%3D2"
         },
         {
             "type": "收藏>文件上传",
             "title": "前端资源教程",
-            "url": "cnodejs.org/topic/56ef3edd532839c33a99d00e"
+            "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
         }
 	]
 }

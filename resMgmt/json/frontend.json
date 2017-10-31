@@ -7,47 +7,47 @@
 			{
                 "type": "前端基础知识>CSS",
                 "title": "CSS 语法参考",
-                "url": "tympanus.net/codrops/css_reference/"
+                "url": "http://tympanus.net/codrops/css_reference/"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "CSS3动画手册",
-                "url": "isux.tencent.com/css3/index.html"
+                "url": "http://isux.tencent.com/css3/index.html"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "腾讯css3动画制作工具",
-                "url": "isux.tencent.com/css3/tools.html"
+                "url": "http://isux.tencent.com/css3/tools.html"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "志爷css小工具集合",
-                "url": "linxz.github.io/tianyizone/"
+                "url": "http://linxz.github.io/tianyizone/"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "css3 js 移动大杂烩",
-                "url": "www.note12.com/category/blog/2014-6-5/538fe0a9f786f1b7019a4dfb"
+                "url": "http://www.note12.com/category/blog/2014-6-5/538fe0a9f786f1b7019a4dfb"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "bouncejs 触摸库",
-                "url": "bouncejs.com/"
+                "url": "http://bouncejs.com/"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "css3 按钮动画",
-                "url": "fian.my.id/Waves/"
+                "url": "http://fian.my.id/Waves/"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "animate.css",
-                "url": "daneden.github.io/animate.css/"
+                "url": "http://daneden.github.io/animate.css/"
             },
             {
                 "type": "前端基础知识>CSS",
                 "title": "全局CSS的终结(狗带) [译]",
-                "url": "www.alloyteam.com/2015/10/8536/"
+                "url": "http://www.alloyteam.com/2015/10/8536/"
             },
             {
                 "type": "前端基础知识>CSS",
@@ -59,443 +59,445 @@
 			{
                 "type": "前端基础知识>jQuery",
                 "title": "jQuery API 中文文档",
-                "url": "www.jquery123.com/"
+                "url": "http://www.jquery123.com/"
             },
             {
                 "type": "前端基础知识>jQuery",
                 "title": "hemin 在线版",
-                "url": "hemin.cn/jq/"
+                "url": "http://hemin.cn/jq/"
             },
             {
                 "type": "前端基础知识>jQuery",
                 "title": "css88 jq api",
-                "url": "www.css88.com/jqapi-1.9/on/"
+                "url": "http://www.css88.com/jqapi-1.9/on/"
             },
             {
                 "type": "前端基础知识>jQuery",
                 "title": "css88 jqui api",
-                "url": "www.css88.com/jquery-ui-api/"
+                "url": "http://www.css88.com/jquery-ui-api/"
             },
             {
                 "type": "前端基础知识>jQuery",
                 "title": "学习jquery",
-                "url": "learn.jquery.com/"
+                "url": "http://learn.jquery.com/"
             },
             {
                 "type": "前端基础知识>jQuery",
                 "title": "jquery 源码查找",
-                "url": "james.padolsey.com/jquery/"
+                "url": "http://james.padolsey.com/jquery/"
             }
 		],
 		"Ecmascript":[
 			{
                 "type": "前端基础知识>Ecmascript",
                 "title": "Understanding ECMAScript 6 - Nicholas C. Zakas",
-                "url": "leanpub.com/understandinges6/read"
+                "url": "https://leanpub.com/understandinges6/read"
             },
             {
                 "type": "前端基础知识>Ecmascript",
                 "title": "exploring-es6",
-                "url": "leanpub.com/exploring-es6/read"
+                "url": "https://leanpub.com/exploring-es6/read"
             },
             {
                 "type": "前端基础知识>Ecmascript",
                 "title": "exploring-es6翻译",
-                "url": "github.com/es6-org/exploring-es6"
+                "url": "https://github.com/es6-org/exploring-es6"
             },
             {
                 "type": "前端基础知识>Ecmascript",
                 "title": "exploring-es6翻译后预览",
-                "url": "es6-org.github.io/exploring-es6/"
+                "url": "http://es6-org.github.io/exploring-es6/"
             },
             {
                 "type": "前端基础知识>Ecmascript",
                 "title": "阮一峰 es6",
-                "url": "es6.ruanyifeng.com/"
+                "url": "http://es6.ruanyifeng.com/"
             },
             {
                 "type": "前端基础知识>Ecmascript",
                 "title": "阮一峰 Javascript",
-                "url": "javascript.ruanyifeng.com/"
+                "url": "http://javascript.ruanyifeng.com/"
             },
             {
                 "type": "前端基础知识>Ecmascript",
                 "title": "ECMA-262，第 5 版",
-                "url": "yanhaijing.com/es5/"
+                "url": "http://yanhaijing.com/es5/"
             },
             {
                 "type": "前端基础知识>Ecmascript",
                 "title": "es5",
-                "url": "es5.github.io/"
+                "url": "http://es5.github.io/"
             }
 		],
 		"Js template":[
 			{
                 "type": "前端基础知识>Js template",
                 "title": "template-chooser",
-                "url": "garann.github.io/template-chooser/"
+                "url": "http://garann.github.io/template-chooser/"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "artTemplate",
-                "url": "github.com/aui/artTemplate"
+                "url": "https://github.com/aui/artTemplate"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "tomdjs",
-                "url": "github.com/aui/tmodjs/blob/master/README.md"
+                "url": "https://github.com/aui/tmodjs/blob/master/README.md"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "淘宝模板juicer模板",
-                "url": "juicer.name/docs/docs_zh_cn.html"
+                "url": "http://juicer.name/docs/docs_zh_cn.html"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "Fxtpl v1.0 繁星前端模板引擎",
-                "url": "koen301.github.io/fxtpl/"
+                "url": "http://koen301.github.io/fxtpl/"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "laytpl",
-                "url": "laytpl.layui.com/"
+                "url": "http://laytpl.layui.com/"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "mozilla - nunjucks",
-                "url": "github.com/mozilla/nunjucks"
+                "url": "https://github.com/mozilla/nunjucks"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "Juicer",
-                "url": "github.com/PaulGuo/Juicer"
+                "url": "https://github.com/PaulGuo/Juicer"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "dustjs",
-                "url": "akdubya.github.io/dustjs/"
+                "url": "http://akdubya.github.io/dustjs/"
             },
             {
                 "type": "前端基础知识>Js template",
                 "title": "etpl",
-                "url": "ecomfe.github.io/etpl/"
+                "url": "http://ecomfe.github.io/etpl/"
             }
         ],
 		"Nodejs":[
 			{
                 "type": "前端基础知识>Nodejs",
                 "title": "nodejs 篇幅比较巨大",
-                "url": "liuqing.pw/"
+                "url": "http://liuqing.pw/"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "Node.js 包教不包会",
-                "url": "github.com/alsotang/node-lessons"
+                "url": "https://github.com/alsotang/node-lessons"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "篇幅比较少",
-                "url": "www.rainweb.cn/article/category/Nodejs"
+                "url": "http://www.rainweb.cn/article/category/Nodejs"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "node express 入门教程",
-                "url": "www.w3cfuns.com/article-5598538-1-1.html"
+                "url": "http://www.w3cfuns.com/article-5598538-1-1.html"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "nodejs定时任务",
-                "url": "my.oschina.net/u/568264/blog/193773"
+                "url": "http://my.oschina.net/u/568264/blog/193773"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "一个nodejs博客",
-                "url": "60sky.com/"
+                "url": "http://60sky.com/"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "【NodeJS 学习笔记04】新闻发布系统",
-                "url": "www.cnblogs.com/yexiaochai/p/3536547.html"
+                "url": "http://www.cnblogs.com/yexiaochai/p/3536547.html"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "过年7天乐，学nodejs 也快乐",
-                "url": "www.cnblogs.com/qqloving/p/3541099.html"
+                "url": "http://www.cnblogs.com/qqloving/p/3541099.html"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "七天学会NodeJS",
-                "url": "github.com/nqdeng/7-days-nodejs"
+                "url": "https://github.com/nqdeng/7-days-nodejs"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "Nodejs学习笔记（二）— 事件模块",
-                "url": "www.cnblogs.com/zhongweiv/p/nodejs_events.html"
+                "url": "http://www.cnblogs.com/zhongweiv/p/nodejs_events.html"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "nodejs入门",
-                "url": "www.cnblogs.com/liusuqi/p/3735491.html"
+                "url": "http://www.cnblogs.com/liusuqi/p/3735491.html"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "angularjs nodejs",
-                "url": "github.com/zensh/jsgen"
+                "url": "https://github.com/zensh/jsgen"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "从零开始nodejs系列文章",
-                "url": "blog.fens.me/series-nodejs/"
+                "url": "http://blog.fens.me/series-nodejs/"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "理解nodejs",
-                "url": "debuggable.com/posts/understanding-node-js%3A4bd98440-45e4-4a9a-8ef7-0f7ecbdd56cb"
+                "url": "http://debuggable.com/posts/understanding-node-js%3A4bd98440-45e4-4a9a-8ef7-0f7ecbdd56cb"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "nodejs事件轮询",
-                "url": "blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/"
+                "url": "http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "node入门",
-                "url": "www.nodebeginner.org/index-zh-cn.html"
+                "url": "http://www.nodebeginner.org/index-zh-cn.html"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "nodejs cms",
-                "url": "ourjs.com/detail/53e1f281c5910a9806000001"
+                "url": "http://ourjs.com/detail/53e1f281c5910a9806000001"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "Node初学者入门，一本全面的NodeJS教程",
-                "url": "ourjs.com/detail/529ca5950cb6498814000005"
+                "url": "http://ourjs.com/detail/529ca5950cb6498814000005"
             },
             {
                 "type": "前端基础知识>Nodejs",
                 "title": "NodeJS的代码调试和性能调优",
-                "url": "www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line/"
+                "url": "http://www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line/"
             }
 		],
-		"Markdown":[
-			{
-                "type": "前端基础知识>Markdown",
+        "Less/Sass":[
+            {
+                "type": "前端基础知识>Less/Sass",
                 "title": "sass",
-                "url": "www.w3cplus.com/sassguide/"
+                "url": "http://www.w3cplus.com/sassguide/"
             },
             {
-                "type": "前端基础知识>Markdown",
+                "type": "前端基础知识>Less/Sass",
                 "title": "sass教程-sass中国",
-                "url": "www.sass.hk/"
+                "url": "http://www.sass.hk/"
             },
             {
-                "type": "前端基础知识>Markdown",
+                "type": "前端基础知识>Less/Sass",
                 "title": "Sass 中文文档",
-                "url": "sass.bootcss.com/"
+                "url": "http://sass.bootcss.com/"
             },
             {
-                "type": "前端基础知识>Markdown",
+                "type": "前端基础知识>Less/Sass",
                 "title": "less",
-                "url": "less.bootcss.com/"
-            },
+                "url": "http://less.bootcss.com/"
+            }
+        ],
+		"Markdown":[
             {
                 "type": "前端基础知识>Markdown",
                 "title": "Markdown 语法说明 (简体中文版)",
-                "url": "wowubuntu.com/markdown/"
+                "url": "http://wowubuntu.com/markdown/"
             },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "markdown入门参考",
-                "url": "github.com/LearnShare/Learning-Markdown/blob/master/README.md"
+                "url": "https://github.com/LearnShare/Learning-Markdown/blob/master/README.md"
             },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "gitbook",
-                "url": "www.gitbook.com/"
+                "url": "https://www.gitbook.com/"
             },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "mdeditor",
-                "url": "www.zybuluo.com/mdeditor"
+                "url": "https://www.zybuluo.com/mdeditor"
             },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "stackedit",
-                "url": "stackedit.io/"
+                "url": "https://stackedit.io/"
             },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "mditor",
-                "url": "bh-lay.github.io/mditor/"
+                "url": "http://bh-lay.github.io/mditor/"
             },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "lepture-editor",
-                "url": "github.com/lepture/editor"
+                "url": "https://github.com/lepture/editor"
             },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "markdown-editor",
-                "url": "github.com/jbt/markdown-editor"
+                "url": "https://github.com/jbt/markdown-editor"
             }
 		],
 		"兼容性":[
 			{
                 "type": "前端基础知识>兼容性",
                 "title": "esma 兼容列表",
-                "url": "kangax.github.io/compat-table/es6/"
+                "url": "http://kangax.github.io/compat-table/es6/"
             },
             {
                 "type": "前端基础知识>兼容性",
                 "title": "W3C CSS验证服务",
-                "url": "jigsaw.w3.org/css-validator/validator.html.zh-cn"
+                "url": "http://jigsaw.w3.org/css-validator/validator.html.zh-cn"
             },
             {
                 "type": "前端基础知识>兼容性",
                 "title": "caniuse",
-                "url": "caniuse.com/%23index"
+                "url": "http://caniuse.com/%23index"
             },
             {
                 "type": "前端基础知识>兼容性",
                 "title": "csscreator",
-                "url": "csscreator.com/properties"
+                "url": "http://csscreator.com/properties"
             },
             {
                 "type": "前端基础知识>兼容性",
                 "title": "microsoft",
-                "url": "msdn.microsoft.com/zh-cn/library/cc351024%28v%3Dvs.85%29.aspx"
+                "url": "https://msdn.microsoft.com/zh-cn/library/cc351024%28v%3Dvs.85%29.aspx"
             },
             {
                 "type": "前端基础知识>兼容性",
                 "title": "在线测兼容-移动端",
-                "url": "www.responsinator.com/"
+                "url": "http://www.responsinator.com/"
             },
             {
                 "type": "前端基础知识>兼容性",
                 "title": "emulators",
-                "url": "www.manymo.com/emulators"
+                "url": "https://www.manymo.com/emulators"
             }
 		],
 		"UI相关":[
 			{
                 "type": "前端基础知识>UI相关",
                 "title": "bootcss",
-                "url": "v3.bootcss.com/"
+                "url": "http://v3.bootcss.com/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "MetroUICSS",
-                "url": "www.w3cplus.com/MetroUICSS/"
+                "url": "http://www.w3cplus.com/MetroUICSS/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "semantic",
-                "url": "semantic-ui.com/"
+                "url": "http://semantic-ui.com/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "Buttons",
-                "url": "alexwolfe.github.io/Buttons/"
+                "url": "http://alexwolfe.github.io/Buttons/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "kitecss",
-                "url": "hiloki.github.io/kitecss/"
+                "url": "http://hiloki.github.io/kitecss/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "pintuer",
-                "url": "www.pintuer.com/"
+                "url": "http://www.pintuer.com/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "amazeui",
-                "url": "amazeui.org/"
+                "url": "http://amazeui.org/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "worldhello",
-                "url": "www.worldhello.net/gotgithub/index.html"
+                "url": "http://www.worldhello.net/gotgithub/index.html"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "linuxtoy",
-                "url": "igit.linuxtoy.org/contents.html"
+                "url": "http://igit.linuxtoy.org/contents.html"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "gitmagic",
-                "url": "www-cs-students.stanford.edu/%7Eblynn/gitmagic/intl/zh_cn/"
+                "url": "http://www-cs-students.stanford.edu/%7Eblynn/gitmagic/intl/zh_cn/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "rogerdudler",
-                "url": "rogerdudler.github.io/git-guide/index.zh.html"
+                "url": "http://rogerdudler.github.io/git-guide/index.zh.html"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "gitref",
-                "url": "gitref.justjavac.com/"
+                "url": "http://gitref.justjavac.com/"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "book",
-                "url": "git-scm.com/book/zh"
+                "url": "http://git-scm.com/book/zh"
             },
             {
                 "type": "前端基础知识>UI相关",
                 "title": "gogojimmy",
-                "url": "gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/"
+                "url": "http://gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/"
             }
 		],
 		"HTTP":[
 			{
                 "type": "前端基础知识>HTTP",
                 "title": "HTTP API 设计指南",
-                "url": "segmentfault.com/bookmark/1230000002521721"
+                "url": "http://segmentfault.com/bookmark/1230000002521721"
             }
 		],
 		"正则表达式":[
 			{
                 "type": "前端基础知识>正则表达式",
                 "title": "JS正则表达式元字符",
-                "url": "segmentfault.com/a/1190000002471140"
+                "url": "http://segmentfault.com/a/1190000002471140"
             },
             {
                 "type": "前端基础知识>正则表达式",
                 "title": "正则表达式30分钟入门教程",
-                "url": "deerchao.net/tutorials/regex/regex.htm"
+                "url": "http://deerchao.net/tutorials/regex/regex.htm"
             },
             {
                 "type": "前端基础知识>正则表达式",
                 "title": "MDN-正则表达式",
-                "url": "developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions"
+                "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions"
             },
             {
                 "type": "前端基础知识>正则表达式",
                 "title": "ruanyifeng - RegExp对象",
-                "url": "javascript.ruanyifeng.com/stdlib/regexp.html"
+                "url": "http://javascript.ruanyifeng.com/stdlib/regexp.html"
             },
             {
                 "type": "前端基础知识>正则表达式",
                 "title": "小胡子哥 - 进阶正则表达式",
-                "url": "div.io/topic/764%3Fpage%3D1"
+                "url": "http://div.io/topic/764%3Fpage%3D1"
             },
             {
                 "type": "前端基础知识>正则表达式",
                 "title": "is.js",
-                "url": "github.com/Cedriking/is.js/blob/master/is.js"
+                "url": "https://github.com/Cedriking/is.js/blob/master/is.js"
             },
             {
                 "type": "前端基础知识>正则表达式",
                 "title": "正则在线测试",
-                "url": "regexper.com/"
+                "url": "http://regexper.com/"
             },
             {
                 "type": "前端基础知识>正则表达式",
                 "title": "前端资源教程",
-                "url": "cnodejs.org/topic/56ef3edd532839c33a99d00e"
+                "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
             }
 		]
 	}

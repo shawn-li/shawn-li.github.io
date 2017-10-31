@@ -3,77 +3,77 @@
 		{
             "type": "收藏>各大公司开源项目",
             "title": "Facebook Projects",
-            "url": "code.facebook.com/projects/web/"
+            "url": "http://code.facebook.com/projects/web/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "百度web前端研发部",
-            "url": "fex.baidu.com/"
+            "url": "http://fex.baidu.com/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "百度EFE",
-            "url": "efe.baidu.com/"
+            "url": "http://efe.baidu.com/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "百度github",
-            "url": "github.com/fex-team/"
+            "url": "https://github.com/fex-team/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "alloyteam",
-            "url": "www.alloyteam.com/"
+            "url": "http://www.alloyteam.com/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "alloyteam-github",
-            "url": "alloyteam.github.io/"
+            "url": "http://alloyteam.github.io/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "alloyteam-AlloyGameEngine",
-            "url": "github.com/AlloyTeam/AlloyGameEngine"
+            "url": "https://github.com/AlloyTeam/AlloyGameEngine"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "AlloyDesigner",
-            "url": "alloyteam.github.io/AlloyDesigner/"
+            "url": "http://alloyteam.github.io/AlloyDesigner/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "H5交互页编辑器AEditor介绍",
-            "url": "www.alloyteam.com/2015/06/h5-jiao-hu-ye-bian-ji-qi-aeditor-jie-shao/"
+            "url": "http://www.alloyteam.com/2015/06/h5-jiao-hu-ye-bian-ji-qi-aeditor-jie-shao/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "AEditor",
-            "url": "aeditor.alloyteam.com/"
+            "url": "http://aeditor.alloyteam.com/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "maka",
-            "url": "forum.maka.im/wordpress/"
+            "url": "http://forum.maka.im/wordpress/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "值得订阅的weekly",
-            "url": "github.com/fenbility/weekly-feed"
+            "url": "https://github.com/fenbility/weekly-feed"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "腾讯html5",
-            "url": "cube.qq.com/"
+            "url": "http://cube.qq.com/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "奇舞团开源项目",
-            "url": "75team.github.io/"
+            "url": "http://75team.github.io/"
         },
         {
             "type": "收藏>各大公司开源项目",
             "title": "Qunar UED",
-            "url": "ued.qunar.com/"
+            "url": "http://ued.qunar.com/"
         }
 	]
 }

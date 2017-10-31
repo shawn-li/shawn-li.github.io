@@ -3,62 +3,62 @@
 		{
             "type": "移动端API",
             "title": "99移动端知识集合",
-            "url": "github.com/jtyjty99999/mobileTech"
+            "url": "https://github.com/jtyjty99999/mobileTech"
         },
         {
             "type": "移动端API",
             "title": "移动端前端开发知识库",
-            "url": "github.com/AlloyTeam/Mars"
+            "url": "https://github.com/AlloyTeam/Mars"
         },
         {
             "type": "移动端API",
             "title": "移动前端的一些坑和解决方法（外观表现）",
-            "url": "caibaojian.com/mobile-web-bug.html"
+            "url": "http://caibaojian.com/mobile-web-bug.html"
         },
         {
             "type": "移动端API",
             "title": "【原】移动web资源整理",
-            "url": "www.cnblogs.com/PeunZhang/p/3407453.html"
+            "url": "http://www.cnblogs.com/PeunZhang/p/3407453.html"
         },
         {
             "type": "移动端API",
             "title": "zepto 1.0 中文手册",
-            "url": "mweb.baidu.com/zeptoapi/"
+            "url": "http://mweb.baidu.com/zeptoapi/"
         },
         {
             "type": "移动端API",
             "title": "zepto 1.0 中文手册",
-            "url": "www.html-5.cn/Manual/Zepto/"
+            "url": "http://www.html-5.cn/Manual/Zepto/"
         },
         {
             "type": "移动端API",
             "title": "zepto 1.1.2",
-            "url": "www.css88.com/doc/zeptojs_api/"
+            "url": "http://www.css88.com/doc/zeptojs_api/"
         },
         {
             "type": "移动端API",
             "title": "zepto 中文注释",
-            "url": "www.cnblogs.com/sky000/archive/2013/03/29/2988952.html"
+            "url": "http://www.cnblogs.com/sky000/archive/2013/03/29/2988952.html"
         },
         {
             "type": "移动端API",
             "title": "jqmobile 手册",
-            "url": "app-framework-software.intel.com/api.php"
+            "url": "http://app-framework-software.intel.com/api.php"
         },
         {
             "type": "移动端API",
             "title": "移动浏览器开发集合",
-            "url": "github.com/maxzhang/maxzhang.github.com/issues"
+            "url": "https://github.com/maxzhang/maxzhang.github.com/issues"
         },
         {
             "type": "移动端API",
             "title": "移动开发大杂烩",
-            "url": "github.com/hoosin/mobile-web-favorites"
+            "url": "https://github.com/hoosin/mobile-web-favorites"
         },
         {
             "type": "移动端API",
             "title": "微信webview中的一些问题",
-            "url": "lin-chao.github.io/2014/11/14/微信webview中的一些问题"
+            "url": "http://lin-chao.github.io/2014/11/14/微信webview中的一些问题"
         }
 	]
 }

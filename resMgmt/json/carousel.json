@@ -4,133 +4,134 @@
             {
                 "type": "收藏>轮播图>pc图轮",
                 "title": "单屏轮播sochange",
-                "url": "www.jsfoot.com/jquery/demo/2011-09-20/192.html"
+                "url": "http://www.jsfoot.com/jquery/demo/2011-09-20/192.html"
             },
             {
                 "type": "收藏>轮播图>pc图轮",
                 "title": "左右按钮多图切换",
-                "url": "bxslider.com/examples/carousel-demystified"
+                "url": "http://bxslider.com/examples/carousel-demystified"
             },
             {
                 "type": "收藏>轮播图>pc图轮",
                 "title": "fullpage全屏轮播",
-                "url": "github.com/alvarotrigo/fullPage.js/"
+                "url": "https://github.com/alvarotrigo/fullPage.js/"
             }
         ],
         "移动端":[
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "无缝切换",
-                "url": "www.swipejs.com/"
+                "url": "http://www.swipejs.com/"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "滑屏效果",
-                "url": "www.idangero.us/swiper/"
+                "url": "http://www.idangero.us/swiper/"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "全屏fullpage",
-                "url": "github.com/peunzhang/fullpage"
+                "url": "https://github.com/peunzhang/fullpage"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "单个图片切换",
-                "url": "github.com/qiqiboy/touchslider"
+                "url": "https://github.com/qiqiboy/touchslider"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "单个全屏切换",
-                "url": "github.com/peunzhang/slip.js"
+                "url": "https://github.com/peunzhang/slip.js"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "百度的切换库",
-                "url": "touch.code.baidu.com/examples.html%3Fqq-pf-to%3Dpcqq.group"
+                "url": "http://touch.code.baidu.com/examples.html%3Fqq-pf-to%3Dpcqq.group"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "单个全屏切换",
-                "url": "github.com/peunzhang/iSlider"
+                "url": "https://github.com/peunzhang/iSlider"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "滑屏效果",
-                "url": "github.com/saw/touch-interfaces"
+                "url": "https://github.com/saw/touch-interfaces"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "旋转拖动设置",
-                "url": "baijs.com/tinycircleslider/"
+                "url": "http://baijs.com/tinycircleslider/"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "类似于swipe切换",
-                "url": "touchslider.com/"
+                "url": "http://touchslider.com/"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "支持多种形式的触摸滑动",
-                "url": "www.swiper.com.cn/demo/index.html"
+                "url": "http://www.swiper.com.cn/demo/index.html"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "滑屏效果",
-                "url": "github.com/joker-ye/main/blob/master/wap/index.html"
+                "url": "https://github.com/joker-ye/main/blob/master/wap/index.html"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "大话主席pc移动图片轮换",
-                "url": "www.superslide2.com/"
+                "url": "http://www.superslide2.com/"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "滑屏效果",
-                "url": "github.com/hahnzhu/parallax.js"
+                "url": "https://github.com/hahnzhu/parallax.js"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "基于zepto的fullpage",
-                "url": "github.com/yanhaijing/zepto.fullpage"
+                "url": "https://github.com/yanhaijing/zepto.fullpage"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "[WebApp]定宽网页设计下，固定宽度布局开发WebApp并实现多终端下WebApp布局自适应",
-                "url": "www.cnblogs.com/plums/archive/2013/01/10/WebApp-fixed-width-layout-of-multi-terminal-adapter-since.html"
+                "url": "http://www.cnblogs.com/plums/archive/2013/01/10/WebApp-fixed-width-layout-of-multi-terminal-adapter-since.html"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "判断微信客户端的那些坑",
-                "url": "loo2k.com/blog/detecting-wechat-client/"
+                "url": "http://loo2k.com/blog/detecting-wechat-client/"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "可以通过javascript直接调用原生分享的工具",
-                "url": "github.com/JefferyWang/nativeShare.js"
+                "url": "https://github.com/JefferyWang/nativeShare.js"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "JiaThis 分享到微信代码",
-                "url": "www.jiathis.com/help/html/weixin-share-code"
+                "url": "http://www.jiathis.com/help/html/weixin-share-code"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "聊聊移动端跨平台开发的各种技术",
-                "url": "fex.baidu.com/blog/2015/05/cross-mobile/"
+                "url": "http://fex.baidu.com/blog/2015/05/cross-mobile/"
             },
             {
                 "type": "收藏>轮播图>移动端",
-                "title": "前端自动化测试"
+                "title": "前端自动化测试",
+                "url": "http://www.zhihu.com/question/29922082"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "多种轮换图片",
-                "url": "ajccom.github.io/niceslider/"
+                "url": "http://ajccom.github.io/niceslider/"
             },
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "滑动侧边栏",
-                "url": "mango.github.io/slideout/"
+                "url": "http://mango.github.io/slideout/"
             }
         ]
 	}

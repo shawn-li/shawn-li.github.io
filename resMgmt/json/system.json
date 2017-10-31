@@ -3,22 +3,22 @@
 		{
             "type": "知识体系",
             "title": "前端知识体系",
-            "url": "www.cnblogs.com/sb19871023/p/3894452.html"
+            "url": "http://www.cnblogs.com/sb19871023/p/3894452.html"
         },
         {
             "type": "知识体系",
             "title": "前端知识结构",
-            "url": "github.com/JacksonTian/fks"
+            "url": "https://github.com/JacksonTian/fks"
         },
         {
             "type": "知识体系",
             "title": "Web前端开发大系概览",
-            "url": "github.com/unruledboy/WebFrontEndStack"
+            "url": "https://github.com/unruledboy/WebFrontEndStack"
         },
         {
             "type": "知识体系",
             "title": "Web前端开发大系概览-中文版",
-            "url": "www.cnblogs.com/unruledboy/p/WebFrontEndStack.html"
+            "url": "http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html"
         },
         {
             "type": "知识体系",
@@ -27,68 +27,63 @@
         },
         {
             "type": "知识体系",
-            "title": "前端知识体系",
-            "url": "www.cnblogs.com/sb19871023/p/3894452.html"
-        },
-        {
-            "type": "知识体系",
             "title": "免费的编程中文书籍索引",
-            "url": "github.com/justjavac/free-programming-books-zh_CN"
+            "url": "https://github.com/justjavac/free-programming-books-zh_CN"
         },
         {
             "type": "知识体系",
             "title": "智能社 - 精通JavaScript开发",
-            "url": "study.163.com/course/introduction/224014.htm"
+            "url": "https://study.163.com/course/introduction/224014.htm"
         },
         {
             "type": "知识体系",
             "title": "重新介绍 JavaScript（JS 教程）",
-            "url": "developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript"
+            "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript"
         },
         {
             "type": "知识体系",
             "title": "麻省理工学院公开课：计算机科学及编程导论",
-            "url": "v.163.com/special/opencourse/bianchengdaolun.html"
+            "url": "https://v.163.com/special/opencourse/bianchengdaolun.html"
         },
         {
             "type": "知识体系",
             "title": "JavaScript中的this陷阱的最全收集–没有之一",
-            "url": "segmentfault.com/a/1190000002640298"
+            "url": "https://segmentfault.com/a/1190000002640298"
         },
         {
             "type": "知识体系",
             "title": "JS函数式编程指南",
-            "url": "llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html"
+            "url": "https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html"
         },
         {
             "type": "知识体系",
             "title": "JavaScript Promise迷你书（中文版）",
-            "url": "liubin.github.io/promises-book/"
+            "url": "https://liubin.github.io/promises-book/"
         },
         {
             "type": "知识体系",
             "title": "腾讯移动Web前端知识库",
-            "url": "github.com/AlloyTeam/Mars"
+            "url": "https://github.com/AlloyTeam/Mars"
         },
         {
             "type": "知识体系",
             "title": "Front-End-Develop-Guide 前端开发指南",
-            "url": "github.com/Front-End-Developers-Hunan/Front-End-Develop-Guide"
+            "url": "https://github.com/Front-End-Developers-Hunan/Front-End-Develop-Guide"
         },
         {
             "type": "知识体系",
             "title": "前端开发笔记本",
-            "url": "li-xinyang.gitbooks.io/frontend-notebook/content/"
+            "url": "https://li-xinyang.gitbooks.io/frontend-notebook/content/"
         },
         {
             "type": "知识体系",
             "title": "大前端工具集 - 聂微东",
-            "url": "github.com/nieweidong/fetool"
+            "url": "https://github.com/nieweidong/fetool"
         },
         {
             "type": "知识体系",
             "title": "前端开发者手册",
-            "url": "dwqs.gitbooks.io/frontenddevhandbook/content/"
+            "url": "https://dwqs.gitbooks.io/frontenddevhandbook/content/"
         }
 	]
 }

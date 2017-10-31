@@ -3,37 +3,37 @@
 		{
             "type": "开发中心",
             "title": "mozilla js参考",
-            "url": "developer.mozilla.org/zh-CN/docs/Web/JavaScript"
+            "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript"
         },
         {
             "type": "开发中心",
             "title": "chrome开发中心（chrome的内核已转向blink）",
-            "url": "developer.chrome.com/extensions/api_index.html"
+            "url": "https://developer.chrome.com/extensions/api_index.html"
         },
         {
             "type": "开发中心",
             "title": "safari开发中心",
-            "url": "developer.apple.com/library/safari/navigation"
+            "url": "https://developer.apple.com/library/safari/navigation"
         },
         {
             "type": "开发中心",
             "title": "microsoft js参考",
-            "url": "msdn.microsoft.com/zh-cn/library/d1et7k7c%28v%3Dvs.94%29.aspx"
+            "url": "https://msdn.microsoft.com/zh-cn/library/d1et7k7c%28v%3Dvs.94%29.aspx"
         },
         {
             "type": "开发中心",
             "title": "js秘密花园",
-            "url": "sanshi.me/articles/JavaScript-Garden-CN/html/index.html"
+            "url": "http://sanshi.me/articles/JavaScript-Garden-CN/html/index.html"
         },
         {
             "type": "开发中心",
             "title": "js秘密花园",
-            "url": "bonsaiden.github.io/JavaScript-Garden/zh/"
+            "url": "http://bonsaiden.github.io/JavaScript-Garden/zh/"
         },
         {
             "type": "开发中心",
             "title": "w3help",
-            "url": "www.w3help.org/"
+            "url": "https://www.w3help.org/"
         }
 	]
 }

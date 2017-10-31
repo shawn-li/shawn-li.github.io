@@ -3,87 +3,87 @@
 		{
             "type": "其它API",
             "title": "javascript流行库汇总",
-            "url": "cnodejs.org/topic/56ef3edd532839c33a99d00e"
+            "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
         },
         {
             "type": "其它API",
             "title": "验证api",
-            "url": "niceue.com/validator/demo/index.php"
+            "url": "http://niceue.com/validator/demo/index.php"
         },
         {
             "type": "其它API",
             "title": "underscore 中文手册",
-            "url": "www.css88.com/doc/underscore/"
+            "url": "http://www.css88.com/doc/underscore/"
         },
         {
             "type": "其它API",
             "title": "underscore源码分析",
-            "url": "www.html-js.com/article/Underscorejs-source-code-analysis-of-underscorejs-source-code-analysis%25203031"
+            "url": "http://www.html-js.com/article/Underscorejs-source-code-analysis-of-underscorejs-source-code-analysis%25203031"
         },
         {
             "type": "其它API",
             "title": "underscore源码分析-亚里士朱德的博客",
-            "url": "yalishizhude.github.io/tags/underscore/"
+            "url": "http://yalishizhude.github.io/tags/underscore/"
         },
         {
             "type": "其它API",
             "title": "underscrejs en api",
-            "url": "underscorejs.org/"
+            "url": "http://underscorejs.org/"
         },
         {
             "type": "其它API",
             "title": "lodash - underscore的代替品",
-            "url": "lodash.com/"
+            "url": "https://lodash.com/"
         },
         {
             "type": "其它API",
             "title": "ext4api",
-            "url": "extjs-doc-cn.github.io/ext4api/"
+            "url": "http://extjs-doc-cn.github.io/ext4api/"
         },
         {
             "type": "其它API",
             "title": "backbone 中文手册",
-            "url": "www.csser.com/tools/backbone/backbone.js.html"
+            "url": "http://www.csser.com/tools/backbone/backbone.js.html"
         },
         {
             "type": "其它API",
             "title": "qwrap手册",
-            "url": "dev.qwrap.com/resource/js/_docs/_youa/%23/qw/base/loadJs_.htm"
+            "url": "http://dev.qwrap.com/resource/js/_docs/_youa/%23/qw/base/loadJs_.htm"
         },
         {
             "type": "其它API",
             "title": "缓动函数",
-            "url": "easings.net/zh-cn"
+            "url": "http://easings.net/zh-cn"
         },
         {
             "type": "其它API",
             "title": "svg 中文参考",
-            "url": "www.w3school.com.cn/svg/svg_reference.asp"
+            "url": "http://www.w3school.com.cn/svg/svg_reference.asp"
         },
         {
             "type": "其它API",
             "title": "svg mdn参考",
-            "url": "developer.mozilla.org/en-US/docs/Web/SVG"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/SVG"
         },
         {
             "type": "其它API",
             "title": "svg 导出 canvas",
-            "url": "github.com/gabelerner/canvg"
+            "url": "https://github.com/gabelerner/canvg"
         },
         {
             "type": "其它API",
             "title": "svg 导出 png",
-            "url": "github.com/exupero/saveSvgAsPng"
+            "url": "https://github.com/exupero/saveSvgAsPng"
         },
         {
             "type": "其它API",
             "title": "ai-to-svg",
-            "url": "www.zamzar.com/convert/ai-to-svg/"
+            "url": "http://www.zamzar.com/convert/ai-to-svg/"
         },
         {
             "type": "其它API",
             "title": "localStorage 库",
-            "url": "github.com/machao/localStorage"
+            "url": "https://github.com/machao/localStorage"
         }
 	]
 }

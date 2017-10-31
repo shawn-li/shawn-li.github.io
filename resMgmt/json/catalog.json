@@ -1,5 +1,5 @@
 {
-	"catalog":[
+	"catalog":[ 
 		{
 			"type" : "综合知识",
 			"name" : "zonghezhishi",
@@ -9,14 +9,18 @@
 					"name": "system"
 				},
 				{
+					"type" : "入门学习",
+					"name" : "primary"
+				},
+				{
 					"type": "前端书籍周报",
 					"name": "book"
+				},
+				{
+					"type": "前端架构",
+					"name": "framework"
 				}			
 			]
-		},
-		{
-			"type" : "入门学习",
-			"name" : "primary"
 		},
 		{
 			"type": "其他",
@@ -80,6 +84,22 @@
 			"name": "collection",
 			"children":[
 				{
+					"type": "前端导航网站",
+					"name": "navwebsite"
+				},
+				{
+					"type": "常用CDN",
+					"name": "cdn"
+				},
+				{
+					"type": "推荐作品",
+					"name": "goodwork"
+				},
+				{
+					"type": "iconfont",
+					"name": "iconfont"
+				},
+				{
 					"type": "在线搜索",
 					"name": "search"
 				},
@@ -93,7 +113,7 @@
 				},
 				{
 					"type": "Javascript",
-					"name": "javascript"
+					"name": "collection-javascript"
 				},
 				{
 					"type": "H5/CSS3/Jquery/JSON",
@@ -128,7 +148,118 @@
 		        	"name": "upload"
 		        }
 			]
+		},
+
+		{
+			"type": "开发规范",
+			"name": "standard",
+			"children": [
+				{
+					"type": "前端",
+					"name": "standard-frontend"
+				},
+				{
+					"type": "PHP",
+					"name": "standard-php"
+				},
+				{
+					"type": "基础知识",
+					"name": "standard-android"
+				}
+			]
+		},
+
+		{
+			"type": "前端工程化",
+			"name": "engineering",
+			"children":[
+				{
+					"type": "概述",
+					"name": "engineering-summary"
+				},
+				{
+					"type":"gulp",
+					"name":"engineering-gulp"
+				},
+				{
+					"type":"grunt",
+					"name":"engineering-grunt"
+				},
+				{
+					"type":"Fis",
+					"name":"engineering-fis"
+				}
+			]
+		},
+
+		{
+			"type": "性能优化",
+			"name": "optimization",
+			"children":[
+				{
+					"type": "常规优化",
+					"name": "optimization-normal"
+				},
+				{
+					"type": "优化工具",
+					"name": "optimization-tool"
+				},
+				{
+					"type": "在线工具",
+					"name": "optimization-online"
+				}
+			]
+		},
+
+		{
+			"type": "求职技巧",
+			"name": "offer",
+			"children": [
+				{
+					"type": "简历模板",
+					"name": "cvTemplate"
+				},
+				{
+					"type": "面试题",
+					"name": "interview"
+				}
+			]
+		},
+		
+		{
+			"type": "开发工具",
+			"name": "devtool",
+			"children":[
+				{
+					"type": "前端开发工具",
+					"name": "devtool-frontend"
+				},
+				{
+					"type": "调试工具",
+					"name": "devtool-debug"
+				}
+			]
+		},
+
+		{
+			"type": "版本控制管理",
+			"name": "verControl",
+			"children":[
+				{
+					"type": "Git",
+					"name": "verMgmt-git"
+				},
+				{
+					"type": "SVN",
+					"name": "verMgmt-svn"
+				},
+				{
+					"type": "GitHub",
+					"name": "verMgmt-github"
+				}
+			]
 		}
+		
 
 	]
 		

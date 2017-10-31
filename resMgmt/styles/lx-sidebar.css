@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 300px;
-  min-height: 2000px;
+  min-height: 1000px;
   padding: 10px;
   background-color: #666;
   transition: all .3s;
@@ -34,6 +34,10 @@
   width: 100%;
   height: 100px;
   background-color: #fff;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .l-sidebar .l-sidebar-summary h3 {
   width: 80%;
@@ -94,6 +98,7 @@
 }
 .l-sidebar .l-sidebar-menu .l-sidebar-menu-main .lx-sidebar-ul .lx-sidebar-li {
   position: relative;
+  border-top: 1px solid #b6b6b6;
 }
 .l-sidebar .l-sidebar-menu .l-sidebar-menu-main .lx-sidebar-ul .lx-sidebar-li a {
   text-decoration: none;

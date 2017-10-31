@@ -4,341 +4,341 @@
 			{
                 "type": "前端基础知识>Angularjs",
                 "title": "Angular.js 的一些学习资源",
-                "url": "github.com/dolymood/AngularLearning"
+                "url": "http://github.com/dolymood/AngularLearning"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angularjs中文社区",
-                "url": "angularjs.cn/"
+                "url": "http://angularjs.cn/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "Angularjs源码学习",
-                "url": "www.cnblogs.com/xuwenmin888/p/3739096.html"
+                "url": "http://www.cnblogs.com/xuwenmin888/p/3739096.html"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "Angularjs源码学习",
-                "url": "www.ifeenan.com/%3Fc%3DAngularJS"
+                "url": "http://www.ifeenan.com/%3Fc%3DAngularJS"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angular对bootstrap的封装",
-                "url": "angular-ui.github.io/bootstrap/"
+                "url": "http://angular-ui.github.io/bootstrap/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angularjs + nodejs",
-                "url": "cnodejs.org/topic/51404e0f069911196d2e3923"
+                "url": "https://cnodejs.org/topic/51404e0f069911196d2e3923"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "吕大豹 Angularjs",
-                "url": "www.cnblogs.com/lvdabao/tag/AngularJs/"
+                "url": "http://www.cnblogs.com/lvdabao/tag/AngularJs/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "AngularJS 最佳实践",
-                "url": "www.infoq.com/cn/news/2013/02/angular-web-app"
+                "url": "http://www.infoq.com/cn/news/2013/02/angular-web-app"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "Angular的一些扩展指令",
-                "url": "www.lovelucy.info/angularjs-best-practices.html"
+                "url": "http://www.lovelucy.info/angularjs-best-practices.html"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "Angular数据绑定原理",
-                "url": "github.com/Pasvaz/bindonce"
+                "url": "https://github.com/Pasvaz/bindonce"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "一些扩展Angular UI组件",
-                "url": "github.com/angular-ui/"
+                "url": "https://github.com/angular-ui/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "Ember和AngularJS的性能测试",
-                "url": "voidcanvas.com/emberjs-vs-angularjs-performance-testing/"
+                "url": "http://voidcanvas.com/emberjs-vs-angularjs-performance-testing/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "带你走近AngularJS - 基本功能介绍",
-                "url": "www.cnblogs.com/powertoolsteam/p/angularjs-introdection.html"
+                "url": "http://www.cnblogs.com/powertoolsteam/p/angularjs-introdection.html"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "Angularjs开发指南",
-                "url": "angular.duapp.com/docs/guide"
+                "url": "http://angular.duapp.com/docs/guide"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "Angularjs学习",
-                "url": "www.cnblogs.com/amosli/p/3710648.html"
+                "url": "http://www.cnblogs.com/amosli/p/3710648.html"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "不要带着jQuery的思维去学习AngularJS",
-                "url": "www.rainweb.cn/article/angularjs-jquery.html"
+                "url": "http://www.rainweb.cn/article/angularjs-jquery.html"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angularjs 学习笔记",
-                "url": "wangjiatao.diandian.com/%3Ftag%3Dangularjs"
+                "url": "http://wangjiatao.diandian.com/%3Ftag%3Dangularjs"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angularjs 开发指南",
-                "url": "www.angularjs.cn/T008"
+                "url": "http://www.angularjs.cn/T008"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angularjs 英文资料",
-                "url": "github.com/jmcunningham/AngularJS-Learning"
+                "url": "https://github.com/jmcunningham/AngularJS-Learning"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angular bootstrap",
-                "url": "angular-ui.github.io/bootstrap/"
+                "url": "http://angular-ui.github.io/bootstrap/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angular jq mobile",
-                "url": "github.com/opitzconsulting/jquery-mobile-angular-adapter"
+                "url": "https://github.com/opitzconsulting/jquery-mobile-angular-adapter"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angular ui",
-                "url": "mgcrea.github.io/angular-strap/"
+                "url": "http://mgcrea.github.io/angular-strap/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "整合jQuery Mobile+AngularJS经验谈",
-                "url": "www.tuicool.com/articles/7ZZVr2"
+                "url": "http://www.tuicool.com/articles/7ZZVr2"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "有jQuery背景，该如何用AngularJS编程思想",
-                "url": "blog.jobbole.com/46589/"
+                "url": "http://blog.jobbole.com/46589/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "AngularJS在线教程",
-                "url": "each.sinaapp.com/angular/"
+                "url": "http://each.sinaapp.com/angular/"
             },
             {
                 "type": "前端基础知识>Angularjs",
                 "title": "angular学习笔记",
-                "url": "www.zouyesheng.com/angular.html"
+                "url": "http://www.zouyesheng.com/angular.html"
             }
 		],
 		"Vue":[
 			{
 	            "type": "前端基础知识>Vue",
-	            "title": "前端基础知识>Vue",
-	            "url": "cn.vuejs.org/"
+	            "title": "Vue",
+	            "url": "http://cn.vuejs.org/"
 	        },
 	        {
 	            "type": "前端基础知识>Vue",
 	            "title": "Vue 论坛",
-	            "url": "forum.vuejs.org/"
+	            "url": "http://forum.vuejs.org/"
 	        },
 	        {
 	            "type": "前端基础知识>Vue",
 	            "title": "Vue 入门指南",
-	            "url": "www.cnblogs.com/aaronjs/p/3660102.html"
+	            "url": "http://www.cnblogs.com/aaronjs/p/3660102.html"
 	        },
 	        {
 	            "type": "前端基础知识>Vue",
 	            "title": "Vue 的一些资源索引",
-	            "url": "segmentfault.com/a/1190000000411057"
+	            "url": "http://segmentfault.com/a/1190000000411057"
 	        },
 	        {
 	            "type": "前端基础知识>Vue",
 	            "title": "前端资源教程",
-	            "url": "cnodejs.org/topic/56ef3edd532839c33a99d00e"
+	            "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
 	        }
 		],
 		"React":[
 			{
                 "type": "前端基础知识>React",
                 "title": "react.js 中文论坛",
-                "url": "www.react-china.org/"
+                "url": "http://www.react-china.org/"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "react.js 官方网址",
-                "url": "facebook.github.io/react/index.html"
+                "url": "https://facebook.github.io/react/index.html"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "react.js 官方文档",
-                "url": "facebook.github.io/react/docs/getting-started.html"
+                "url": "https://facebook.github.io/react/docs/getting-started.html"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "react.js material UI",
-                "url": "material-ui.com/%23/"
+                "url": "http://material-ui.com/%23/"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "react.js TouchstoneJS UI",
-                "url": "touchstonejs.io/"
+                "url": "http://touchstonejs.io/"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "react.js amazeui UI",
-                "url": "amazeui.org/react/"
+                "url": "http://amazeui.org/react/"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "React 入门实例教程 - 阮一峰",
-                "url": "www.ruanyifeng.com/blog/2015/03/react.html"
+                "url": "http://www.ruanyifeng.com/blog/2015/03/react.html"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "React Native 中文版",
-                "url": "wiki.jikexueyuan.com/project/react-native/"
+                "url": "http://wiki.jikexueyuan.com/project/react-native/"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "Webpack 和 React 小书 - 前端乱炖",
-                "url": "www.html-js.com/article/Fakefish%25203053"
+                "url": "http://www.html-js.com/article/Fakefish%25203053"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "Webpack 和 React 小书 - gitbook",
-                "url": "fakefish.github.io/react-webpack-cookbook/"
+                "url": "https://fakefish.github.io/react-webpack-cookbook/"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "webpack",
-                "url": "github.com/webpack/webpack"
+                "url": "https://github.com/webpack/webpack"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "Webpack，101入门体验",
-                "url": "html-js.com/article/3009"
+                "url": "http://html-js.com/article/3009"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "webpack入门教程",
-                "url": "html-js.com/article/3113"
+                "url": "http://html-js.com/article/3113"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "基于webpack搭建前端工程解决方案探索",
-                "url": "segmentfault.com/a/1190000003499526"
+                "url": "http://segmentfault.com/a/1190000003499526"
             },
             {
                 "type": "前端基础知识>React",
                 "title": "React原创实战视频教程",
-                "url": "www.piliyu.com/"
+                "url": "http://www.piliyu.com/"
             }
 		],
 		"avalon":[
 			{
                 "type": "前端基础知识>avalon",
                 "title": "avalonjs",
-                "url": "avalonjs.github.io/"
+                "url": "http://avalonjs.github.io/"
             },
             {
                 "type": "前端基础知识>avalon",
                 "title": "Avalon新一代UI库： OniUI",
-                "url": "ued.qunar.com/oniui/index.html"
+                "url": "http://ued.qunar.com/oniui/index.html"
             },
             {
                 "type": "前端基础知识>avalon",
                 "title": "avalon.oniui-基于avalon的组件库",
-                "url": "github.com/RubyLouvre/avalon.oniui"
+                "url": "https://github.com/RubyLouvre/avalon.oniui"
             },
             {
                 "type": "前端基础知识>avalon",
                 "title": "前端资源教程",
-                "url": "cnodejs.org/topic/56ef3edd532839c33a99d00e"
+                "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
             }
 		],
 		"Requriejs":[
 			{
                 "type": "前端基础知识>Requriejs",
                 "title": "Javascript模块化编程（一）：模块的写法",
-                "url": "www.ruanyifeng.com/blog/2012/10/javascript_module.html"
+                "url": "http://www.ruanyifeng.com/blog/2012/10/javascript_module.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "Javascript模块化编程（二）：AMD规范",
-                "url": "www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html"
+                "url": "http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "Javascript模块化编程（三）：require.js的用法",
-                "url": "www.ruanyifeng.com/blog/2012/11/require_js.html"
+                "url": "http://www.ruanyifeng.com/blog/2012/11/require_js.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "RequireJS入门（一）",
-                "url": "www.cnblogs.com/snandy/archive/2012/05/22/2513652.html"
+                "url": "http://www.cnblogs.com/snandy/archive/2012/05/22/2513652.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "RequireJS入门（二）",
-                "url": "www.cnblogs.com/snandy/archive/2012/05/23/2513712.html"
+                "url": "http://www.cnblogs.com/snandy/archive/2012/05/23/2513712.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "RequireJS进阶（三）",
-                "url": "www.cnblogs.com/snandy/archive/2012/06/08/2538001.html"
+                "url": "http://www.cnblogs.com/snandy/archive/2012/06/08/2538001.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "requrie源码学习",
-                "url": "www.cnblogs.com/yexiaochai/p/3632580.html"
+                "url": "http://www.cnblogs.com/yexiaochai/p/3632580.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "requrie 入门指南",
-                "url": "www.oschina.net/translate/getting-started-with-the-requirejs-library"
+                "url": "http://www.oschina.net/translate/getting-started-with-the-requirejs-library"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "requrieJS 学习笔记",
-                "url": "www.cnblogs.com/yexiaochai/p/3214926.html"
+                "url": "http://www.cnblogs.com/yexiaochai/p/3214926.html"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "requriejs 其一",
-                "url": "cyj.me/why-seajs/requirejs/"
+                "url": "http://cyj.me/why-seajs/requirejs/"
             },
             {
                 "type": "前端基础知识>Requriejs",
                 "title": "require backbone结合",
-                "url": "www.cnblogs.com/yexiaochai/p/3221081.html"
+                "url": "http://www.cnblogs.com/yexiaochai/p/3221081.html"
             }
 		],
 		"Seajs":[
 			{
                 "type": "前端基础知识>Seajs",
                 "title": "seajs",
-                "url": "seajs.org/"
+                "url": "http://seajs.org/"
             },
             {
                 "type": "前端基础知识>Seajs",
                 "title": "seajs 中文手册",
-                "url": "cyj.me/why-seajs/zh/"
+                "url": "http://cyj.me/why-seajs/zh/"
             }
 		],
 		"ionic":[
 	        {
 	            "type": "前端基础知识>ionic",
 	            "title": "ionic",
-	            "url": "github.com/ychow/ionic-guide"
+	            "url": "https://github.com/ychow/ionic-guide"
 	        }
 		],
 		"Mock.js":[
 			{
                 "type": "前端基础知识>Mock.js",
                 "title": "Mock.js 是一款模拟数据生成器",
-                "url": "mockjs.com/"
+                "url": "http://mockjs.com/"
             }
 		]
 	}

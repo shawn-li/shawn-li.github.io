@@ -4,71 +4,71 @@
             {
                 "type": "收藏>Javascript>常用",
                 "title": "ieBetter.js-让IE6-IE8拥有IE9+,Chrome等浏览器特性",
-                "url": "www.zhangxinxu.com/wordpress/2013/12/iebetter-js-make-ie6-ie8-like-modern-browser-ie9-chrome/"
+                "url": "http://www.zhangxinxu.com/wordpress/2013/12/iebetter-js-make-ie6-ie8-like-modern-browser-ie9-chrome/"
             },
             {
                 "type": "收藏>Javascript>常用",
                 "title": "模拟键盘",
-                "url": "mottie.github.io/Keyboard/"
+                "url": "http://mottie.github.io/Keyboard/"
             },
             {
                 "type": "收藏>Javascript>常用",
                 "title": "拼音",
-                "url": "github.com/hotoo/pinyin"
+                "url": "https://github.com/hotoo/pinyin"
             },
             {
                 "type": "收藏>Javascript>常用",
                 "title": "中国个人身份证号验证",
-                "url": "github.com/mc-zone/IDValidator"
+                "url": "https://github.com/mc-zone/IDValidator"
             }
         ],
         "算法": [
             {
                 "type": "收藏>Javascript>算法",
                 "title": "数据结构与算法 JavaScript 描述. 章节练习",
-                "url": "github.com/Ralph-Wang/algorithm.in.js"
+                "url": "https://github.com/Ralph-Wang/algorithm.in.js"
             },
             {
                 "type": "收藏>Javascript>算法",
                 "title": "常见排序算法（JS版）",
-                "url": "github.com/twobin/twobinSort"
+                "url": "https://github.com/twobin/twobinSort"
             },
             {
                 "type": "收藏>Javascript>算法",
                 "title": "经典排序",
-                "url": "github.com/luofei2011/jsAgm/blob/master/js/sort.js"
+                "url": "https://github.com/luofei2011/jsAgm/blob/master/js/sort.js"
             },
             {
                 "type": "收藏>Javascript>算法",
                 "title": "常见排序算法-js版本",
-                "url": "github.com/hechangmin/jssort"
+                "url": "https://github.com/hechangmin/jssort"
             },
             {
                 "type": "收藏>Javascript>算法",
                 "title": "JavaScript 算法与数据结构 精华集",
-                "url": "github.com/lightningtgc/JavaScript-Algorithms"
+                "url": "https://github.com/lightningtgc/JavaScript-Algorithms"
             },
             {
                 "type": "收藏>Javascript>算法",
                 "title": "面试常考算法题精讲",
-                "url": "www.nowcoder.com/live/courses"
+                "url": "http://www.nowcoder.com/live/courses"
             },
             {
                 "type": "收藏>Javascript>算法",
                 "title": "前端资源教程",
-                "url": "cnodejs.org/topic/56ef3edd532839c33a99d00e"
+                "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
             }
         ],
         "移动端":[
             {
                 "type": "收藏>Javascript>移动端",
                 "title": "fastclick",
-                "url": "github.com/ftlabs/fastclick"
+                "url": "https://github.com/ftlabs/fastclick"
             },
             {
                 "type": "收藏>Javascript>移动端",
                 "title": "no-click-delay",
-                "url": "github.com/mmastrac/jquery-noclickdelay"
+                "url": "https://github.com/mmastrac/jquery-noclickdelay"
             }
         ]
 	}
