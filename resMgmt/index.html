@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>学习资源管理</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">  <!-- 不识别数字为电话 -->
 	<link rel="shortcut icon" type="image/x-icon" href="./icons/resMgmt.png" media="screen" />
 	<link rel='bookmark' href='./icons/resMgmt.png'> 
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
-	<link rel="stylesheet" type="text/css" href="./styles/global.css">
-	<link rel="stylesheet" type="text/css" href="./styles/lx-sidebar.css">
+	<link rel="stylesheet" type="text/css" href="./styles/global.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/lx-sidebar.min.css">
 </head>
 <body>
 	<img class="toTop" src="./icons/rocket1.png" alt="toTop">
@@ -54,14 +56,21 @@
 				
 			</div>
 			<div class="content-container">
-				<h1 class="content-h1"></h1>
+				<div class="loader loader-hobby">
+					<div class="loader-item loader1"></div>
+					<div class="loader-item loader2"></div>
+					<div class="loader-item loader3"></div>
+				</div>
 			</div>
+		</div>
+		<div class="copyright">
+			Copyright©2017 shawn-li
 		</div>
 	</div>
 
 
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/lxSidebar.js"></script>
+	<script type="text/javascript" src="./js/lxSidebar.min.js"></script>
 	<script type="text/javascript">
 		(function($){
 			var lxSidebarJson = function(){
@@ -205,7 +214,7 @@
 				
 				
 			}
-			
+
 			var $content = $('.content-container');
 			var $subItem = $('.js-lx-sidebar-subItem');
 

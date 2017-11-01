@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>shawn-li</title>
 	<!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
-	<link rel="shortcut icon" type="image/x-icon" href="./icons/myicon.png" media="screen" /> <!-- 这个作用是在浏览器地址栏显示您的小图标 -->
-	<link rel='bookmark' href='./icons/myicon.png'> 
+	<link rel="shortcut icon" type="image/x-icon" href="./icons/homePage.png" media="screen" /> <!-- 这个作用是在浏览器地址栏显示您的小图标 -->
+	<link rel='bookmark' href='./icons/homePage.png'> 
 	<!-- 这个作用是在收藏夹里面显示您的小图标 -->
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
-	<link rel="stylesheet" type="text/css" href="./styles/global.css">
-	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.css">
+	<link rel="stylesheet" type="text/css" href="./styles/global.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/lx-nav.min.css">
 	<link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
 	
 
@@ -259,7 +259,7 @@
 			</div>
 			<div class="project-content cl">
 				<div class="project-content-top">
-					<a class="project-content-top-a js-a-resMgmt" href="resMgmt/">前端学习资源管理</a>
+					<a class="project-content-top-a js-a-newWindow" href="resMgmt/">前端学习资源管理</a>
 					<div class="project-icon-circle"></div>
 				</div>
 				<div class="project-content-bottom">
@@ -498,7 +498,7 @@
 						<!-- <span>github</span> -->
 						<img src="./icons/github.png" alt="github">
 						<div class="contact-content">
-							<a href="https://github.com/shawn-li" target="_blank">https://github.com/shawn-li</a>
+							<a class="js-a-newWindow" href="https://github.com/shawn-li">https://github.com/shawn-li</a>
 						</div>
 					</div>
 				</li>
@@ -538,12 +538,18 @@
 	<script type="text/javascript" src="./scripts/lx-nav.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.js-a-resMgmt').click(function(){
-				window.open("./resMgmt/");
-			});
+			var openInNewWindow = function(){
+				var $el = $('.js-a-newWindow');
+				$el.click(function(){
+					var $this = $(this);
+					var url = $this.attr('href');
+					window.open(url);
+				});
+			}
+			openInNewWindow();
 		});
 	</script>
-	<script type="text/javascript" src="./scripts/main.js"></script>
+	<script type="text/javascript" src="./scripts/main.min.js"></script>
 
 </body>
 </html>

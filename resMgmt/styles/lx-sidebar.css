@@ -22,9 +22,10 @@
 }
 .l-sidebar .lx-sidebar-top {
   margin-bottom: 10px;
-  height: 32px;
+  height: 42px;
 }
 .l-sidebar .lx-sidebar-top .lx-sidebar-narrow {
+  display: block;
   float: right;
 }
 .l-sidebar .lx-sidebar-top .lx-sidebar-narrow:hover {
@@ -96,9 +97,11 @@
   min-height: 200px;
   width: 100%;
 }
+.l-sidebar .l-sidebar-menu .l-sidebar-menu-main .lx-sidebar-ul {
+  border-top: 1px solid #b6b6b6;
+}
 .l-sidebar .l-sidebar-menu .l-sidebar-menu-main .lx-sidebar-ul .lx-sidebar-li {
   position: relative;
-  border-top: 1px solid #b6b6b6;
 }
 .l-sidebar .l-sidebar-menu .l-sidebar-menu-main .lx-sidebar-ul .lx-sidebar-li a {
   text-decoration: none;
