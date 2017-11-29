@@ -191,20 +191,7 @@
 				}
 			]
 		},
-		{
-			"type": "测试",
-			"name": "test",
-			"children":[
-				{
-					"type": "测试框架",
-					"name": "test-frame"
-				},
-				{
-					"type": "断言工具",
-					"name": "test-assert"
-				}
-			]
-		}
+
 		{
 			"type": "性能优化",
 			"name": "optimization",
