@@ -1,4 +1,4 @@
-{
+﻿{
 	"data":{
 		"Javascript":[
 
@@ -229,8 +229,28 @@
             },
             {
                 "type": "前端基础知识>Nodejs",
+                "title": "Node.js 开源课程 alsotang",
+                "url": "https://github.com/alsotang/node-lessons"
+            },
+            {
+                "type": "前端基础知识>Nodejs",
+                "title": "从零开始nodejs系列文章",
+                "url": "http://blog.fens.me/series-nodejs/"
+            },
+            {
+                "type": "前端基础知识>Nodejs",
                 "title": "Nodejs学习笔记（二）— 事件模块",
                 "url": "http://www.cnblogs.com/zhongweiv/p/nodejs_events.html"
+            },
+            {
+                "type": "前端基础知识>Nodejs",
+                "title": "深入浅出Node.js相关的内容",
+                "url": "http://www.infoq.com/cn/master-nodejs"
+            },
+            {
+                "type": "前端基础知识>Nodejs",
+                "title": "使用 Node.js 作为完整的云环境开发堆栈",
+                "url": "https://www.ibm.com/developerworks/cn/cloud/library/cl-nodejscloud/"
             },
             {
                 "type": "前端基础知识>Nodejs",
@@ -276,6 +296,11 @@
                 "type": "前端基础知识>Nodejs",
                 "title": "NodeJS的代码调试和性能调优",
                 "url": "http://www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line/"
+            },
+	        {
+                "type": "前端基础知识>Nodejs",
+                "title": "Socket.IO用于浏览器与node.js之间实现实时通信",
+                "url": "https://socket.io/"
             }
 		],
         "Less/Sass":[

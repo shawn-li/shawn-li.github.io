@@ -1,0 +1,14 @@
+{
+	"data":[
+		{
+            "type": "断言工具",
+            "title": "BDD / TDD断言库chaijs",
+            "url": "http://chaijs.com/"
+        },
+        {
+        	"type": "断言工具",
+            "title": "断言库should",
+            "url": "https://github.com/tj/should.js"
+        }
+    ]
+}

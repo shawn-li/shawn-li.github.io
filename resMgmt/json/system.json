@@ -7,6 +7,36 @@
         },
         {
             "type": "知识体系",
+            "title": "1. web前端开发分享-css,js入门篇",
+            "url": "http://www.cnblogs.com/jikey/p/3600308.html"
+        },
+        {
+            "type": "知识体系",
+            "title": "2. web前端开发分享-css,js进阶篇",
+            "url": "http://www.cnblogs.com/jikey/p/3601666.html"
+        },
+        {
+            "type": "知识体系",
+            "title": "3. web前端开发分享-css,js提高篇",
+            "url": "http://www.cnblogs.com/jikey/p/3604459.html"
+        },
+        {
+            "type": "知识体系",
+            "title": "4. web前端开发分享-css,js工具篇",
+            "url": "http://www.cnblogs.com/jikey/p/3607133.html"
+        },
+        {
+            "type": "知识体系",
+            "title": "5. web前端开发分享-css,js深化篇",
+            "url": "http://www.cnblogs.com/jikey/p/3611394.html"
+        },
+        {
+            "type": "知识体系",
+            "title": "6. web前端开发分享-css,js移动篇",
+            "url": "http://www.cnblogs.com/jikey/p/3632392.html"
+        },
+        {
+            "type": "知识体系",
             "title": "前端知识结构",
             "url": "https://github.com/JacksonTian/fks"
         },
