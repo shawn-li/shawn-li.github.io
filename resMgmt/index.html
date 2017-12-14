@@ -8,12 +8,14 @@
 	<link rel="shortcut icon" type="image/x-icon" href="./icons/resMgmt.png" media="screen" />
 	<link rel='bookmark' href='./icons/resMgmt.png'> 
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
-	<link rel="stylesheet" type="text/css" href="./styles/global.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/global.css">
 	<link rel="stylesheet" type="text/css" href="./styles/lx-sidebar.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 </head>
 <body>
 	<img class="toTop" src="./icons/rocket1.png" alt="toTop">
-	<div class="container">
+	<div id="container" class="">
 		<div class="l-sidebar">
 			<div class="l-sidebar-main">
 				<div class="lx-sidebar-top cl">
@@ -55,13 +57,28 @@
 				</a>
 				
 			</div>
-			<div class="content-container">
+
+			<table id="example" class="display">
+			<div id="buttonBox" style="padding: 10px;"></div>
+				<thead>
+				<tr>
+				  <th><input type="checkbox" id="CheckAll"></th>
+				  <th>网址</th>
+				  <th>链接</th>
+				  <th>种类</th>
+				</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+			<!-- <div class="content-container">
 				<div class="loader loader-hobby">
 					<div class="loader-item loader1"></div>
 					<div class="loader-item loader2"></div>
 					<div class="loader-item loader3"></div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="copyright">
 			Copyright©2017 shawn-li
@@ -71,8 +88,67 @@
 
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/lxSidebar.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.css"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript">
 		(function($){
+
+			var BUTTONS =
+            '<button class="btn btn-default"  type="button" id="reload" data-toggle="modal" data-target="#employeeModal">刷新表格</button>' +
+            '<button class="btn btn-primary" type="button" id="batchIds" style="margin-left:20px;" data-toggle="modal" >多选</button>' +
+            '<button class="btn btn-primary" type="button" id="selection" style="margin-left:20px;" data-toggle="modal" >单选</button>';
+
+            //选中一行 checkbox选中
+		    function checkbox(tableId) {
+		        //每次加载时都先清理
+		        $('#' + tableId + ' tbody').off("click", "tr");
+		        $('#' + tableId + ' tbody').on("click", "tr", function () {
+		            $(this).toggleClass('selected');
+		            if ($(this).hasClass("selected")) {
+		                $(this).find("input").prop("checked", true);
+		            } else {
+		                $(this).find("input").prop("checked", false);
+		            }
+		        });
+		    }
+
+		    //获取所有选中行的UUID 多选
+		    function batchIds() {
+		        var uuid = '';
+		        var uuids = lxTable.rows(".selected").data();
+		        if (uuids.length == 0) {
+		            alert("请选择一条数据！");
+		        } else {
+		            for (var i = 0; i < uuids.length; i++) {
+		                uuid = uuid + uuids[i].url + ",";
+		            }
+		            alert(uuid);
+		        }
+		    }
+
+		    //单选
+		    function selection() {
+
+		        if (lxTable.rows(".selected").data().length == 1) {
+		            var uuid = lxTable.row(".selected").data().url;
+
+		            if (uuid == "") {
+		                alert("请选择一条数据！");
+		            } else {
+		                alert(uuid);
+		            }
+
+		        } else {
+		            alert("请选择一条数据！");
+		        }
+		    }
+
+		    //刷新页面
+		    //重新加载数据
+		    function reload() {
+		        lxTable.ajax.reload();
+		    }
+
 			var lxSidebarJson = function(){
 				
 				$.ajaxSetup({  
@@ -82,7 +158,7 @@
 					var _data = data.catalog;
 
 					create(_data);
-					
+					console.log('sidebar data loaded!');
 				});
 			}
 			//创建sidebar
@@ -139,82 +215,128 @@
 
 			lxSidebarJson();
 
-			//加载主界面信息
-			var createConetentDiv = function(parent , arr ,parent_type ,h2_addText){
-				//parent为添加到的父节点，arr为请求返回的数据数组，parent_type为父类型，
-				//h2_addText为h2标题需要添加的子标题
-				if (!document.querySelector('.content-h1')) {
-					var h1Dom = document.createElement('h1');
-					var h1TextNode = document.createTextNode(parent_type);
-					h1Dom.appendChild(h1TextNode);
-					h1Dom.className = 'content-h1';
-					parent.appendChild(h1Dom);
-				}
-				
-				var divDom = document.createElement('div');
-				divDom.className = 'content-div';
-				var h2Dom = document.createElement('h2');
-				h2Dom.className = 'content-title';
-				var ulDom = document.createElement('ul');
-				ulDom.className = 'content-ul';
+			$('.lx-sidebar').lxSidebar();
 
-				if (h2_addText) {
-					var h2TextNode = document.createTextNode(h2_addText);
-					h2Dom.appendChild(h2TextNode);
-					divDom.appendChild(h2Dom);
-				}
+			var lxTable = $('#example').DataTable({
+				"searching": true,//搜索框，默认是开启
 
-				for (var i = 0; i < arr.length; i++) {
-				
-					var liDom = document.createElement('li');
-					liDom.className = 'content-li';
-					var divSubDom = document.createElement('div');
-					divSubDom.className = 'content-li-item';
-					var ulSubDom = document.createElement('ul');
-					var liSubDom1 = document.createElement('li');
-					var liSubDom2 = document.createElement('li');
+				"lengthChange": true,//是否允许用户改变表格每页显示的记录数，默认是开启
 
-					var liTextNode1 = document.createTextNode(arr[i].title);
-					var liTextNode2 = document.createTextNode("链接:   ");
-					var aDomli = document.createElement('a');
-					aDomli.className = 'content-li-item-a';
-					aDomli.target = '_blank';
-					aDomli.href = arr[i].url;
-					var aDomTextNode = document.createTextNode(arr[i].url);
-					aDomli.appendChild(aDomTextNode);
-					liSubDom1.appendChild(liTextNode1);
-					liSubDom2.appendChild(liTextNode2);
-					liSubDom2.appendChild(aDomli);
+				"paging": true,//是否开启本地分页，默认是开启
 
-					ulSubDom.appendChild(liSubDom1);
-					ulSubDom.appendChild(liSubDom2);
-					divSubDom.appendChild(ulSubDom);
-					liDom.appendChild(divSubDom);
-					ulDom.appendChild(liDom);
-				}	
-				divDom.appendChild(ulDom);
-				parent.appendChild(divDom);
+				"ordering":  true, //默认排序
 
-			} 
-			//渲染main主界面
-			var loadData = function( parent_type, data){
-				//console.log(document.querySelector('.content-container'));
-				
+				"processing": true,//是否显示中文提示
 
-				if (Array.isArray(data.data)) {
-					//数组
-					createConetentDiv(document.querySelector('.content-container') , data.data ,parent_type);				
-				}else{
-					//对象 --- 多个数组
-					for (var key in data.data) {
-						var arr = data.data[key];
-						createConetentDiv(document.querySelector('.content-container') , arr ,parent_type , key);
+				"scrollCollapse": true,  //是否开启DataTables的高度自适应，当数据条数不够分页数据条数的时候，插件高度是否随数据条数而改变
+
+				"serverSide": false, //开启服务器模式，默认是关闭
+
+				"scrollY": "100%",//设置高
+
+				"scrollX": "100%",//设置宽度
+
+				"scrollXInner": "100%",//设置内宽度
+
+				"jQueryUI": false,//jquery 风格
+
+				"autoWidth": true, //是否自适应宽度
+
+				"dom": '<lf<t>ip>',
+
+				"language": {
+					"sProcessing": "处理中...",
+					"sLengthMenu": "显示 _MENU_ 项结果",
+					"sZeroRecords": "没有匹配结果",
+					"sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+					"sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+					"sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+					"sInfoPostFix": "",
+					"sSearch": "搜索:",
+					"sUrl": "",
+					"sEmptyTable": "未搜索到数据",
+					"sLoadingRecords": "载入中...",
+					"sInfoThousands": ",",
+					"oPaginate": {
+					  "sFirst": "首页",
+					  "sPrevious": "上页",
+					  "sNext": "下页",
+					  "sLast": "末页"
+					},
+					"oAria": {
+					  "sSortAscending": ": 以升序排列此列",
+					  "sSortDescending": ": 以降序排列此列"
 					}
+				},
+
+				"initComplete": function () {
+
+	            	$("#buttonBox").append(BUTTONS);
+	                if (1) {
+	                    $search = $("input[type='search']");
+	                    //隐藏默认的搜索框
+	                    //$search.parent().hide();
+	                }
+	                //加载完成之后 初始化checkbox
+
+	                checkbox('example');
+
+
+	                $("#reload").click(function () {
+	                    reload();
+	                });
+
+	                $("#batchIds").click(function () {
+	                    batchIds();
+	                });
+
+	                $("#selection").click(function () {
+	                    selection();
+	                });
+
+	                //checkbox全选
+	                $("#CheckAll").click(function () {
+	                    if ($(this).prop("checked")) {
+	                        $("input[name='checkList']").prop("checked", true);
+	                        $("tr").addClass('selected');
+	                    } else {
+	                        $("input[name='checkList']").prop("checked", false);
+	                        $("tr").removeClass('selected');
+	                    }
+	                });
+		        },
+
+				ajax: {
+		            url: './json/system.json',
+		            //url: url,
+		            dataSrc:'data'
+		          },
+		          //ajax:"./json/test.json",
+
+				"columns": [
+					{
+						"data": "type",
+						"createdCell": function (nTd, sData) {
+							$(nTd).html("<input type='checkbox' name='checkList' value='" + sData + "'>");
+						}
+					},
+					{ "data": "title" },
+					{ "data": "url" },
+					{ "data": "type" }
+				]
+			});
+
+			var loadData = function(url){
+				if (!lxTable) {
+					console.log('dataTabel wrong!!');
+				}else{
+					console.log(lxTable)
+					lxTable.ajax.url(url).load();
 				}
-				
 				
 			}
 
+			
 			var $content = $('.content-container');
 			var $subItem = $('.js-lx-sidebar-subItem');
 
@@ -222,23 +344,18 @@
 				var $this = $(this);
 				var file = $this.attr('data-file');
 				var type = $this.attr('data-type');
-				//console.log(file)
-				$.get('./json/'+file+'.json',function(data){
-					$content.children().remove();
-					loadData( type ,data);
-					//$content.html(data.data[0].type);
-				})
+				console.log('./json/'+file+'.json')
+				
+				loadData('./json/'+file+'.json');
 			});
 
 			var $toTop = $('.toTop');
-			var $html_body = $('.body,html');
+			var $html_body = $('body,html');
 			$toTop.click(function(){
 				$html_body.animate({scrollTop: 0 }, 800);
 				return false;
 			});
 			
-
-			$('.lx-sidebar').lxSidebar();
 			
 		})(jQuery)
 	</script>

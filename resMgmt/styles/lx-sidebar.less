@@ -1,0 +1,162 @@
+.l-sidebar{
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 300px;
+	min-height: 1000px;
+	padding: 10px;
+	background-color: #666;
+	transition: all .3s;
+	overflow: auto;
+
+	-moz-box-sizing: border-box;  /*Firefox3.5+*/
+	-webkit-box-sizing: border-box; /*Safari3.2+*/
+	-o-box-sizing: border-box; /*Opera9.6*/
+	-ms-box-sizing: border-box; /*IE8*/
+	box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+	
+	.lx-sidebar-top{
+		margin-bottom: 10px;
+		height: 42px;
+		
+		.lx-sidebar-narrow{
+			display: block;
+			float: right;
+		}
+		
+		.lx-sidebar-narrow:hover {
+			cursor: pointer;
+		}
+	}
+	.l-sidebar-summary{
+		width: 100%;
+		height: 100px;
+		background-color: #fff;
+		-moz-border-radius: 5px;
+		-ms-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius: 5px;
+		
+		h3{
+			width: 80%;
+			height: 40px;
+			margin: 0 auto;
+			padding: 10px;
+			font:bold 16px/20px STHeiti;
+			text-align: center;
+			-moz-box-sizing: border-box;  /*Firefox3.5+*/
+			-webkit-box-sizing: border-box; /*Safari3.2+*/
+			-o-box-sizing: border-box; /*Opera9.6*/
+			-ms-box-sizing: border-box; /*IE8*/
+			box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/ 
+		}
+		p{
+			width: 100%;
+			min-height: 60px;
+			padding:5px 10px;
+			font: 14px/20px Microsoft JhengHei;
+			-moz-box-sizing: border-box;  /*Firefox3.5+*/
+			-webkit-box-sizing: border-box; /*Safari3.2+*/
+			-o-box-sizing: border-box; /*Opera9.6*/
+			-ms-box-sizing: border-box; /*IE8*/
+			box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/   
+		}
+	}
+	
+	.l-sidebar-menu{
+		width: 100%;
+		min-height: 200px;
+		//background-color: #263238;
+		-ms-border-radius: 5px;
+	  	-webkit-border-radius: 5px;
+	  	-moz-border-radius: 5px;
+	  	border-radius: 5px;
+
+		.l-sidebar-menu-title{
+			display: inline-block;
+			width: 100%;
+			height: 30px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: center;
+			color:#fff;
+			font:bold 20px/30px STHeiti;
+			letter-spacing:1em;
+		}
+		.l-sidebar-menu-main{
+			min-height: 200px;
+			width: 100%;
+
+			.lx-sidebar-ul{
+				border-top: 1px solid #b6b6b6;
+				.lx-sidebar-li{
+					position: relative;
+
+					a{
+						text-decoration: none;
+						display: block;
+					    padding-left: 20px;
+					    line-height: 45px;
+					    height: 45px;
+					    color: #ABB1B7;
+					    transition: all .3s;
+					    border-bottom: 1px solid #b6b6b6;
+					    border-left: 1px solid transparent;
+					}
+					a:hover{
+						cursor: pointer;
+						color: #fff;
+						background-color: transparent;
+						border-left: 1px solid #b6b6b6;
+					}
+					.lx-sidebar-arrow{
+						position: absolute;
+						right: 2%;
+						top: 6px;
+						transition: all 0.4s;
+					}
+					.lx-sidebar-arrow:hover{
+						cursor: pointer;
+					}
+					.lx-sidebar-show{
+						display: none;
+					}
+
+				}
+
+				.lx-sidebar-show{
+					list-style-image: url(../icons/circle.png);
+				}
+				.lx-sidebar-sub-li{
+					a{
+					    height: 30px;
+					    line-height: 30px;
+					    font-size: 14px;
+					    padding-left: 40px;
+					}
+					a:hover{
+						cursor: pointer;
+						color: #fff;
+						background-color: transparent;
+						border-left: 1px solid #b6b6b6;
+					}
+				}
+			}
+		}
+	}
+}
+
+.img-rotate{
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); 	/* IE 9 */
+	-moz-transform:rotate(90deg); 	/* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(90deg); 	/* Opera */
+}
+.l-sidebar.mini{
+	width: 50px;
+}
+.main.position{
+	margin: 0 auto;
+} 
