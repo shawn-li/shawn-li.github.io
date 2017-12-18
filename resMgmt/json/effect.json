@@ -1,13 +1,16 @@
 {
-	"data":{
-		"效果类": [
+    "type":[
+        "效果类","弹出层"
+    ],
+	"data":[
+		
             {
                 "type": "收藏>效果类",
                 "title": "焦点图轮播特效",
                 "url": "http://www.imooc.com/learn/18"
-            }
-        ],
-        "弹出层" : [
+            },
+        
+        
             {
                 "type": "收藏>效果类",
                 "title": "弹出层",
@@ -43,6 +46,6 @@
                 "title": "sweetalert-有css3动画弹出层",
                 "url": "http://t4t5.github.io/sweetalert/"
             }
-        ]
-	}
+        
+	]
 }

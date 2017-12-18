@@ -1,6 +1,9 @@
 {
-	"data":{
-		"PC":[
+    "type":[
+        "PC","移动","Date library"
+    ],
+	"data":[
+		
             {
                 "type": "收藏>日历>PC",
                 "title": "经典my97",
@@ -95,9 +98,9 @@
                 "type": "收藏>日历>PC",
                 "title": "jquery双日历",
                 "url": "http://www.daterangepicker.com/"
-            }
-        ],
-        "移动":[
+            },
+        
+      
             {
                 "type": "收藏>日历>移动",
                 "title": "大气实用jQuery手机移动端日历日期选择插件",
@@ -107,9 +110,9 @@
                 "type": "收藏>日历>移动",
                 "title": "jQuery Mobile 移动开发中的日期插件Mobiscroll",
                 "url": "http://mobiscroll.com/"
-            }
-        ],
-        "Date library":[
+            },
+        
+       
             {
                 "type": "收藏>日历>Date library",
                 "title": "Datejs",
@@ -125,6 +128,6 @@
                 "title": "Moment.js ",
                 "url": "http://momentjs.com/"
             }
-        ]
-	}
+    ]
+	
 }

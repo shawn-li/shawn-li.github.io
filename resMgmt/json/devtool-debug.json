@@ -1,6 +1,10 @@
 {
-	"data":{
-		"Fiddler": [
+    "type":[
+        "Fiddler","Chrome","Firebug","移动,微信调试","iOS Simulator"
+    ],
+
+	"data":[
+		
             {
                 "type": "开发工具>调试工具>Fiddler",
                 "title": "Fiddler调式使用知多少(一)深入研究",
@@ -20,9 +24,9 @@
                 "type": "开发工具>调试工具>Fiddler",
                 "title": "前端资源教程",
                 "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
-            }
-        ],
-        "Chrome": [
+            },
+        
+        
             {
                 "type": "开发工具>调试工具>Chrome",
                 "title": "Google Chrome 官方",
@@ -177,9 +181,9 @@
                 "type": "开发工具>调试工具>Chrome",
                 "title": "Chrome 开发者工具使用技巧",
                 "url": "http://segmentfault.com/a/1190000003882567"
-            }
-        ],
-        "Firebug": [
+            },
+
+        
             {
                 "type": "开发工具>调试工具>Firebug",
                 "title": "firebug视频教程",
@@ -209,9 +213,8 @@
                 "type": "开发工具>调试工具>Firebug",
                 "title": "前端资源教程",
                 "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
-            }
-        ],
-        "移动,微信调试": [
+            },
+
             {
                 "type": "开发工具>调试工具>移动,微信调试",
                 "title": "浏览器端调试安卓",
@@ -271,9 +274,9 @@
                 "type": "开发工具>调试工具>移动,微信调试",
                 "title": "各种真机远程调试方法汇总",
                 "url": "https://github.com/jieyou/remote_inspect_web_on_real_device"
-            }
-        ],
-        "iOS Simulator": [
+            },
+
+
             {
                 "type": "开发工具>调试工具>iOS Simulator",
                 "title": "Simulator",
@@ -284,6 +287,6 @@
                 "title": "Xcode中的iOS模拟器(iOS Simulator)的介绍和使用心得",
                 "url": "http://www.crifan.com/intro_ios_simulator_in_xcode_and_usage_summary/"
             }
-        ]
-	}
+        
+	]
 }

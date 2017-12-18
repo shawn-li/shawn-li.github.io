@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>学习资源管理</title>
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
 	<meta name="format-detection" content="telephone=no">  <!-- 不识别数字为电话 -->
 	<link rel="shortcut icon" type="image/x-icon" href="./icons/resMgmt.png" media="screen" />
 	<link rel='bookmark' href='./icons/resMgmt.png'> 
@@ -10,7 +11,16 @@
 	<link rel="stylesheet" type="text/css" href="./styles/global.css">
 	<link rel="stylesheet" type="text/css" href="./styles/lx-sidebar.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-  	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  	<style type="text/css">
+  		.cell-padding{
+			padding-left: 20px !important;
+		}
+		.checkbox-margin{
+			margin-left: 7px !important;
+		}
+  	</style>
 </head>
 <body>
 	<img class="toTop" src="./icons/rocket1.png" alt="toTop">
@@ -54,30 +64,32 @@
 						<span>github</span>
 					</div>
 				</a>
-				
+				<a href="">
+					<div class="top-nav-item">
+						<img src="./icons/config.png" alt="github">
+						<span>资源配置</span>
+					</div>
+				</a>
+			</div>
+			
+			<div class="table-title">知识体系</div>
+			<div class="table-box">
+				<table id="myTable" class="display">
+				<div id="buttonBox" style="padding: 10px;"></div>
+					<thead>
+					<tr>
+					  <th><input type="checkbox" id="CheckAll"></th>
+					  <th>&emsp;网址</th>
+					  <th>链接</th>
+					  <th>种类</th>
+					</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
 			</div>
 
-			<table id="example" class="display">
-			<div id="buttonBox" style="padding: 10px;"></div>
-				<thead>
-				<tr>
-				  <th><input type="checkbox" id="CheckAll"></th>
-				  <th>网址</th>
-				  <th>链接</th>
-				  <th>种类</th>
-				</tr>
-				</thead>
-				<tbody>
-
-				</tbody>
-			</table>
-			<!-- <div class="content-container">
-				<div class="loader loader-hobby">
-					<div class="loader-item loader1"></div>
-					<div class="loader-item loader2"></div>
-					<div class="loader-item loader3"></div>
-				</div>
-			</div> -->
 		</div>
 		<div class="copyright">
 			Copyright©2017 shawn-li
@@ -86,137 +98,204 @@
 
 
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/lxSidebar.min.js"></script>
+	<script type="text/javascript" src="./js/lxSidebar.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.css"></script>
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript">
 		(function($){
 
-			var BUTTONS =
-            '<button class="btn btn-default"  type="button" id="reload" data-toggle="modal" data-target="#employeeModal">刷新表格</button>' +
-            '<button class="btn btn-primary" type="button" id="batchIds" style="margin-left:20px;" data-toggle="modal" >多选</button>' +
-            '<button class="btn btn-primary" type="button" id="selection" style="margin-left:20px;" data-toggle="modal" >单选</button>';
+			var lxResMgmt = (function(){
 
-            //选中一行 checkbox选中
-		    function checkbox(tableId) {
-		        //每次加载时都先清理
-		        $('#' + tableId + ' tbody').off("click", "tr");
-		        $('#' + tableId + ' tbody').on("click", "tr", function () {
-		            $(this).toggleClass('selected');
-		            if ($(this).hasClass("selected")) {
-		                $(this).find("input").prop("checked", true);
-		            } else {
-		                $(this).find("input").prop("checked", false);
-		            }
-		        });
-		    }
+		//-------------- 常量 ------------
+				var BUTTONS =
+	            '<button class="btn btn-default"  type="button" id="reload" data-toggle="modal" data-target="#employeeModal">刷新表格</button>' +
+	            '<button class="btn btn-primary" type="button" id="batchIds" style="margin-left:20px;" data-toggle="modal" >多选</button>' +
+	            '<button class="btn btn-primary" type="button" id="selection" style="margin-left:20px;" data-toggle="modal" >单选</button>';
+	            var QUERY1 = '<div class="dropdown js-myDropdown" style="display:inline-block;margin-left: 20px;"><button type="button" class="btn dropdown-toggle js-myDropdownBtn" id="dropdownMenu1" data-toggle="dropdown" style="">'+
+					'种类&emsp;<span class="caret"></span></button>'+
+				'<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">';
+				var QUERY2 = '</ul></div><button class="btn btn-primary" type="button" id="query" style="margin-left:20px;" data-toggle="modal" >搜索</button>';
+				// 	<li role="presentation">
+				// 		<a role="menuitem" tabindex="-1" href="#">Java</a>
+				// 	</li>
+				// '</ul></div>'
 
-		    //获取所有选中行的UUID 多选
-		    function batchIds() {
-		        var uuid = '';
-		        var uuids = lxTable.rows(".selected").data();
-		        if (uuids.length == 0) {
-		            alert("请选择一条数据！");
-		        } else {
-		            for (var i = 0; i < uuids.length; i++) {
-		                uuid = uuid + uuids[i].url + ",";
-		            }
-		            alert(uuid);
-		        }
-		    }
 
-		    //单选
-		    function selection() {
+		// ----------- 私有变量 -----------						
+	            var _title = $('.table-title'); //主页的tilte
+	            var $btnBox = $("#buttonBox"); //button框
+	            var $myDropdown = $('.js-myDropdown'); //下拉框
 
-		        if (lxTable.rows(".selected").data().length == 1) {
-		            var uuid = lxTable.row(".selected").data().url;
 
-		            if (uuid == "") {
-		                alert("请选择一条数据！");
-		            } else {
-		                alert(uuid);
-		            }
+	    // ----------- 公有方法 ----------
+	    		//选中一行 checkbox选中
+			    function checkbox(tableId) {
+			        //每次加载时都先清理
+			        $('#' + tableId + ' tbody').off("click", "tr");
+			        $('#' + tableId + ' tbody').on("click", "tr", function () {
+			            $(this).toggleClass('selected');
+			            if ($(this).hasClass("selected")) {
+			                $(this).find("input").prop("checked", true);
+			            } else {
+			                $(this).find("input").prop("checked", false);
+			            }
+			        });
+			    }
 
-		        } else {
-		            alert("请选择一条数据！");
-		        }
-		    }
+			    //获取所有选中行的UUID 多选
+			    function batchIds() {
+			        var uuid = '';
+			        var uuids = lxTable.rows(".selected").data();
+			        if (uuids.length == 0) {
+			            alert("请选择一条数据！");
+			        } else {
+			            for (var i = 0; i < uuids.length; i++) {
+			                uuid = uuid + uuids[i].url + ",";
+			            }
+			            alert(uuid);
+			        }
+			    }
 
-		    //刷新页面
-		    //重新加载数据
-		    function reload() {
-		        lxTable.ajax.reload();
-		    }
+			    //单选
+			    function selection() {
 
-			var lxSidebarJson = function(){
-				
-				$.ajaxSetup({  
-				    async : false  
-				});  
-				$.get('./json/catalog.json', function(data){
-					var _data = data.catalog;
+			        if (lxTable.rows(".selected").data().length == 1) {
+			            var uuid = lxTable.row(".selected").data().url;
 
-					create(_data);
-					console.log('sidebar data loaded!');
-				});
-			}
-			//创建sidebar
-			var create = function(_data){
-				for (var i = 0; i < _data.length; i++) {
-					var type = _data[i].type 
-					var arr_obj = [];
-					var children = _data[i].children;
-					
-					if (children) {
-						var len = children.length;
-						for (var j=0; j<len;j++) {
-							//console.log(children[j].type);
-							arr_obj.push(children[j]);
-						}
+			            if (uuid == "") {
+			                alert("请选择一条数据！");
+			            } else {
+			                alert(uuid);
+			            }
+
+			        } else {
+			            alert("请选择一条数据！");
+			        }
+			    }
+
+			    //搜索
+			    function query(text){
+					lxTable.column(3)
+				    .search(text)
+				    .draw();
+				}
+
+				//清除所有checkbox
+				function cleanCheckBox(table){
+					$("#CheckAll").prop("checked", false);
+					table.find("input[name='checkList']").prop("checked", false);
+			        table.find("tr").removeClass('selected');          
+				}
+
+			    //刷新页面
+			    //重新加载数据
+			    function reload() {
+			        lxTable.ajax.reload();
+			    }
+
+				//给dataTable的title和table加载数据
+				var loadData = function(url , title){
+					if (!lxTable) {
+						console.log('dataTabel wrong!!');
+					}else{
+						//console.log(lxTable);
+						
+						_title.html(title);
+						lxTable.ajax.url(url).load();
 					}
-					//console.log(arr);
-					createLi(document.querySelector('.lx-sidebar-ul'),type,arr_obj);
-				}
-			}
-			//创建sidebar
-			var createLi = function(parent ,text, children){
-				var liDom = document.createElement('li');
-				liDom.className = 'lx-sidebar-li';
-				var aDom = document.createElement('a');
-				var aTextNode = document.createTextNode(text);
-				aDom.className = "js-lx-sidebar-item";
-				aDom.appendChild(aTextNode);
-				aDom.setAttribute('href','javascript:;');
-				var imgDom = document.createElement('img');
-				imgDom.className = 'lx-sidebar-arrow js-lx-sidebar-item';
-				imgDom.setAttribute('src','./icons/arrow.png');
-				var ulDom = document.createElement('ul');
-				ulDom.className = 'lx-sidebar-show';
-				for (var i = 0; i < children.length; i++) {
-					var subliDom = document.createElement('li');
-					subliDom.className = 'lx-sidebar-sub-li'
-					var subaDom = document.createElement('a');
-					subaDom.className = 'js-lx-sidebar-subItem';
-					subaDom.setAttribute('href','javascript:;');
-					subaDom.setAttribute('data-file',children[i].name);
-					subaDom.setAttribute('data-type',children[i].type);
-					var aTextNode = document.createTextNode(children[i].type);
-					subaDom.appendChild(aTextNode);
-					subliDom.appendChild(subaDom);
-					ulDom.appendChild(subliDom);
 				}
 
-				parent.appendChild(liDom);
-				liDom.appendChild(aDom);
-				liDom.appendChild(imgDom);
-				liDom.appendChild(ulDom);
+				//为下拉框加载数据
+				var loadDataDropdown = function(url){
+					$.get(url, function(data){
+						var _type = data.type;
+						//console.log(data)
+						if (!_type) {
+							console.log("无下拉框选择！");
+							$btnBox.html(BUTTONS);
+							return true;
+						}
+						console.log("请下拉框选择！");
+						var len = _type.length;
+						var _QUERY= BUTTONS + QUERY1;
+						
+						for(var i=0; i<len; i++){
+							_QUERY += '<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">'
+							+ _type[i] + '</a></li>'
+						}
+						_QUERY += '<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">全部</a></li>'
+						_QUERY += QUERY2;
+						$btnBox.html(_QUERY);
+					});
+
+					var $myDropdownli = $('.js-myDropdown .dropdown-menu >li>a'); //下拉子项
+					var $myDropdownBtn = $('.js-myDropdownBtn');  //button框中的下拉btn框
+					var $query = $('#query'); //搜索按键btn
+					// console.log('-------')
+					// console.log($myDropdownli);
+					$myDropdownli.click(function(){
+						var _text = $(this).html();
+						console.log(_text)
+						if ( _text == '全部') {
+							$myDropdownBtn.html('全部&emsp;<span class="caret"></span>');
+						}else{
+							$myDropdownBtn.html(_text+'&emsp;<span class="caret"></span>');
+						}
+						//alert($this.html());
+					});
+
+					$query.click(function(){
+						var _btnText = $myDropdownBtn.text().trim();
+						
+						if (_btnText == '种类' || _btnText == "全部") {
+							query("");
+						}else{
+							query(_btnText);
+						}		
+					});
+					$("#batchIds").on('click',function () {
+		                batchIds();
+		            });
+		            $("#reload").click(function () {
+		                reload();
+		            });
+		            $("#selection").click(function () {
+		                selection();
+		            });
+				}
+			
+	            return {
+	            	BUTTONS: BUTTONS,
+	            	QUERY1: QUERY1,
+	            	QUERY2: QUERY2,
+	            	checkbox: checkbox,
+	            	batchIds: batchIds,
+	            	selection: selection,
+	            	query: query,
+	            	cleanCheckBox: cleanCheckBox,
+	            	reload: reload,
+	            	loadData: loadData,
+	            	loadDataDropdown: loadDataDropdown
+	            }
+
+			})(); 
+
+			
+
+// -------- 初始化sidebar ---------		
+			var mySidebar = $('.lx-sidebar').lxSidebar();
+			mySidebar.lxSidebarJson('./json/catalog.json');
+			mySidebar.allEvent();
+			console.log("PC or mobile:" +isMobile.result);
+			if (isMobile.result) {
+				mySidebar.mobile();
+			}else{
+				mySidebar.PCEvent();
 			}
 
-			lxSidebarJson();
-
-			$('.lx-sidebar').lxSidebar();
-
-			var lxTable = $('#example').DataTable({
+// -------- 初始化为知识体系system ---------
+			var lxTable = $('#myTable').DataTable({
 				"searching": true,//搜索框，默认是开启
 
 				"lengthChange": true,//是否允许用户改变表格每页显示的记录数，默认是开启
@@ -270,39 +349,25 @@
 
 				"initComplete": function () {
 
-	            	$("#buttonBox").append(BUTTONS);
-	                if (1) {
-	                    $search = $("input[type='search']");
-	                    //隐藏默认的搜索框
-	                    //$search.parent().hide();
-	                }
+	            	$("#buttonBox").append(lxResMgmt.BUTTONS);
+	                
+	                $search = $("input[type='search']");
+	                 
 	                //加载完成之后 初始化checkbox
 
-	                checkbox('example');
-
-
-	                $("#reload").click(function () {
-	                    reload();
-	                });
-
-	                $("#batchIds").click(function () {
-	                    batchIds();
-	                });
-
-	                $("#selection").click(function () {
-	                    selection();
-	                });
+	                lxResMgmt.checkbox('myTable');
 
 	                //checkbox全选
-	                $("#CheckAll").click(function () {
-	                    if ($(this).prop("checked")) {
-	                        $("input[name='checkList']").prop("checked", true);
-	                        $("tr").addClass('selected');
-	                    } else {
-	                        $("input[name='checkList']").prop("checked", false);
-	                        $("tr").removeClass('selected');
-	                    }
-	                });
+		            $("#CheckAll").click(function () {
+		                if ($(this).prop("checked")) {
+		                    $("input[name='checkList']").prop("checked", true);
+		                    $("tr").addClass('selected'); 
+		                } else {
+		                	$("input[name='checkList']").prop("checked", false);
+		                    $("tr").removeClass('selected');                	
+		                }
+		            });
+		            
 		        },
 
 				ajax: {
@@ -315,27 +380,35 @@
 				"columns": [
 					{
 						"data": "type",
+						"width":"20px",
+						"orderable": false,
 						"createdCell": function (nTd, sData) {
-							$(nTd).html("<input type='checkbox' name='checkList' value='" + sData + "'>");
+							$(nTd).html("<input class='checkbox-margin' type='checkbox' name='checkList' value='" + sData + "'>");
 						}
 					},
-					{ "data": "title" },
-					{ "data": "url" },
+					{ 
+						"data": "title",
+						"class" : "cell-padding",
+						"render": function ( data, type, full, meta ) {
+					     	return data;
+					    }
+					},
+					{ 
+						"data": "url" ,
+						"render": function ( data, type, full, meta ) {
+					     	return '<a href="'+data+'" target="_blank">Link</a>';
+					    }
+					},
 					{ "data": "type" }
-				]
+				],
+
+				//"columnDefs": [{ "orderable": false, "targets": 0 } ]
 			});
+			lxResMgmt.loadDataDropdown('./json/system.json');
 
-			var loadData = function(url){
-				if (!lxTable) {
-					console.log('dataTabel wrong!!');
-				}else{
-					console.log(lxTable)
-					lxTable.ajax.url(url).load();
-				}
-				
-			}
 
-			
+
+// ----------------绑定事件		
 			var $content = $('.content-container');
 			var $subItem = $('.js-lx-sidebar-subItem');
 
@@ -345,8 +418,12 @@
 				var type = $this.attr('data-type');
 				console.log('./json/'+file+'.json')
 				
-				loadData('./json/'+file+'.json');
+				lxResMgmt.loadData('./json/'+file+'.json', type);
+				lxResMgmt.cleanCheckBox($('#myTable'));
+				lxResMgmt.query("");
+				lxResMgmt.loadDataDropdown('./json/'+file+'.json');
 			});
+
 
 			var $toTop = $('.toTop');
 			var $html_body = $('body,html');
@@ -354,7 +431,6 @@
 				$html_body.animate({scrollTop: 0 }, 800);
 				return false;
 			});
-			
 			
 		})(jQuery)
 	</script>

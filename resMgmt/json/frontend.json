@@ -1,9 +1,8 @@
-{
-	"data":{
-		"Javascript":[
-
-		],
-		"CSS":[
+{   
+    "type":[
+        "CSS","jQuery","Ecmascript","Js template","Nodejs","Less/Sass","Markdown","兼容性","UI相关","HTTP","正则表达式"
+    ],
+	"data":[
 			{
                 "type": "前端基础知识>CSS",
                 "title": "CSS 语法参考",
@@ -53,9 +52,7 @@
                 "type": "前端基础知识>CSS",
                 "title": "word-wrap:break-word和word-break:break-all的区别",
                 "url": "http://www.cnblogs.com/2050/archive/2012/08/10/2632256.html"
-            }
-		],
-		"jQuery":[
+            },
 			{
                 "type": "前端基础知识>jQuery",
                 "title": "jQuery API 中文文档",
@@ -85,9 +82,7 @@
                 "type": "前端基础知识>jQuery",
                 "title": "jquery 源码查找",
                 "url": "http://james.padolsey.com/jquery/"
-            }
-		],
-		"Ecmascript":[
+            },
 			{
                 "type": "前端基础知识>Ecmascript",
                 "title": "Understanding ECMAScript 6 - Nicholas C. Zakas",
@@ -127,9 +122,7 @@
                 "type": "前端基础知识>Ecmascript",
                 "title": "es5",
                 "url": "http://es5.github.io/"
-            }
-		],
-		"Js template":[
+            },
 			{
                 "type": "前端基础知识>Js template",
                 "title": "template-chooser",
@@ -179,9 +172,7 @@
                 "type": "前端基础知识>Js template",
                 "title": "etpl",
                 "url": "http://ecomfe.github.io/etpl/"
-            }
-        ],
-		"Nodejs":[
+            },
 			{
                 "type": "前端基础知识>Nodejs",
                 "title": "nodejs 篇幅比较巨大",
@@ -276,9 +267,7 @@
                 "type": "前端基础知识>Nodejs",
                 "title": "NodeJS的代码调试和性能调优",
                 "url": "http://www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line/"
-            }
-		],
-        "Less/Sass":[
+            },
             {
                 "type": "前端基础知识>Less/Sass",
                 "title": "sass",
@@ -298,9 +287,7 @@
                 "type": "前端基础知识>Less/Sass",
                 "title": "less",
                 "url": "http://less.bootcss.com/"
-            }
-        ],
-		"Markdown":[
+            },
             {
                 "type": "前端基础知识>Markdown",
                 "title": "Markdown 语法说明 (简体中文版)",
@@ -340,9 +327,8 @@
                 "type": "前端基础知识>Markdown",
                 "title": "markdown-editor",
                 "url": "https://github.com/jbt/markdown-editor"
-            }
-		],
-		"兼容性":[
+            },
+		
 			{
                 "type": "前端基础知识>兼容性",
                 "title": "esma 兼容列表",
@@ -377,9 +363,7 @@
                 "type": "前端基础知识>兼容性",
                 "title": "emulators",
                 "url": "https://www.manymo.com/emulators"
-            }
-		],
-		"UI相关":[
+            },
 			{
                 "type": "前端基础知识>UI相关",
                 "title": "bootcss",
@@ -449,16 +433,12 @@
                 "type": "前端基础知识>UI相关",
                 "title": "gogojimmy",
                 "url": "http://gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/"
-            }
-		],
-		"HTTP":[
+            },
 			{
                 "type": "前端基础知识>HTTP",
                 "title": "HTTP API 设计指南",
                 "url": "http://segmentfault.com/bookmark/1230000002521721"
-            }
-		],
-		"正则表达式":[
+            },
 			{
                 "type": "前端基础知识>正则表达式",
                 "title": "JS正则表达式元字符",
@@ -499,7 +479,6 @@
                 "title": "前端资源教程",
                 "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
             }
-		]
-	}
+	]
 		
 }

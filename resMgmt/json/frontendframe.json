@@ -1,6 +1,9 @@
-{
-	"data":{
-		"Angularjs":[
+{   
+    "type":[
+        "Angularjs","Vue","React","avalon","Requriejs","Express","Koa","ThinkJS","Seajs","ionic","Mock.js"
+    ],
+    "data":[
+		
 			{
                 "type": "前端基础知识>Angularjs",
                 "title": "Angular.js 的一些学习资源",
@@ -130,9 +133,8 @@
                 "type": "前端基础知识>Angularjs",
                 "title": "angular学习笔记",
                 "url": "http://www.zouyesheng.com/angular.html"
-            }
-		],
-		"Vue":[
+            },
+		
 			{
 	            "type": "前端基础知识>Vue",
 	            "title": "Vue",
@@ -157,9 +159,9 @@
 	            "type": "前端基础知识>Vue",
 	            "title": "前端资源教程",
 	            "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
-	        }
-		],
-		"React":[
+	        },
+		
+		
 			{
                 "type": "前端基础知识>React",
                 "title": "react.js 中文论坛",
@@ -234,9 +236,9 @@
                 "type": "前端基础知识>React",
                 "title": "React原创实战视频教程",
                 "url": "http://www.piliyu.com/"
-            }
-		],
-		"avalon":[
+            },
+		
+		
 			{
                 "type": "前端基础知识>avalon",
                 "title": "avalonjs",
@@ -256,9 +258,9 @@
                 "type": "前端基础知识>avalon",
                 "title": "前端资源教程",
                 "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
-            }
-		],
-		"Requriejs":[
+            },
+		
+		
 			{
                 "type": "前端基础知识>Requriejs",
                 "title": "Javascript模块化编程（一）：模块的写法",
@@ -313,30 +315,30 @@
                 "type": "前端基础知识>Requriejs",
                 "title": "require backbone结合",
                 "url": "http://www.cnblogs.com/yexiaochai/p/3221081.html"
-            }
-		],
-        "Express":[
+            },
+		
+        
             {
                 "type":"前端基础知识>Express",
                 "title":"Node.js框架Express",
                 "url":"http://www.expressjs.com.cn/"
-            }
-        ],
-        "Koa":[
+            },
+  
+        
             {
                 "type":"前端基础知识>Koa",
                 "title":"Node.js框架Koa",
                 "url":"http://koa.bootcss.com/"
-            }
-        ],
-        "ThinkJS":[
+            },
+        
+       
             {
                 "type":"前端基础知识>ThinkJS",
                 "title":"Node.js框架ThinkTS",
                 "url":"https://thinkjs.org/doc/index.html"
-            }
-        ],
-		"Seajs":[
+            },
+        
+		
 			{
                 "type": "前端基础知识>Seajs",
                 "title": "seajs",
@@ -346,21 +348,21 @@
                 "type": "前端基础知识>Seajs",
                 "title": "seajs 中文手册",
                 "url": "http://cyj.me/why-seajs/zh/"
-            }
-		],
-		"ionic":[
+            },
+		
+		
 	        {
 	            "type": "前端基础知识>ionic",
 	            "title": "ionic",
 	            "url": "https://github.com/ychow/ionic-guide"
-	        }
-		],
-		"Mock.js":[
+	        },
+		
+		
 			{
                 "type": "前端基础知识>Mock.js",
                 "title": "Mock.js 是一款模拟数据生成器",
                 "url": "http://mockjs.com/"
             }
-		]
-	}
+	]
+	
 }

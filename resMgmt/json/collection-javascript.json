@@ -1,6 +1,7 @@
 {
-	"data":{ 
-		"常用": [
+    "type":["常用", "算法" ,"移动端"],
+	"data":[
+		
             {
                 "type": "收藏>Javascript>常用",
                 "title": "ieBetter.js-让IE6-IE8拥有IE9+,Chrome等浏览器特性",
@@ -20,9 +21,9 @@
                 "type": "收藏>Javascript>常用",
                 "title": "中国个人身份证号验证",
                 "url": "https://github.com/mc-zone/IDValidator"
-            }
-        ],
-        "算法": [
+            },
+        
+        
             {
                 "type": "收藏>Javascript>算法",
                 "title": "数据结构与算法 JavaScript 描述. 章节练习",
@@ -57,9 +58,9 @@
                 "type": "收藏>Javascript>算法",
                 "title": "前端资源教程",
                 "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
-            }
-        ],
-        "移动端":[
+            },
+        
+        
             {
                 "type": "收藏>Javascript>移动端",
                 "title": "fastclick",
@@ -70,6 +71,6 @@
                 "title": "no-click-delay",
                 "url": "https://github.com/mmastrac/jquery-noclickdelay"
             }
-        ]
-	}
+        
+	]
 }

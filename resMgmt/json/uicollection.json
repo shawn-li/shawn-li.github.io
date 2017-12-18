@@ -1,6 +1,9 @@
 {
-	"data":{
-		"Ext":[
+    "type":[
+        "Ext","EasyUI","J-UI","Other"
+    ],
+	"data":[
+		
             {
                 "type": "收藏>各种UI方案>Ext",
                 "title": "extjs",
@@ -20,23 +23,23 @@
                 "type": "收藏>各种UI方案>Ext",
                 "title": "前端资源教程",
                 "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
-            }
-        ],
-        "EasyUI":[
+            },
+        
+        
             {
                 "type": "收藏>各种UI方案>EasyUI",
                 "title": "jquery easyui 未压缩源代码",
                 "url": "http://jquery-easyui.googlecode.com/svn/trunk/src/"
-            }
-        ],
-        "J-UI":[
+            },
+        
+        
             {
                 "type": "收藏>各种UI方案>J-UI",
                 "title": "J-UI",
                 "url": "http://jui.org/"
-            }
-        ],
-        "Other" :[
+            },
+        
+        
             {
                 "type": "收藏>各种UI方案>Other",
                 "title": "MUI-最接近原生APP体验的高性能前端框架",
@@ -82,6 +85,6 @@
                 "title": "雅虎UI - CSS UI",
                 "url": "http://developer.yahoo.com/yui/grids/"
             }
-        ]
-	}
+        
+	]
 }

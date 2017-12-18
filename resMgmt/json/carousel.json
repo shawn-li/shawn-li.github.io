@@ -1,6 +1,9 @@
 {
-	"data":{
-		"pc图轮": [
+    "type":[
+        "pc图轮","移动端"
+    ],
+	"data":[
+		
             {
                 "type": "收藏>轮播图>pc图轮",
                 "title": "单屏轮播sochange",
@@ -15,9 +18,9 @@
                 "type": "收藏>轮播图>pc图轮",
                 "title": "fullpage全屏轮播",
                 "url": "https://github.com/alvarotrigo/fullPage.js/"
-            }
-        ],
-        "移动端":[
+            },
+        
+        
             {
                 "type": "收藏>轮播图>移动端",
                 "title": "无缝切换",
@@ -133,6 +136,6 @@
                 "title": "滑动侧边栏",
                 "url": "http://mango.github.io/slideout/"
             }
-        ]
-	}
+        
+	]
 }

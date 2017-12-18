@@ -27,6 +27,9 @@
 	#container{
 		width: 100%;
 	}
+	.main{
+		width: 80%;
+	}
 }
 @media screen and (max-width: 800px){
 	.main{
@@ -74,6 +77,9 @@
 					font: 14px/40px Microsoft JhengHei;
 					line-height: 40px;
 					vertical-align: middle;
+				}
+				span:hover{
+
 				}
 				img{
 					display: block;
@@ -208,9 +214,28 @@
 	}
 }
 
+//dataTables title
+.table-title{
+	padding: 10px;
+	margin: 20px 0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 24px;
+}
+//dataTables box
+.table-box{
+	padding: 10px;
+	margin-top: 20px;
+	border-top: 1px solid #6e6e6e;
+}
+#buttonBox{
+	button:hover{
+		cursor: pointer;
+	}
+}
 
-//dataTable
-#example_wrapper{
+//dataTables
+#myTable_wrapper{
 	min-width: 700px;
 
 	table{
@@ -219,7 +244,6 @@
 			max-width: 400px;
 			word-wrap:break-word;
 		}
-
 		td:hover{
 			color:#5c90ff;
 			cursor: pointer;
@@ -251,5 +275,7 @@
 	    height: 28px;
 	    line-height: 28px;
 	    padding: 0.3em;
+	    font-size: 12px;
 	}
 }
+

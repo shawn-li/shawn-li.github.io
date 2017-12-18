@@ -32,6 +32,9 @@
   #container {
     width: 100%;
   }
+  .main {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 800px) {
   .main {
@@ -204,45 +207,61 @@
     height: 50%;
   }
 }
-#example_wrapper {
+.table-title {
+  padding: 10px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.table-box {
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #6e6e6e;
+}
+#buttonBox button:hover {
+  cursor: pointer;
+}
+#myTable_wrapper {
   min-width: 700px;
 }
-#example_wrapper table {
+#myTable_wrapper table {
   font-size: 14px;
 }
-#example_wrapper table td {
+#myTable_wrapper table td {
   max-width: 400px;
   word-wrap: break-word;
 }
-#example_wrapper table td:hover {
+#myTable_wrapper table td:hover {
   color: #5c90ff;
   cursor: pointer;
 }
-#example_wrapper .sorting_asc,
-#example_wrapper .sorting_desc {
+#myTable_wrapper .sorting_asc,
+#myTable_wrapper .sorting_desc {
   font: 14px/16px #000000;
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-#example_wrapper .sorting {
+#myTable_wrapper .sorting {
   font: 14px/16px #000000;
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-#example_wrapper .dataTables_length {
+#myTable_wrapper .dataTables_length {
   padding: 10px;
   margin-left: 20px;
 }
-#example_wrapper .dataTables_filter {
+#myTable_wrapper .dataTables_filter {
   padding: 10px;
   margin-right: 20px;
 }
-#example_wrapper .dataTables_filter label {
+#myTable_wrapper .dataTables_filter label {
   font-size: 16px;
 }
-#example_wrapper .dataTables_filter input {
+#myTable_wrapper .dataTables_filter input {
   border: 1px solid #b6b6b6;
   height: 28px;
   line-height: 28px;
   padding: 0.3em;
+  font-size: 12px;
 }
