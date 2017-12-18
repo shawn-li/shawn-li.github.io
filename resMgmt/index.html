@@ -105,6 +105,54 @@
 	<script type="text/javascript">
 		(function($){
 
+//模块模式-下拉框
+			var lxDropdown = (function(){
+		    	
+		    	var DROPDOWN1 = '<ul class="js-myDropdownMenu dropdown-menu" style="display:none;">';
+		    	var DROPDOWN2 = '</ul>';
+
+		    	var init = function(content){
+		    		var html = DROPDOWN1 + content + DROPDOWN2;
+
+		    		
+		    		return html;
+		    	}
+
+		    	var bindEvent = function(){
+		    		var $btn = $('.js-myDropdownBtn');
+		    		var $menu = $('.js-myDropdownMenu');
+		    		$btn.click(function(){
+		    			// alert(1)
+			    		if ($menu.css('display') == 'none') {
+			    			$menu.css('display','block');
+			    		}else{
+			    			$menu.css('display', 'none');
+			    		}
+		    		});
+
+		    		var $myDropdownli = $('.js-myDropdown .js-myDropdownMenu >li>a'); //下拉子项
+		    		$myDropdownli.click(function(){
+						var _text = $(this).html();
+						//console.log(_text)
+						if ( _text == '全部') {
+							$btn.html('全部&emsp;<span class="caret"></span>');
+						}else{
+							$btn.html(_text+'&emsp;<span class="caret"></span>');
+						}
+						$menu.css('display','none');
+					});
+
+		    	}
+		    	
+
+		    	return {
+		    		init: init,
+		    		bindEvent : bindEvent
+		    	}
+		    })()
+
+
+//模块模式-主界面表格
 			var lxResMgmt = (function(){
 
 		//-------------- 常量 ------------
@@ -112,10 +160,15 @@
 	            '<button class="btn btn-default"  type="button" id="reload" data-toggle="modal" data-target="#employeeModal">刷新表格</button>' +
 	            '<button class="btn btn-primary" type="button" id="batchIds" style="margin-left:20px;" data-toggle="modal" >多选</button>' +
 	            '<button class="btn btn-primary" type="button" id="selection" style="margin-left:20px;" data-toggle="modal" >单选</button>';
-	            var QUERY1 = '<div class="dropdown js-myDropdown" style="display:inline-block;margin-left: 20px;"><button type="button" class="btn dropdown-toggle js-myDropdownBtn" id="dropdownMenu1" data-toggle="dropdown" style="">'+
-					'种类&emsp;<span class="caret"></span></button>'+
-				'<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">';
-				var QUERY2 = '</ul></div><button class="btn btn-primary" type="button" id="query" style="margin-left:20px;" data-toggle="modal" >搜索</button>';
+
+	            var DROPDOWN1 = '<div class="dropdown js-myDropdown" style="display:inline-block;margin-left: 20px;"><button type="button" class="btn dropdown-toggle js-myDropdownBtn" id="dropdownMenu1">'+
+					'种类&emsp;<span class="caret"></span></button>'
+				// 	+
+				// '<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">';
+
+				var DROPDOWN2 = '<li><a href="javascript:;">全部</a></li>'
+
+				var DROPDOWN3 = '</div><button class="btn btn-primary" type="button" id="query" style="margin-left:20px;" data-toggle="modal" >搜索</button>';
 				// 	<li role="presentation">
 				// 		<a role="menuitem" tabindex="-1" href="#">Java</a>
 				// 	</li>
@@ -179,6 +232,9 @@
 					lxTable.column(3)
 				    .search(text)
 				    .draw();
+				 //console.log($('.dataTables_filter').find('input'));
+				 //console.log(text);
+				 $('.dataTables_filter').find('input').val(text);
 				}
 
 				//清除所有checkbox
@@ -191,6 +247,7 @@
 			    //刷新页面
 			    //重新加载数据
 			    function reload() {
+			    	$("#CheckAll").prop("checked", false);
 			        lxTable.ajax.reload();
 			    }
 
@@ -218,33 +275,37 @@
 						}
 						console.log("请下拉框选择！");
 						var len = _type.length;
-						var _QUERY= BUTTONS + QUERY1;
+						//var _html = BUTTONS + QUERY1;
+						var _html = '';
+						var _content = '';
 						
 						for(var i=0; i<len; i++){
-							_QUERY += '<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">'
+							_content += '<li><a href="javascript:;">'
 							+ _type[i] + '</a></li>'
 						}
-						_QUERY += '<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">全部</a></li>'
-						_QUERY += QUERY2;
-						$btnBox.html(_QUERY);
+						var _html = BUTTONS + DROPDOWN1 + lxDropdown.init(_content+ DROPDOWN2) + DROPDOWN3;
+						//lxDropdown.init(_content+ DROPDOWN2) 返回一个<ul><li></li></ul>的结构
+						$btnBox.html(_html);
+
+						lxDropdown.bindEvent();
 					});
 
-					var $myDropdownli = $('.js-myDropdown .dropdown-menu >li>a'); //下拉子项
-					var $myDropdownBtn = $('.js-myDropdownBtn');  //button框中的下拉btn框
-					var $query = $('#query'); //搜索按键btn
+					//var $myDropdownli = $('.js-myDropdown .dropdown-menu >li>a'); //下拉子项
 					// console.log('-------')
 					// console.log($myDropdownli);
-					$myDropdownli.click(function(){
-						var _text = $(this).html();
-						console.log(_text)
-						if ( _text == '全部') {
-							$myDropdownBtn.html('全部&emsp;<span class="caret"></span>');
-						}else{
-							$myDropdownBtn.html(_text+'&emsp;<span class="caret"></span>');
-						}
-						//alert($this.html());
-					});
+					// $myDropdownli.click(function(){
+					// 	var _text = $(this).html();
+					// 	console.log(_text)
+					// 	if ( _text == '全部') {
+					// 		$myDropdownBtn.html('全部&emsp;<span class="caret"></span>');
+					// 	}else{
+					// 		$myDropdownBtn.html(_text+'&emsp;<span class="caret"></span>');
+					// 	}
+					// 	//alert($this.html());
+					// });
 
+					var $myDropdownBtn = $('.js-myDropdownBtn');
+					var $query = $('#query'); //搜索按键btn
 					$query.click(function(){
 						var _btnText = $myDropdownBtn.text().trim();
 						
@@ -266,9 +327,6 @@
 				}
 			
 	            return {
-	            	BUTTONS: BUTTONS,
-	            	QUERY1: QUERY1,
-	            	QUERY2: QUERY2,
 	            	checkbox: checkbox,
 	            	batchIds: batchIds,
 	            	selection: selection,
