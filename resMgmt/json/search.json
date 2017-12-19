@@ -1,0 +1,29 @@
+{
+	"data":[
+		{
+            "type": "综合搜索",
+            "title": "javascripting",
+            "url": "http://www.javascripting.com/"
+        },
+        {
+            "type": "综合搜索",
+            "title": "各种流行库搜索",
+            "url": "http://microjs.com/"
+        },
+        {
+            "type": "收藏>综合效果搜索平台",
+            "title": "效果网",
+            "url": "http://www.jq22.com/"
+        },
+        {
+            "type": "收藏>综合效果搜索平台",
+            "title": "17素材",
+            "url": "http://www.17sucai.com/"
+        },
+        {
+            "type": "收藏>综合效果搜索平台",
+            "title": "常用的JavaScript代码片段",
+            "url": "http://microjs.com/"
+        }
+	]
+}

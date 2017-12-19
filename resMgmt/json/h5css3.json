@@ -1,0 +1,49 @@
+{
+	"data":[
+		{
+            "type": "收藏>HTML5",
+            "title": "HTML5 有哪些让你惊艳的 demo？",
+            "url": "http://www.zhihu.com/question/24398907"
+        },
+        {
+	        "type": "收藏>CSS",
+	        "title": "browserhacks",
+	        "url": "http://browserhacks.com/"
+	    },
+	    {
+	        "type": "收藏>CSS",
+	        "title": "前端资源教程",
+	        "url": "http://cnodejs.org/topic/56ef3edd532839c33a99d00e"
+	    },
+	    {
+            "type": "收藏>jQuery",
+            "title": "myfocus",
+            "url": "https://github.com/koen301/myfocus"
+        },
+        {
+            "type": "收藏>jQuery",
+            "title": "myfocus-官方演示站",
+            "url": "http://www.chhua.com/myfocus/"
+        },
+        {
+            "type": "收藏>jQuery",
+            "title": "SuperSlidev2.1 – 大话主席",
+            "url": "http://www.superslide2.com/"
+        },
+        {
+            "type": "收藏>jQuery",
+            "title": "soChange",
+            "url": "http://www.bujichong.com/sojs/soChange/index.html"
+        },
+        {
+            "type": "收藏>JSON",
+            "title": "模拟生成JSON数据",
+            "url": "http://beta.json-generator.com/"
+        },
+        {
+            "type": "收藏>JSON",
+            "title": "返回跨域JSONAPI",
+            "url": "http://jsonp.afeld.me/"
+        }
+	]
+}
