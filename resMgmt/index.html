@@ -110,6 +110,7 @@
 		    	
 		    	var DROPDOWN1 = '<ul class="js-myDropdownMenu dropdown-menu" style="display:none;">';
 		    	var DROPDOWN2 = '</ul>';
+		    	var $html_body =$('html,body');
 
 		    	var init = function(content){
 		    		var html = DROPDOWN1 + content + DROPDOWN2;
@@ -128,6 +129,7 @@
 			    		}else{
 			    			$menu.css('display', 'none');
 			    		}
+			    		return false;
 		    		});
 
 		    		var $myDropdownli = $('.js-myDropdown .js-myDropdownMenu >li>a'); //下拉子项
@@ -140,7 +142,13 @@
 							$btn.html(_text+'&emsp;<span class="caret"></span>');
 						}
 						$menu.css('display','none');
+						return false;
 					});
+
+					$html_body.click(function(){
+						$menu.css('display','none');
+					})
+
 
 		    	}
 		    	
